@@ -1,0 +1,16 @@
+# Output products list for <SinCos>
+SinCos/doc/cordic_v5_0_readme.txt
+SinCos/doc/cordic_v5_0_vinfo.html
+SinCos/doc/ds858_cordic.pdf
+SinCos.asy
+SinCos.gise
+SinCos.ngc
+SinCos.sym
+SinCos.vhd
+SinCos.vho
+SinCos.xco
+SinCos.xise
+SinCos_flist.txt
+SinCos_readme.txt
+SinCos_xmdf.tcl
+demo_tb/tb_SinCos.vhd

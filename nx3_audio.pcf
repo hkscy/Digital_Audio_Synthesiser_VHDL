@@ -1,0 +1,43 @@
+//! **************************************************************************
+// Written by: Map O.87xd on Fri Dec 26 17:37:23 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "audioOut<0>" LOCATE = SITE "U11" LEVEL 1;
+COMP "audioOut<1>" LOCATE = SITE "V11" LEVEL 1;
+COMP "segments<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "segments<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "segments<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "segments<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "segments<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "segments<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "segments<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "segments<7>" LOCATE = SITE "M13" LEVEL 1;
+COMP "switches<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "switches<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "switches<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "switches<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "switches<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "switches<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "switches<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "switches<7>" LOCATE = SITE "T5" LEVEL 1;
+COMP "leds<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "leds<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "leds<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "leds<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "leds<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "leds<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "leds<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "leds<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "digit<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "digit<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "digit<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "digit<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "buttons<0>" LOCATE = SITE "C9" LEVEL 1;
+COMP "buttons<1>" LOCATE = SITE "D9" LEVEL 1;
+COMP "buttons<2>" LOCATE = SITE "A8" LEVEL 1;
+COMP "buttons<3>" LOCATE = SITE "C4" LEVEL 1;
+COMP "buttons<4>" LOCATE = SITE "B8" LEVEL 1;
+SCHEMATIC END;
+

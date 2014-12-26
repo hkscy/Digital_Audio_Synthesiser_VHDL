@@ -1,0 +1,43 @@
+# clock pin for Nexys 3 Board 
+ NET "clk" LOC= "V10"; # Bank = 2 , Pin name = IO_L30N_GCLK0_USERCCLK , Type = GCLK , Sch name = GCLK0
+
+ NET "segments<0>" LOC= "T17"; 
+ NET "segments<1>" LOC= "T18"; 
+ NET "segments<2>" LOC= "U17"; 
+ NET "segments<3>" LOC= "U18"; 
+ NET "segments<4>" LOC= "M14"; 
+ NET "segments<5>" LOC= "N14"; 
+ NET "segments<6>" LOC= "L14"; 
+ NET "segments<7>" LOC= "M13"; 
+
+ NET "digit<0>" LOC= "N16"; 
+ NET "digit<1>" LOC= "N15"; 
+ NET "digit<2>" LOC= "P18"; 
+ NET "digit<3>" LOC= "P17"; 
+
+ NET "switches<0>" LOC= "T10"; 
+ NET "switches<1>" LOC= "T9"; 
+ NET "switches<2>" LOC= "V9"; 
+ NET "switches<3>" LOC= "M8"; 
+ NET "switches<4>" LOC= "N8"; 
+ NET "switches<5>" LOC= "U8"; 
+ NET "switches<6>" LOC= "V8"; 
+ NET "switches<7>" LOC= "T5"; 
+
+ NET "buttons<0>" LOC= "C9"; 
+ NET "buttons<1>" LOC= "D9"; 
+ NET "buttons<2>" LOC= "A8"; 
+ NET "buttons<3>" LOC= "C4"; 
+ NET "buttons<4>" LOC= "B8"; 
+
+ NET "leds<0>" LOC= "U16"; 
+ NET "leds<1>" LOC= "V16"; 
+ NET "leds<2>" LOC= "U15"; 
+ NET "leds<3>" LOC= "V15"; 
+ NET "leds<4>" LOC= "M11"; 
+ NET "leds<5>" LOC= "N11"; 
+ NET "leds<6>" LOC= "R11"; 
+ NET "leds<7>" LOC= "T11";
+
+ NET "audioOut<1>" LOC= "V11";
+ NET "audioOut<0>" LOC= "U11";

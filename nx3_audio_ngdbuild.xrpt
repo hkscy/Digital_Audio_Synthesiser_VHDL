@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<document OS="lin64" product="ISE" version="13.4">
+
+  <!--The data in this file is primarily intended for consumption by Xilinx tools.
+    The structure and the elements are likely to change over the next few releases.
+    This means code written to parse this file will need to be revisited each subsequent release.-->
+
+  <application stringID="NgdBuild" timeStamp="Fri Dec 26 17:37:06 2014">
+    <section stringID="User_Env">
+      <table stringID="User_EnvVar">
+        <column stringID="variable"/>
+        <column stringID="value"/>
+        <row stringID="row" value="0">
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="/opt/Xilinx/13.4/ISE_DS/ISE//bin/lin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"/>
+        </row>
+        <row stringID="row" value="1">
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="/opt/Xilinx/13.4/ISE_DS/ISE/"/>
+        </row>
+        <row stringID="row" value="2">
+          <item stringID="variable" value="LD_LIBRARY_PATH"/>
+          <item stringID="value" value="/opt/Xilinx/13.4/ISE_DS/ISE//lib/lin64"/>
+        </row>
+      </table>
+      <item stringID="User_EnvOs" value="OS Information">
+        <item stringID="User_EnvOsname" value="Debian"/>
+        <item stringID="User_EnvOsrelease" value="Debian GNU/Linux testing/unstable"/>
+      </item>
+      <item stringID="User_EnvHost" value="mechastriessand"/>
+      <table stringID="User_EnvCpu">
+        <column stringID="arch"/>
+        <column stringID="speed"/>
+        <row stringID="row" value="0">
+          <item stringID="arch" value="Intel(R) Core(TM) i3-2310M CPU @ 2.10GHz"/>
+          <item stringID="speed" value="2034.046 MHz"/>
+        </row>
+      </table>
+    </section>
+    <task stringID="NGDBUILD_OPTION_SUMMARY">
+      <section stringID="NGDBUILD_OPTION_SUMMARY">
+        <item DEFAULT="None" label="-intstyle" stringID="NGDBUILD_intstyle" value="ise"/>
+        <item DEFAULT="None" label="-dd" stringID="NGDBUILD_output_dir" value="_ngo"/>
+        <item DEFAULT="None" label="-p" stringID="NGDBUILD_partname" value="xc6slx16-csg324-2"/>
+        <item DEFAULT="None" label="-sd" stringID="NGDBUILD_search_path" value="ipcore_dir"/>
+        <item DEFAULT="None" label="-uc" stringID="NGDBUILD_ucf_file" value="nx3_audio.ucf"/>
+      </section>
+    </task>
+    <task stringID="NGDBUILD_REPORT">
+      <section stringID="NGDBUILD_DESIGN_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_WARNINGS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_INFOS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="0"/>
+      </section>
+      <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_GND" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="8"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="21"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="24"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="680"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="1262"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="60"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="187"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="51"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="2146"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="22"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="2220"/>
+      </section>
+      <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_GND" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="14"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="21"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="24"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="680"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="1262"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="60"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="187"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="51"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="2146"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="22"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="2220"/>
+      </section>
+      <section stringID="NGDBUILD_CORE_SUMMARY">
+        <item COUNT="1" stringID="NGDBUILD_CORE" value="cordic_v5_0, Xilinx CORE Generator 13.4"/>
+        <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
+          <section stringID="NGDBUILD_CORE_INSTANCES">
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="SinCos">
+              <item stringID="NGDBUILD_CORE_INFO" type="cordic_v5_0" value="SinCos"/>
+              <item c_architecture="2" c_coarse_rotate="1" c_cordic_function="2" c_data_format="0" c_has_aclk="0" c_has_aclken="0" c_has_aresetn="0" c_has_s_axis_cartesian="0" c_has_s_axis_cartesian_tlast="0" c_has_s_axis_cartesian_tuser="0" c_has_s_axis_phase="1" c_has_s_axis_phase_tlast="0" c_has_s_axis_phase_tuser="0" c_input_width="24" c_iterations="0" c_m_axis_dout_tdata_width="48" c_m_axis_dout_tuser_width="1" c_output_width="24" c_phase_format="1" c_pipeline_mode="0" c_precision="0" c_round_mode="2" c_s_axis_cartesian_tdata_width="48" c_s_axis_cartesian_tuser_width="1" c_s_axis_phase_tdata_width="24" c_s_axis_phase_tuser_width="1" c_scale_comp="0" c_throttle_scheme="3" c_tlast_resolution="0" c_xdevicefamily="spartan6" stringID="NGDBUILD_CORE_PARAMETERS" value="SinCos"/>
+            </scope>
+          </section>
+        </section>
+      </section>
+    </task>
+  </application>
+
+</document>
