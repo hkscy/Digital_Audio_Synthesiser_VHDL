@@ -1,0 +1,40 @@
+Running: /opt/Xilinx/13.4/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sincos_tb_isim_beh.exe -prj /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sincos_tb_beh.prj work.sincos_tb 
+ISim O.87xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/SinCos.vhd" into library work
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sincos_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 105928 KB
+Fuse CPU Usage: 1670 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package textio
+Compiling package numeric_std
+Compiling package bip_utils_pkg_v2_0
+Compiling package xbip_pipe_v2_0_xst_comp
+Compiling package axi_utils_pkg_v1_1
+Compiling package math_real
+Compiling package global_util_pkg_v1_1
+Compiling package axi_utils_v1_1_comps
+Compiling package std_logic_signed
+Compiling package mult_gen_pkg_v11_0
+Compiling package cordic_v5_0_pack
+Compiling package cordic_v5_0_comps
+Compiling package xbip_pipe_v2_0_comp
+Compiling architecture behavioral of entity xbip_pipe_v2_0 [\xbip_pipe_v2_0(0,1,0,0,0,0,0,"0...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0_xst [\xbip_pipe_v2_0_xst(0,1,0,0,0,0,...]
+Compiling architecture behavioral of entity cordic_v5_0_behv [\cordic_v5_0_behv(2,2,1,0,"spart...]
+Compiling architecture behavioral of entity cordic_v5_0 [\cordic_v5_0(2,2,1,0,"spartan6",...]
+Compiling architecture sincos_a of entity SinCos [sincos_default]
+Compiling architecture behavior of entity sincos_tb
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 27 VHDL Units
+Built simulation executable /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sincos_tb_isim_beh.exe
+Fuse Memory Usage: 706784 KB
+Fuse CPU Usage: 2430 ms
+GCC CPU Usage: 10700 ms

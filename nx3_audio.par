@@ -1,7 +1,7 @@
 Release 13.4 par O.87xd (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-mechastriessand::  Fri Dec 26 17:37:27 2014
+mechastriessand::  Sat Dec 27 20:14:08 2014
 
 par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd
 nx3_audio.pcf 
@@ -99,13 +99,13 @@ WARNING:Par:288 - The signal buttons<4>_IBUF has no load.  PAR will not attempt 
 Starting Router
 
 
-Phase  1  : 8172 unrouted;      REAL time: 6 secs 
+Phase  1  : 8172 unrouted;      REAL time: 5 secs 
 
-Phase  2  : 7885 unrouted;      REAL time: 7 secs 
+Phase  2  : 7885 unrouted;      REAL time: 6 secs 
 
 Phase  3  : 1856 unrouted;      REAL time: 20 secs 
 
-Phase  4  : 1856 unrouted; (Par is working to improve performance)     REAL time: 21 secs 
+Phase  4  : 1856 unrouted; (Par is working to improve performance)     REAL time: 20 secs 
 
 Updating file: nx3_audio.ncd with current fully routed design.
 
@@ -119,8 +119,8 @@ Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 2
 
 Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 23 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
-Total REAL time to Router completion: 24 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 23 secs 
+Total REAL time to Router completion: 23 secs 
 Total CPU time to Router completion: 23 secs 
 
 Partition Implementation Status

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-12-26T17:13:37</DateModified>
+  <DateModified>2014-12-27T20:50:52</DateModified>
   <ModuleName>nx3_audio</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2014-12-27T20:08:24</SummaryTimeStamp>
   <SavedFilePath>/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/iseconfig/nx3_audio.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/</ImplementationReportsDirectory>
   <DateInitialized>2014-12-26T17:13:37</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

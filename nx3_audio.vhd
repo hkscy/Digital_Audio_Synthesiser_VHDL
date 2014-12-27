@@ -9,19 +9,19 @@
 -- Description:    Start file for lab 3 and assignment
 ----------------------------------------------------------------------------------
 
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.std_logic_arith.ALL;
+use ieee.std_logic_unsigned.ALL;
 
 entity nx3_audio is
-  Port ( clk      : in  STD_LOGIC;
-         buttons  : in  STD_LOGIC_VECTOR (4 downto 0);
-         switches : in  STD_LOGIC_VECTOR (7 downto 0);  
-         leds     : out  STD_LOGIC_VECTOR (7 downto 0);
-         digit    : out  STD_LOGIC_VECTOR (3 downto 0);
-         segments : out  STD_LOGIC_VECTOR (7 downto 0);
-         audioOut : out  STD_LOGIC_VECTOR (1 downto 0));
+  Port ( clk      : in  std_logic;
+         buttons  : in  std_logic_vector (4 downto 0);
+         switches : in  std_logic_vector (7 downto 0);  
+         leds     : out  std_logic_vector (7 downto 0);
+         digit    : out  std_logic_vector (3 downto 0);
+         segments : out  std_logic_vector (7 downto 0);
+         audioOut : out  std_logic_vector (1 downto 0));
 end nx3_audio;
 
 architecture Behavioral of nx3_audio is
@@ -34,12 +34,12 @@ architecture Behavioral of nx3_audio is
 			m_axis_dout_tvalid  : out std_logic;
 			m_axis_dout_tdata   : out std_logic_vector(47 downto 0)
 			);
-	END COMPONENT;
+	end component;
 begin
 	sc: SinCos port map( s_axis_phase_tvalid => '1',
-									  s_axis_phase_tdata => phase,
-									  -- m_axis_dout_tvalid => , unconnected.
-									   m_axis_dout_tdata => sincosout );
+								s_axis_phase_tdata => phase, -- input 
+							-- m_axis_dout_tvalid => , unconnected.
+								m_axis_dout_tdata => sincosout ); -- output
 	-- Audio output pins (set to zero for now)
 	audioOut <= "00";
 	
