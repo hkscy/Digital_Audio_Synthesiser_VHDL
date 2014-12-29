@@ -40,8 +40,9 @@ architecture Behavioral of sineGen is
 begin
 
 	sc: SinCos port map( s_axis_phase_tvalid => '1',
-								s_axis_phase_tdata => conv_signed(phaseCounter(21 downto 0), 24),
-							-- m_axis_dout_tvalid => , unconnected.
+								s_axis_phase_tdata => std_logic_vector(conv_signed(signed(phaseCounter(21 downto 0)), 24)),
+							-- The conv_signed fn is used to extend the lower 22 bits of phaseCounter to 24 bits,
+							-- meaning that the most positive phase value presented to the CORDIC will be X"1FFFFF"
 								m_axis_dout_tdata => sincosout ); -- output
 								
 	process (clk)

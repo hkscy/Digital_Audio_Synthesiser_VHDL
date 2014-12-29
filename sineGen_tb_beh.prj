@@ -1,0 +1,3 @@
+vhdl work "ipcore_dir/SinCos.vhd"
+vhdl work "sineGen.vhd"
+vhdl work "sineGen_tb.vhd"

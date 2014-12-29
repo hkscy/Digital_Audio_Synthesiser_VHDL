@@ -8,7 +8,6 @@
 -- Target Devices: xc6slx16
 -- Description:    Start file for lab 3 and assignment
 ----------------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.ALL;
 use ieee.std_logic_arith.ALL;
@@ -36,17 +35,17 @@ architecture Behavioral of nx3_audio is
 			);
 	end component;
 begin
-	sc: SinCos port map( s_axis_phase_tvalid => '1',
-								s_axis_phase_tdata => phase, -- input 
-							-- m_axis_dout_tvalid => , unconnected.
-								m_axis_dout_tdata => sincosout ); -- output
+	sc: SinCos port map( s_axis_phase_tvalid => '1', -- is phase input valid?
+								s_axis_phase_tdata => phase, -- input angle we want to calculate the sine and cosine of.
+							-- m_axis_dout_tvalid => , unconnected, is output valid?
+								m_axis_dout_tdata => sincosout ); -- sine of input (47 downto 24), cosine if input(23 downto 0)
 	-- Audio output pins (set to zero for now)
 	audioOut <= "00";
 	
 	-- Test the SinCos core using switches.
 	phase(23 downto 16) <= switches;
 	phase(15 downto 0) <= (others => '0');
-	leds(7 downto 0) <= sincosout(47 downto 40);
+	leds(7 downto 0) <= sincosout(47 downto 40); --8msb of sin(phase)
 	
 	digit <= "1110";           -- Address the rightmost 7-segment display
 	segments <= "11111111";    -- Switch off the 7 segment display addressed by "digit" 

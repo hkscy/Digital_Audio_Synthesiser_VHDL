@@ -34,9 +34,11 @@ ARCHITECTURE behavior OF sincos_tb IS
          m_axis_dout_tdata : OUT  std_logic_vector(47 downto 0)
         );
     END COMPONENT;
+	 
    --Inputs
    signal s_axis_phase_tvalid : std_logic := '1';
    signal s_axis_phase_tdata : std_logic_vector(23 downto 0) := (others => '0');
+	
  	--Outputs
    signal m_axis_dout_tvalid : std_logic;
    signal m_axis_dout_tdata : std_logic_vector(47 downto 0);

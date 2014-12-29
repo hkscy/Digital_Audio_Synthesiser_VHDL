@@ -77,6 +77,10 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sincos_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="sincos_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="sincos_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sincos_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sineGen_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="sineGen_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="sineGen_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sineGen_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
@@ -91,7 +95,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1419716671" xil_pn:in_ck="4801113814755885621" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1419716671">
+    <transform xil_pn:end_ts="1419868854" xil_pn:in_ck="4801113814755885621" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1419868854">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="nx3_audio.vhd"/>
@@ -99,58 +103,49 @@
       <outfile xil_pn:name="sineGen.vhd"/>
       <outfile xil_pn:name="sineGen_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1419707753" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2718386954791902758" xil_pn:start_ts="1419707753">
+    <transform xil_pn:end_ts="1419858208" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="203781293846861076" xil_pn:start_ts="1419858208">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1419707753" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2962099159836104104" xil_pn:start_ts="1419707753">
+    <transform xil_pn:end_ts="1419858208" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5604731216828198510" xil_pn:start_ts="1419858208">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1419707823" xil_pn:in_ck="-2675535970947587658" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2157635444012241305" xil_pn:start_ts="1419707823">
+    <transform xil_pn:end_ts="1419858208" xil_pn:in_ck="-2675535970947587658" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2157635444012241305" xil_pn:start_ts="1419858208">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="ipcore_dir/SinCos.ngc"/>
       <outfile xil_pn:name="ipcore_dir/SinCos.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1419707972" xil_pn:in_ck="4467695032225667452" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1419707972">
+    <transform xil_pn:end_ts="1419868854" xil_pn:in_ck="5363358807356982595" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1419868854">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="ipcore_dir/SinCos.vhd"/>
+      <outfile xil_pn:name="nx3_audio.vhd"/>
+      <outfile xil_pn:name="sincos_tb.vhd"/>
+      <outfile xil_pn:name="sineGen.vhd"/>
+      <outfile xil_pn:name="sineGen_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1419707979" xil_pn:in_ck="4467695032225667452" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8494042342018044692" xil_pn:start_ts="1419707972">
+    <transform xil_pn:end_ts="1419868861" xil_pn:in_ck="5363358807356982595" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6811129163469235192" xil_pn:start_ts="1419868854">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="sineGen_tb_beh.prj"/>
+      <outfile xil_pn:name="sineGen_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1419707979" xil_pn:in_ck="2705749755144569459" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-927262715011086335" xil_pn:start_ts="1419707979">
+    <transform xil_pn:end_ts="1419868861" xil_pn:in_ck="2788236982989864333" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4477571672993465707" xil_pn:start_ts="1419868861">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="sineGen_tb_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1419614028" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1419614028">
       <status xil_pn:value="SuccessfullyRun"/>
