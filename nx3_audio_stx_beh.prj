@@ -1,0 +1,2 @@
+vhdl isim_temp "ipcore_dir/SinCos.vhd"
+vhdl isim_temp "nx3_audio.vhd"

@@ -13,8 +13,6 @@
 --						 radians.
 ----------------------------------------------------------------------------------
 library IEEE;
---USE ieee.numeric_std.ALL;
---USE ieee.std_logic_unsigned.all;
 USE ieee.std_logic_signed.all;
 USE ieee.std_logic_1164.ALL; 
 USE IEEE.STD_LOGIC_ARITH.ALL;
@@ -45,9 +43,11 @@ begin
 							-- meaning that the most positive phase value presented to the CORDIC will be X"1FFFFF"
 								m_axis_dout_tdata => sincosout ); -- output
 								
-	process (clk)
+	process ( clk )
 	begin
-		phaseCounter <= phaseCounter + phaseInc;
+		if rising_edge(clk) then
+			phaseCounter <= phaseCounter + phaseInc;
+		end if;
 	end process;
 	
 	output <= sincosout(47 downto 24);

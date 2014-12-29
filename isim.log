@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen_tb_isim_beh.wdb 
+Running: /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/pdmModule_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/pdmModule_isim_beh.wdb 
 ISim O.87xd (signature 0x8ddf5b5d)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,9 +10,5 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /sinegen_tb/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-at 0 ps, Instance /sinegen_tb/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
-# run 1.00us
-# run 23.10us
 # exit 0
