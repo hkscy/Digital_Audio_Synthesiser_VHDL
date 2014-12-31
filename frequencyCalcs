@@ -1,0 +1,20 @@
+s = sin( 2.pi.f.i / f(s) )
+i.e.
+s = sin( 2.pi.40kHz.i/100Mhz) = sin(pi.i/1250) = 1678 (scaled radians form)
+
+so for 5kHz on a 2.8224Mhz sample clock
+s = sin(2.pi.5000.i/2.8224^6) = sin(pi.i/282.24) = 7430 (scaled radians form)
+s = X"1D06"
+10000/(2.8224*pow(10,6))
+0.0035430839002267575
+>>> 1/_
+282.24
+>>> pow(2,21)/_
+7430.385487528344
+
+
+20Hz; s = sin(2.pi.20.i/2.8224^6) = sin(pi.i.40/2.8224^6) = 29 = 0b11101
+
+5khz; s = sin(2.pi.5000.i/2.8224^6) = 7430 = 0b1110100000110
+
+20kHz; s = sin(2.pi.20000.i/2.8224*10^6) = 29722 = 0b111010000011010

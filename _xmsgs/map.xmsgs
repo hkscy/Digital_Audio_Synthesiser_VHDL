@@ -8,12 +8,12 @@
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">buttons&lt;4&gt;_IBUF</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">45</arg> more times for the following (max. 5 shown):
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">36</arg> more times for the following (max. 5 shown):
 <arg fmt="%s" index="3">buttons&lt;3&gt;_IBUF,
 buttons&lt;2&gt;_IBUF,
 buttons&lt;1&gt;_IBUF,
 buttons&lt;0&gt;_IBUF,
-clk_IBUF</arg>
+switches&lt;7&gt;_IBUF</arg>
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 

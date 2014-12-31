@@ -1,12 +1,14 @@
 ----------------------------------------------------------------------------------
 -- Company:        University of Birmingham
--- Engineer:       Tim Collins
--- Create Date:    10:30 20/10/2014
+-- Engineer:       Christopher Hicks
+-- Create Date:    20/12/2014
 -- Design Name:    Lab 3 
 -- Module Name:    nx3_audio - Behavioral 
 -- Project Name:   Lab 3
 -- Target Devices: xc6slx16
--- Description:    Start file for lab 3 and assignment
+-- Description:    First complete test system. 
+--						 Uses the same parameters as the Direct Stream Digital system used
+--						 by Super Audio CDs. i.e. One bit sampled at 2.8224Mhz.
 ----------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -24,28 +26,84 @@ entity nx3_audio is
 end nx3_audio;
 
 architecture Behavioral of nx3_audio is
-	signal phase : std_logic_vector(23 downto 0);
-	signal sincosout : std_logic_vector(47 downto 0);
-	component SinCos
+	signal frequency: std_logic_vector(23 downto 0);-- := "111010000011000000000000"; --5kHz
+	signal freqSweep: std_logic_vector(18 downto 0) := (others => '0');
+	signal sineGenOut: std_logic_vector(23 downto 0);
+	
+	signal sampleClock : std_logic := '0'; --@22.5792Mhz
+	signal pdmClock: std_logic := '0'; --@2.8224Mhz
+	signal msclk: std_logic := '0'; --@1kHz
+	
+	signal audioOutMono: std_logic := '0';
+	
+	component dcm --22.5792MHz sample clock
 		port (
-			s_axis_phase_tvalid : in std_logic;
-			s_axis_phase_tdata  : in std_logic_vector(23 downto 0);
-			m_axis_dout_tvalid  : out std_logic;
-			m_axis_dout_tdata   : out std_logic_vector(47 downto 0)
-			);
+			clk_in1  : in std_logic;
+			clk_out1 : out std_logic );
 	end component;
+	
+	component audioClock --Divides it's input clock by 8, yields 2.8224 Mhz.
+		port (
+			clk_in2	: in std_logic;
+			clk_out2	: out std_logic );
+	end component;
+	
+	component msClock -- Divives it's input by 2822, used here for ~1000Hz
+		port (
+			clk_in3  : in std_logic;
+			clk_out3 : out std_logic );
+	end component;
+	
+	component sineGen --Sine Wave Oscillator
+		port (
+			phaseInc : in  std_logic_vector(23 downto 0); --s = sin(2πfi/system_clk_Hz)
+				  clk : in  STD_LOGIC;
+			  output : out  STD_LOGIC_VECTOR(23 downto 0));
+	end component sineGen;
+	
+	component pdmModule --PDM output
+		port (
+			sineIn 	 : in  std_logic_vector(23 downto 0);
+         clk 		 : in  std_logic;
+         pdmOutput : out  std_logic );
+	end component;
+	
 begin
-	sc: SinCos port map( s_axis_phase_tvalid => '1', -- is phase input valid?
-								s_axis_phase_tdata => phase, -- input angle we want to calculate the sine and cosine of.
-							-- m_axis_dout_tvalid => , unconnected, is output valid?
-								m_axis_dout_tdata => sincosout ); -- sine of input (47 downto 24), cosine if input(23 downto 0)
+	sample_clock: dcm port map( clk_in1 => clk,	-- Create sample clock @ 22.5792Mhz.
+										clk_out1 => sampleClock );
+	
+	dcm_clock: audioClock port map ( clk_in2 => sampleClock,
+											  clk_out2 => pdmClock ); -- Derive pdm clock @ 2.8224Mhz.
+
+	ms_clk: msClock port map ( clk_in3 => pdmClock,
+											clk_out3 => msclk ); -- 1kHz clock.
+
+	sGen: sineGen port map( phaseInc => frequency,
+										  clk => pdmClock,
+									  output => sineGenOut );
+	
+	pdm: pdmModule port map( sineIn => sineGenOut,
+										 clk => pdmClock,
+								 pdmOutput => audioOutMono );
+	
 	-- Audio output pins (set to zero for now)
-	audioOut <= "00";
+	audioOut(0) <= audioOutMono;
+	audioOut(1) <= audioOutMono;
+	
+	--Sweep audible spectrum. 
+	-- 20Hz  = 0b111010000000000000000000
+	-- 5kHz =  0b111010000011000000000000
+	-- 20kHz = 0b111010000011010000000000
+	frequency(23 downto 0) <= "000000000001110100000110";
+--	process(msclk)
+--	begin
+--		frequency(18 downto 0) <= freqSweep;
+--	end process;
 	
 	-- Test the SinCos core using switches.
-	phase(23 downto 16) <= switches;
-	phase(15 downto 0) <= (others => '0');
-	leds(7 downto 0) <= sincosout(47 downto 40); --8msb of sin(phase)
+	--frequency(23 downto 16) <= switches;
+	--frequency(15 downto 0) <= (others => '0');
+	leds(7 downto 0) <= sineGenOut(23 downto 16); --8 msb of sin(phase)
 	
 	digit <= "1110";           -- Address the rightmost 7-segment display
 	segments <= "11111111";    -- Switch off the 7 segment display addressed by "digit" 

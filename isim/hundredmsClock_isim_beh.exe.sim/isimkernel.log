@@ -1,0 +1,30 @@
+Command line:
+   hundredmsClock_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  35985
+
+Wed Dec 31 12:05:25 2014
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 180.396 Meg
+
+ Total Signals          : 3
+ Total Nets             : 21
+ Total Signal Drivers   : 2
+ Total Blocks           : 4
+ Total Primitive Blocks : 4
+ Total Processes        : 1
+ Total Traceable Variables  : 10
+ Total Scalar Nets and Variables : 399
+Total Line Count : 6
+Total Line Count : 6
+
+ Total Simulation Time: 11.24 sec
+
+ Current Memory Usage: 255.898 Meg
+
+Wed Dec 31 12:06:41 2014
+

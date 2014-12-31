@@ -13,7 +13,7 @@
 --						 radians.
 ----------------------------------------------------------------------------------
 library IEEE;
-USE ieee.std_logic_signed.all;
+USE ieee.std_logic_unsigned.all;
 USE ieee.std_logic_1164.ALL; 
 USE IEEE.STD_LOGIC_ARITH.ALL;
 

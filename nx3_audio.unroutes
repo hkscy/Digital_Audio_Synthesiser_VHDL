@@ -1,11 +1,11 @@
 Release 13.4 - par O.87xd (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Sat Dec 27 20:14:33 2014
+Wed Dec 31 19:54:23 2014
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 6 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 13 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    buttons<0>_IBUF
@@ -13,6 +13,13 @@ WARNING:ParHelpers:361 - There are 6 loadless signals in this design. This desig
    buttons<2>_IBUF
    buttons<3>_IBUF
    buttons<4>_IBUF
-   clk_IBUF
+   switches<0>_IBUF
+   switches<1>_IBUF
+   switches<2>_IBUF
+   switches<3>_IBUF
+   switches<4>_IBUF
+   switches<5>_IBUF
+   switches<6>_IBUF
+   switches<7>_IBUF
 
 

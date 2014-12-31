@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/pdmModule_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/pdmModule_isim_beh.wdb 
+Running: /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/msClock_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/msClock_isim_beh.wdb 
 ISim O.87xd (signature 0x8ddf5b5d)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -11,4 +11,31 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+# isim force add /msclock/clk_in 1 -radix bin -value 0 -radix bin -time 177150 ps -repeat 354300 ps
+# isim force add /msclock/clk_in 1 -radix bin -value 0 -radix bin -time 177150 ps -repeat 354300 ps
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100us
+# run 100000us
 # exit 0

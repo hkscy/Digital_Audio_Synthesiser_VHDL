@@ -32,85 +32,23 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Pad to Pad
----------------+---------------+---------+
-Source Pad     |Destination Pad|  Delay  |
----------------+---------------+---------+
-switches<0>    |leds<0>        |  110.880|
-switches<0>    |leds<1>        |  110.849|
-switches<0>    |leds<2>        |  110.641|
-switches<0>    |leds<3>        |  111.092|
-switches<0>    |leds<4>        |  111.322|
-switches<0>    |leds<5>        |  111.260|
-switches<0>    |leds<6>        |  111.351|
-switches<0>    |leds<7>        |  111.185|
-switches<1>    |leds<0>        |  109.987|
-switches<1>    |leds<1>        |  109.956|
-switches<1>    |leds<2>        |  109.748|
-switches<1>    |leds<3>        |  110.199|
-switches<1>    |leds<4>        |  110.429|
-switches<1>    |leds<5>        |  110.367|
-switches<1>    |leds<6>        |  110.458|
-switches<1>    |leds<7>        |  110.292|
-switches<2>    |leds<0>        |  110.010|
-switches<2>    |leds<1>        |  109.979|
-switches<2>    |leds<2>        |  109.771|
-switches<2>    |leds<3>        |  110.222|
-switches<2>    |leds<4>        |  110.452|
-switches<2>    |leds<5>        |  110.390|
-switches<2>    |leds<6>        |  110.481|
-switches<2>    |leds<7>        |  110.315|
-switches<3>    |leds<0>        |  110.819|
-switches<3>    |leds<1>        |  110.788|
-switches<3>    |leds<2>        |  110.580|
-switches<3>    |leds<3>        |  111.031|
-switches<3>    |leds<4>        |  111.261|
-switches<3>    |leds<5>        |  111.199|
-switches<3>    |leds<6>        |  111.290|
-switches<3>    |leds<7>        |  111.124|
-switches<4>    |leds<0>        |  110.468|
-switches<4>    |leds<1>        |  110.437|
-switches<4>    |leds<2>        |  110.229|
-switches<4>    |leds<3>        |  110.680|
-switches<4>    |leds<4>        |  110.910|
-switches<4>    |leds<5>        |  110.848|
-switches<4>    |leds<6>        |  110.939|
-switches<4>    |leds<7>        |  110.773|
-switches<5>    |leds<0>        |  109.984|
-switches<5>    |leds<1>        |  109.953|
-switches<5>    |leds<2>        |  109.745|
-switches<5>    |leds<3>        |  110.196|
-switches<5>    |leds<4>        |  110.426|
-switches<5>    |leds<5>        |  110.364|
-switches<5>    |leds<6>        |  110.455|
-switches<5>    |leds<7>        |  110.289|
-switches<6>    |leds<0>        |  109.730|
-switches<6>    |leds<1>        |  109.699|
-switches<6>    |leds<2>        |  109.491|
-switches<6>    |leds<3>        |  109.942|
-switches<6>    |leds<4>        |  110.172|
-switches<6>    |leds<5>        |  110.110|
-switches<6>    |leds<6>        |  110.201|
-switches<6>    |leds<7>        |  110.035|
-switches<7>    |leds<0>        |  112.181|
-switches<7>    |leds<1>        |  112.150|
-switches<7>    |leds<2>        |  111.942|
-switches<7>    |leds<3>        |  112.393|
-switches<7>    |leds<4>        |  112.623|
-switches<7>    |leds<5>        |  112.561|
-switches<7>    |leds<6>        |  112.652|
-switches<7>    |leds<7>        |  112.486|
----------------+---------------+---------+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.327|         |         |         |
+---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Dec 27 20:14:43 2014 
+Analysis completed Wed Dec 31 19:54:35 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 416 MB
+Peak Memory Usage: 441 MB
 
 
 

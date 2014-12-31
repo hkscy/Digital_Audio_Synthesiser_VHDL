@@ -39,5 +39,5 @@
  NET "leds<6>" LOC= "R11"; 
  NET "leds<7>" LOC= "T11";
 
- NET "audioOut<1>" LOC= "V11";
- NET "audioOut<0>" LOC= "U11";
+ NET "audioOut<0>" LOC= "N10"; #Pin 3, PmodA, left audio signal.
+ NET "audioOut<1>" LOC= "T12"; #Pin 1, PmodA, right audio signal.
