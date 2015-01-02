@@ -26,8 +26,8 @@ entity nx3_audio is
 end nx3_audio;
 
 architecture Behavioral of nx3_audio is
-	signal frequency: std_logic_vector(23 downto 0);-- := "111010000011000000000000"; --5kHz
-	signal freqSweep: std_logic_vector(18 downto 0) := (others => '0');
+	signal frequency: std_logic_vector(23 downto 0);
+	signal freqSweep: std_logic_vector(13 downto 0) := (others => '0');
 	signal sineGenOut: std_logic_vector(23 downto 0);
 	
 	signal sampleClock : std_logic := '0'; --@22.5792Mhz
@@ -91,14 +91,20 @@ begin
 	audioOut(1) <= audioOutMono;
 	
 	--Sweep audible spectrum. 
-	-- 20Hz  = 0b111010000000000000000000
-	-- 5kHz =  0b111010000011000000000000
-	-- 20kHz = 0b111010000011010000000000
-	frequency(23 downto 0) <= "000000000001110100000110";
---	process(msclk)
---	begin
---		frequency(18 downto 0) <= freqSweep;
---	end process;
+	-- 20Hz  = 0b000000000000000000011101
+	-- 1kHz =  0b000000000000010111001110
+	-- 5kHz =  0b000000000001110100000110
+	-- 20kHz = 0b000000000011101000001101
+	--frequency(23 downto 0) <= "000000000000010111001110";
+	
+	process(msclk)
+	begin
+		if rising_edge(msclk) then
+			frequency(23 downto 0) <= (others => '0');
+			frequency(13 downto 0) <= freqSweep;
+			freqSweep <= freqSweep + 1;
+		end if;
+	end process;
 	
 	-- Test the SinCos core using switches.
 	--frequency(23 downto 16) <= switches;

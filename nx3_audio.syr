@@ -122,9 +122,6 @@ WARNING:HDLCompiler:946 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VH
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/pdmModule.vhd" into library work
 Parsing entity <pdmModule>.
 Parsing architecture <Behavioral> of entity <pdmmodule>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm/example_design/dcm_exdes.vhd" into library work
-Parsing entity <dcm_exdes>.
-Parsing architecture <xilinx> of entity <dcm_exdes>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/msClock.vhd" into library work
 Parsing entity <msClock>.
 Parsing architecture <Behavioral> of entity <msclock>.
@@ -137,6 +134,9 @@ Parsing architecture <Behavioral> of entity <audioclock>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" into library work
 Parsing entity <nx3_audio>.
 Parsing architecture <Behavioral> of entity <nx3_audio>.
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm/example_design/dcm_exdes.vhd" into library work
+Parsing entity <dcm_exdes>.
+Parsing architecture <xilinx> of entity <dcm_exdes>.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -157,7 +157,6 @@ Elaborating entity <sineGen> (architecture <Behavioral>) from library <work>.
 Elaborating entity <SinCos> (architecture <SinCos_a>) from library <work>.
 
 Elaborating entity <pdmModule> (architecture <Behavioral>) from library <work>.
-WARNING:Xst:2972 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" line 78. All outputs of instance <ms_clk> of block <msClock> are unconnected in block <nx3_audio>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -167,9 +166,13 @@ Synthesizing Unit <nx3_audio>.
     Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd".
 WARNING:Xst:647 - Input <buttons<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <switches<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" line 78: Output port <clk_out3> of the instance <ms_clk> is unconnected or connected to loadless signal.
+    Found 14-bit register for signal <freqSweep>.
+    Found 14-bit register for signal <frequency>.
+    Found 14-bit adder for signal <freqSweep[13]_GND_5_o_add_0_OUT> created at line 105.
+    WARNING:Xst:2404 -  FFs/Latches <frequency<23:14>> (without init value) have a constant value of 0 in block <nx3_audio>.
     Summary:
-	no macro.
+	inferred   1 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
 Unit <nx3_audio> synthesized.
 
 Synthesizing Unit <dcm>.
@@ -186,6 +189,15 @@ Synthesizing Unit <audioClock>.
 	inferred   1 Adder/Subtractor(s).
 	inferred   3 D-type flip-flop(s).
 Unit <audioClock> synthesized.
+
+Synthesizing Unit <msClock>.
+    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/msClock.vhd".
+    Found 12-bit register for signal <counter>.
+    Found 12-bit subtractor for signal <GND_11_o_GND_11_o_sub_1_OUT<11:0>> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+Unit <msClock> synthesized.
 
 Synthesizing Unit <sineGen>.
     Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen.vhd".
@@ -216,12 +228,16 @@ Unit <pdmModule> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 4
+# Adders/Subtractors                                   : 6
+ 12-bit subtractor                                     : 1
+ 14-bit adder                                          : 1
  24-bit adder                                          : 2
  24-bit addsub                                         : 1
  3-bit adder                                           : 1
-# Registers                                            : 5
+# Registers                                            : 8
  1-bit register                                        : 2
+ 12-bit register                                       : 1
+ 14-bit register                                       : 2
  24-bit register                                       : 2
  3-bit register                                        : 1
 # Comparators                                          : 1
@@ -241,6 +257,10 @@ Synthesizing (advanced) Unit <audioClock>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
 Unit <audioClock> synthesized (advanced).
 
+Synthesizing (advanced) Unit <nx3_audio>.
+The following registers are absorbed into counter <freqSweep>: 1 register on signal <freqSweep>.
+Unit <nx3_audio> synthesized (advanced).
+
 Synthesizing (advanced) Unit <pdmModule>.
 The following registers are absorbed into accumulator <sample.sigma>: 1 register on signal <sample.sigma>.
 Unit <pdmModule> synthesized (advanced).
@@ -253,15 +273,17 @@ Unit <sineGen> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 3
+ 12-bit subtractor                                     : 1
  24-bit adder                                          : 1
  24-bit addsub                                         : 1
-# Counters                                             : 1
+# Counters                                             : 2
+ 14-bit up counter                                     : 1
  3-bit up counter                                      : 1
 # Accumulators                                         : 2
  24-bit up accumulator                                 : 2
-# Registers                                            : 2
- Flip-Flops                                            : 2
+# Registers                                            : 28
+ Flip-Flops                                            : 28
 # Comparators                                          : 1
  24-bit comparator greater                             : 1
 
@@ -271,16 +293,17 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <sample.pdmBit> in Unit <pdmModule> is equivalent to the following FF/Latch, which will be removed : <pdmOutput> 
-WARNING:Xst:1293 - FF/Latch <sGen/phaseCounter_0> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <sGen/phaseCounter_22> of sequential type is unconnected in block <nx3_audio>.
 WARNING:Xst:2677 - Node <sGen/phaseCounter_23> of sequential type is unconnected in block <nx3_audio>.
 INFO:Xst:1901 - Instance sample_clock/pll_base_inst in unit sample_clock/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
 
 Optimizing unit <nx3_audio> ...
 
+Optimizing unit <msClock> ...
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block nx3_audio, actual ratio is 14.
+Found area constraint ratio of 100 (+ 5) on block nx3_audio, actual ratio is 15.
 
 Final Macro Processing ...
 
@@ -288,8 +311,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 49
- Flip-Flops                                            : 49
+# Registers                                            : 90
+ Flip-Flops                                            : 90
 
 =========================================================================
 
@@ -312,23 +335,24 @@ Top Level Output File Name         : nx3_audio.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 6944
+# BELS                             : 7026
 #      GND                         : 2
-#      INV                         : 29
-#      LUT1                        : 38
-#      LUT2                        : 753
+#      INV                         : 35
+#      LUT1                        : 45
+#      LUT2                        : 768
 #      LUT3                        : 1264
 #      LUT4                        : 61
 #      LUT5                        : 191
-#      LUT6                        : 51
-#      MUXCY                       : 2240
+#      LUT6                        : 53
+#      MUXCY                       : 2265
 #      VCC                         : 2
-#      XORCY                       : 2313
-# FlipFlops/Latches                : 49
-#      FD                          : 46
-#      FDC                         : 3
-# Clock Buffers                    : 3
-#      BUFG                        : 3
+#      XORCY                       : 2340
+# FlipFlops/Latches                : 90
+#      FD                          : 75
+#      FDC                         : 10
+#      FDP                         : 5
+# Clock Buffers                    : 4
+#      BUFG                        : 4
 # IO Buffers                       : 23
 #      IBUFG                       : 1
 #      OBUF                        : 22
@@ -342,23 +366,23 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              49  out of  18224     0%  
- Number of Slice LUTs:                 2387  out of   9112    26%  
-    Number used as Logic:              2387  out of   9112    26%  
+ Number of Slice Registers:              90  out of  18224     0%  
+ Number of Slice LUTs:                 2417  out of   9112    26%  
+    Number used as Logic:              2417  out of   9112    26%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2408
-   Number with an unused Flip Flop:    2359  out of   2408    97%  
-   Number with an unused LUT:            21  out of   2408     0%  
-   Number of fully used LUT-FF pairs:    28  out of   2408     1%  
-   Number of unique control sets:         2
+ Number of LUT Flip Flop pairs used:   2455
+   Number with an unused Flip Flop:    2365  out of   2455    96%  
+   Number with an unused LUT:            38  out of   2455     1%  
+   Number of fully used LUT-FF pairs:    52  out of   2455     2%  
+   Number of unique control sets:         4
 
 IO Utilization: 
  Number of IOs:                          36
  Number of bonded IOBs:                  23  out of    232     9%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
  Number of PLL_ADVs:                      1  out of      2    50%  
 
 ---------------------------
@@ -382,10 +406,11 @@ Clock Information:
 -----------------------------------+---------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)     | Load  |
 -----------------------------------+---------------------------+-------+
-pdmClock(dcm_clock/clk_out2<2>1:O) | BUFG(*)(pdm/sample.pdmBit)| 46    |
+msclk(ms_clk/clk_out3<11>3:O)      | BUFG(*)(frequency_0)      | 28    |
+pdmClock(dcm_clock/clk_out2<2>1:O) | BUFG(*)(pdm/sample.pdmBit)| 59    |
 sample_clock/pll_base_inst/CLKOUT0 | BUFG                      | 3     |
 -----------------------------------+---------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
+(*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 
@@ -407,9 +432,45 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'msclk'
+  Clock period: 2.279ns (frequency: 438.789MHz)
+  Total number of paths / destination ports: 119 / 28
+-------------------------------------------------------------------------
+Delay:               2.279ns (Levels of Logic = 15)
+  Source:            freqSweep_0 (FF)
+  Destination:       freqSweep_13 (FF)
+  Source Clock:      msclk rising
+  Destination Clock: msclk rising
+
+  Data Path: freqSweep_0 to freqSweep_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  freqSweep_0 (freqSweep_0)
+     INV:I->O              1   0.255   0.000  Mcount_freqSweep_lut<0>_INV_0 (Mcount_freqSweep_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcount_freqSweep_cy<0> (Mcount_freqSweep_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_freqSweep_cy<1> (Mcount_freqSweep_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_freqSweep_cy<2> (Mcount_freqSweep_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_freqSweep_cy<3> (Mcount_freqSweep_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_freqSweep_cy<4> (Mcount_freqSweep_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_freqSweep_cy<5> (Mcount_freqSweep_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_freqSweep_cy<6> (Mcount_freqSweep_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_freqSweep_cy<7> (Mcount_freqSweep_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_freqSweep_cy<8> (Mcount_freqSweep_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_freqSweep_cy<9> (Mcount_freqSweep_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_freqSweep_cy<10> (Mcount_freqSweep_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_freqSweep_cy<11> (Mcount_freqSweep_cy<11>)
+     MUXCY:CI->O           0   0.023   0.000  Mcount_freqSweep_cy<12> (Mcount_freqSweep_cy<12>)
+     XORCY:CI->O           1   0.206   0.000  Mcount_freqSweep_xor<13> (Result<13>1)
+     FD:D                      0.074          freqSweep_13
+    ----------------------------------------
+    Total                      2.279ns (1.554ns logic, 0.725ns route)
+                                       (68.2% logic, 31.8% route)
+
+=========================================================================
 Timing constraint: Default period analysis for Clock 'pdmClock'
   Clock period: 103.067ns (frequency: 9.702MHz)
-  Total number of paths / destination ports: 144434998265066585178026728238383778337648541696 / 46
+  Total number of paths / destination ports: 148958562541386937106728835275299839414580019200 / 71
 -------------------------------------------------------------------------
 Delay:               103.067ns (Levels of Logic = 719)
   Source:            sGen/phaseCounter_21 (FF)
@@ -1171,7 +1232,7 @@ Delay:               2.938ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'pdmClock'
-  Total number of paths / destination ports: 542970442426065194261604726269865778154045440 / 10
+  Total number of paths / destination ports: 559975749827654896960324761227731056201826304 / 10
 -------------------------------------------------------------------------
 Offset:              100.671ns (Levels of Logic = 720)
   Source:            sGen/phaseCounter_21 (FF)
@@ -1913,11 +1974,20 @@ Offset:              100.671ns (Levels of Logic = 720)
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock msclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+msclk          |    2.279|         |         |         |
+---------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock pdmClock
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
+msclk          |    2.421|         |         |         |
 pdmClock       |  103.067|         |         |         |
 ---------------+---------+---------+---------+---------+
 
@@ -1932,15 +2002,15 @@ sample_clock/pll_base_inst/CLKOUT0|    2.938|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.11 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.99 secs
  
 --> 
 
 
-Total memory usage is 429784 kilobytes
+Total memory usage is 429972 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    9 (   0 filtered)
-Number of infos    :    6 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 
