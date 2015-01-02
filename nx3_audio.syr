@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 Reading design: nx3_audio.prj
@@ -128,21 +128,28 @@ Parsing architecture <Behavioral> of entity <msclock>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm.vhd" into library work
 Parsing entity <dcm>.
 Parsing architecture <xilinx> of entity <dcm>.
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm/example_design/dcm_exdes.vhd" into library work
+Parsing entity <dcm_exdes>.
+Parsing architecture <xilinx> of entity <dcm_exdes>.
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/display_driver.vhd" into library work
+Parsing entity <display_driver>.
+Parsing architecture <Behavioral> of entity <display_driver>.
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/counter.vhd" into library work
+Parsing entity <counter>.
+Parsing architecture <Behavioral> of entity <counter>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/audioClock.vhd" into library work
 Parsing entity <audioClock>.
 Parsing architecture <Behavioral> of entity <audioclock>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" into library work
 Parsing entity <nx3_audio>.
 Parsing architecture <Behavioral> of entity <nx3_audio>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm/example_design/dcm_exdes.vhd" into library work
-Parsing entity <dcm_exdes>.
-Parsing architecture <xilinx> of entity <dcm_exdes>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
 
 Elaborating entity <nx3_audio> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 42: Using initial value "01" for mode since it is never assigned
 
 Elaborating entity <dcm> (architecture <xilinx>) from library <work>.
 
@@ -152,11 +159,22 @@ WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHD
 Elaborating entity <msClock> (architecture <Behavioral>) from library <work>.
 WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/msClock.vhd" Line 28: counter should be on the sensitivity list of the process
 
+Elaborating entity <display_driver> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/display_driver.vhd" Line 43: number should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/display_driver.vhd" Line 46: number should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/display_driver.vhd" Line 49. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:439 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 67: Formal port count of mode inout cannot be associated with actual port count of mode out
+INFO:HDLCompiler:1408 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/counter.vhd" Line 19. count is declared here
+
+Elaborating entity <counter> (architecture <Behavioral>) with generics from library <work>.
+INFO:HDLCompiler:1408 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/counter.vhd" Line 19. count is declared here
+
 Elaborating entity <sineGen> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <SinCos> (architecture <SinCos_a>) from library <work>.
 
 Elaborating entity <pdmModule> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 44: Net <num[3]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -166,9 +184,10 @@ Synthesizing Unit <nx3_audio>.
     Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd".
 WARNING:Xst:647 - Input <buttons<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <switches<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <num> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 14-bit register for signal <freqSweep>.
     Found 14-bit register for signal <frequency>.
-    Found 14-bit adder for signal <freqSweep[13]_GND_5_o_add_0_OUT> created at line 105.
+    Found 14-bit adder for signal <freqSweep[13]_GND_5_o_add_0_OUT> created at line 132.
     WARNING:Xst:2404 -  FFs/Latches <frequency<23:14>> (without init value) have a constant value of 0 in block <nx3_audio>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -199,6 +218,22 @@ Synthesizing Unit <msClock>.
 	inferred  12 D-type flip-flop(s).
 Unit <msClock> synthesized.
 
+Synthesizing Unit <display_driver>.
+    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/display_driver.vhd".
+    Summary:
+	no macro.
+Unit <display_driver> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/counter.vhd".
+        N = 16
+    Found 16-bit register for signal <count>.
+    Found 16-bit adder for signal <count[15]_GND_16_o_add_0_OUT> created at line 27.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <counter> synthesized.
+
 Synthesizing Unit <sineGen>.
     Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen.vhd".
 INFO:Xst:3210 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen.vhd" line 40: Output port <m_axis_dout_tvalid> of the instance <sc> is unconnected or connected to loadless signal.
@@ -214,10 +249,10 @@ Synthesizing Unit <pdmModule>.
     Found 1-bit register for signal <sample.pdmBit>.
     Found 1-bit register for signal <pdmOutput>.
     Found 24-bit register for signal <sample.sigma>.
-    Found 24-bit adder for signal <sineIn[23]_GND_16_o_add_1_OUT> created at line 34.
+    Found 24-bit adder for signal <sineIn[23]_GND_20_o_add_1_OUT> created at line 34.
     Found 24-bit adder for signal <sample.sigma[23]_sineIn[23]_add_3_OUT> created at line 36.
-    Found 24-bit subtractor for signal <sineIn[23]_GND_16_o_sub_1_OUT<23:0>> created at line 32.
-    Found 24-bit comparator greater for signal <sample.sigma[23]_GND_16_o_LessThan_5_o> created at line 37
+    Found 24-bit subtractor for signal <sineIn[23]_GND_20_o_sub_1_OUT<23:0>> created at line 32.
+    Found 24-bit comparator greater for signal <sample.sigma[23]_GND_20_o_LessThan_5_o> created at line 37
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  26 D-type flip-flop(s).
@@ -228,16 +263,18 @@ Unit <pdmModule> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 6
+# Adders/Subtractors                                   : 7
  12-bit subtractor                                     : 1
  14-bit adder                                          : 1
+ 16-bit adder                                          : 1
  24-bit adder                                          : 2
  24-bit addsub                                         : 1
  3-bit adder                                           : 1
-# Registers                                            : 8
+# Registers                                            : 9
  1-bit register                                        : 2
  12-bit register                                       : 1
  14-bit register                                       : 2
+ 16-bit register                                       : 1
  24-bit register                                       : 2
  3-bit register                                        : 1
 # Comparators                                          : 1
@@ -251,11 +288,17 @@ Macro Statistics
 
 Reading core <ipcore_dir/SinCos.ngc>.
 Loading core <SinCos> for timing and area information for instance <sc>.
+WARNING:Xst:1290 - Hierarchical block <c> is unconnected in block <nx3_audio>.
+   It will be removed from the design.
 INFO:Xst:2261 - The FF/Latch <sample.pdmBit> in Unit <pdm> is equivalent to the following FF/Latch, which will be removed : <pdmOutput> 
 
 Synthesizing (advanced) Unit <audioClock>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
 Unit <audioClock> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <counter> synthesized (advanced).
 
 Synthesizing (advanced) Unit <nx3_audio>.
 The following registers are absorbed into counter <freqSweep>: 1 register on signal <freqSweep>.
@@ -277,8 +320,9 @@ Macro Statistics
  12-bit subtractor                                     : 1
  24-bit adder                                          : 1
  24-bit addsub                                         : 1
-# Counters                                             : 2
+# Counters                                             : 3
  14-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
  3-bit up counter                                      : 1
 # Accumulators                                         : 2
  24-bit up accumulator                                 : 2
@@ -470,7 +514,7 @@ Delay:               2.279ns (Levels of Logic = 15)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'pdmClock'
   Clock period: 103.067ns (frequency: 9.702MHz)
-  Total number of paths / destination ports: 148958562541386937106728835275299839414580019200 / 71
+  Total number of paths / destination ports: 148958562541386977671548042578640687309082591232 / 71
 -------------------------------------------------------------------------
 Delay:               103.067ns (Levels of Logic = 719)
   Source:            sGen/phaseCounter_21 (FF)
@@ -1199,10 +1243,10 @@ Delay:               103.067ns (Levels of Logic = 719)
      LUT2:I1->O            1   0.254   0.000  pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_lut<14> (pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_lut<14>)
      MUXCY:S->O            1   0.215   0.000  pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_cy<14> (pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_cy<14>)
      XORCY:CI->O           1   0.206   1.112  pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_xor<15> (pdm/sample.sigma[23]_sineIn[23]_add_3_OUT<15>)
-     LUT5:I0->O            1   0.254   0.000  pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_lut<3> (pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_lut<3>)
-     MUXCY:S->O            1   0.215   0.000  pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_cy<3> (pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_cy<3>)
-     MUXCY:CI->O           1   0.235   0.681  pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_cy<4> (pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_cy<4>)
-     INV:I->O              1   0.255   0.681  pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_cy<4>_inv1_INV_0 (pdm/sample.sigma[23]_GND_16_o_LessThan_5_o)
+     LUT5:I0->O            1   0.254   0.000  pdm/Mcompar_sample.sigma[23]_GND_20_o_LessThan_5_o_lut<3> (pdm/Mcompar_sample.sigma[23]_GND_20_o_LessThan_5_o_lut<3>)
+     MUXCY:S->O            1   0.215   0.000  pdm/Mcompar_sample.sigma[23]_GND_20_o_LessThan_5_o_cy<3> (pdm/Mcompar_sample.sigma[23]_GND_20_o_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           1   0.235   0.681  pdm/Mcompar_sample.sigma[23]_GND_20_o_LessThan_5_o_cy<4> (pdm/Mcompar_sample.sigma[23]_GND_20_o_LessThan_5_o_cy<4>)
+     INV:I->O              1   0.255   0.681  pdm/Mcompar_sample.sigma[23]_GND_20_o_LessThan_5_o_cy<4>_inv1_INV_0 (pdm/sample.sigma[23]_GND_20_o_LessThan_5_o)
      FD:D                      0.074          pdm/sample.pdmBit
     ----------------------------------------
     Total                    103.067ns (30.705ns logic, 72.362ns route)
@@ -1232,7 +1276,7 @@ Delay:               2.938ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'pdmClock'
-  Total number of paths / destination ports: 559975749827654896960324761227731056201826304 / 10
+  Total number of paths / destination ports: 559975749827654817732162246963393462657875968 / 10
 -------------------------------------------------------------------------
 Offset:              100.671ns (Levels of Logic = 720)
   Source:            sGen/phaseCounter_21 (FF)
@@ -2002,15 +2046,15 @@ sample_clock/pll_base_inst/CLKOUT0|    2.938|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 12.99 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.88 secs
  
 --> 
 
 
-Total memory usage is 429972 kilobytes
+Total memory usage is 430052 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    8 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 

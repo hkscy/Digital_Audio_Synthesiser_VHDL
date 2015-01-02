@@ -1,7 +1,7 @@
 Release 13.4 par O.87xd (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-mechastriessand::  Fri Jan 02 20:40:38 2015
+mechastriessand::  Fri Jan 02 23:27:20 2015
 
 par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd
 nx3_audio.pcf 
@@ -45,12 +45,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   658 out of   2,278   28%
+  Number of occupied Slices:                   655 out of   2,278   28%
   Nummber of MUXCYs used:                    2,436 out of   4,556   53%
-  Number of LUT Flip Flop pairs used:        2,283
-    Number with an unused Flip Flop:         2,193 out of   2,283   96%
-    Number with an unused LUT:                   8 out of   2,283    1%
-    Number of fully used LUT-FF pairs:          82 out of   2,283    3%
+  Number of LUT Flip Flop pairs used:        2,285
+    Number with an unused Flip Flop:         2,195 out of   2,285   96%
+    Number with an unused LUT:                  10 out of   2,285    1%
+    Number of fully used LUT-FF pairs:          80 out of   2,285    3%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -97,8 +97,8 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 7 secs 
-Finished initial Timing Analysis.  REAL time: 7 secs 
+Starting initial Timing Analysis.  REAL time: 6 secs 
+Finished initial Timing Analysis.  REAL time: 6 secs 
 
 WARNING:Par:288 - The signal switches<0>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal switches<1>_IBUF has no load.  PAR will not attempt to route this signal.
@@ -118,27 +118,27 @@ Starting Router
 
 Phase  1  : 8645 unrouted;      REAL time: 7 secs 
 
-Phase  2  : 8355 unrouted;      REAL time: 9 secs 
+Phase  2  : 8355 unrouted;      REAL time: 8 secs 
 
-Phase  3  : 1872 unrouted;      REAL time: 28 secs 
+Phase  3  : 1809 unrouted;      REAL time: 23 secs 
 
-Phase  4  : 1872 unrouted; (Par is working to improve performance)     REAL time: 28 secs 
+Phase  4  : 1809 unrouted; (Par is working to improve performance)     REAL time: 23 secs 
 
 Updating file: nx3_audio.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 37 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 33 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 37 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 33 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 37 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 33 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 37 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 33 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 37 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 33 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
-Total REAL time to Router completion: 38 secs 
-Total CPU time to Router completion: 38 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 34 secs 
+Total REAL time to Router completion: 34 secs 
+Total CPU time to Router completion: 34 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -161,11 +161,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Autotimespec constraint for clock net sam | SETUP       |         N/A|     2.571ns|     N/A|           0
   pleClock                                  | HOLD        |     0.444ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net pdm | SETUP       |         N/A|    90.042ns|     N/A|           0
-  Clock_BUFG                                | HOLD        |     0.445ns|            |       0|           0
+  Autotimespec constraint for clock net pdm | SETUP       |         N/A|    89.924ns|     N/A|           0
+  Clock_BUFG                                | HOLD        |     0.446ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net msc | SETUP       |         N/A|     2.123ns|     N/A|           0
-  lk_BUFG                                   | HOLD        |     0.457ns|            |       0|           0
+  Autotimespec constraint for clock net msc | SETUP       |         N/A|     2.089ns|     N/A|           0
+  lk_BUFG                                   | HOLD        |     0.510ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -183,10 +183,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 13 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 40 secs 
-Total CPU time to PAR completion: 41 secs 
+Total REAL time to PAR completion: 36 secs 
+Total CPU time to PAR completion: 36 secs 
 
-Peak Memory Usage:  658 MB
+Peak Memory Usage:  655 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
