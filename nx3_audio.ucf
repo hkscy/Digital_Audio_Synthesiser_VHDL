@@ -41,3 +41,6 @@
 
  NET "audioOut<0>" LOC= "N10"; #Pin 3, PmodA, left audio signal.
  NET "audioOut<1>" LOC= "T12"; #Pin 1, PmodA, right audio signal.
+ 
+ NET "uart_tx" LOC= "N18"; #UART transmit pin
+ NET "uart_rx" LOC= "N17"; #UART receive pin

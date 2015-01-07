@@ -15,11 +15,6 @@ Program -p 1
 Program -p 1 
 Program -p 1 
 Program -p 1 
-Program -p 1 
-Program -p 1 
-Program -p 1 
-Program -p 1 
-Program -p 1 
 setMode -bs
 setMode -bs
 setMode -ss

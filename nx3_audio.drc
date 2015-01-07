@@ -1,7 +1,7 @@
 Release 13.4 Drc O.87xd (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Fri Jan  2 23:28:13 2015
+Tue Jan  6 21:39:55 2015
 
 drc -z nx3_audio.ncd nx3_audio.pcf
 

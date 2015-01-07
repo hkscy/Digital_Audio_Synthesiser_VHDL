@@ -17,20 +17,23 @@ entity msClock is
 end msClock;
 
 architecture Behavioral of msClock is
-	signal counter : std_logic_vector(11 downto 0) := "101100000110"; 
-	--divide clock by 2822, gives 1000.142Hz
+	constant MS_CLK_MAX : std_logic_vector(14 downto 0) := "110111000111100"; -- 28220 clock cycles per 10ms.
+	signal counter : std_logic_vector(14 downto 0) := (others => '0'); 
+	--divide clock by 28220, gives 100.142Hz
 begin
+	--counts up to 28220 and then outputs hi for one cycle.
 	process(clk_in3)
 	begin
 		if rising_edge(clk_in3) then -- Only count rising edges.
-			counter <= counter - 1;	
-		end if;
-		if counter = 0 then
-			clk_out3 <= '1';	-- Output a heart beat.
-			counter <= "101100000110"; -- Reset the counter.
-		else
-			clk_out3 <= '0';
+			if counter = MS_CLK_MAX then
+				counter <= (others => '0');
+				clk_out3 <= '1';
+			else
+				counter <= counter + 1;
+				clk_out3 <= '0';
+			end if;
 		end if;
 	end process;
+	
 end Behavioral;
 

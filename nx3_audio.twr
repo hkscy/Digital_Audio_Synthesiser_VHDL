@@ -32,23 +32,42 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+digit<0>    |         6.793(R)|      SLOW  |         3.025(R)|      FAST  |sampleClock       |   0.000|
+digit<1>    |         6.806(R)|      SLOW  |         3.040(R)|      FAST  |sampleClock       |   0.000|
+digit<2>    |         6.753(R)|      SLOW  |         3.015(R)|      FAST  |sampleClock       |   0.000|
+digit<3>    |         6.688(R)|      SLOW  |         2.970(R)|      FAST  |sampleClock       |   0.000|
+segments<0> |        10.974(R)|      SLOW  |         3.817(R)|      FAST  |sampleClock       |   0.000|
+segments<1> |        10.741(R)|      SLOW  |         3.784(R)|      FAST  |sampleClock       |   0.000|
+segments<2> |        10.771(R)|      SLOW  |         3.743(R)|      FAST  |sampleClock       |   0.000|
+segments<3> |        10.864(R)|      SLOW  |         3.681(R)|      FAST  |sampleClock       |   0.000|
+segments<4> |        10.388(R)|      SLOW  |         3.621(R)|      FAST  |sampleClock       |   0.000|
+segments<5> |        10.462(R)|      SLOW  |         3.472(R)|      FAST  |sampleClock       |   0.000|
+segments<6> |        10.461(R)|      SLOW  |         3.586(R)|      FAST  |sampleClock       |   0.000|
+segments<7> |        12.960(R)|      SLOW  |         4.291(R)|      FAST  |sampleClock       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.571|         |         |         |
+clk            |    2.000|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Jan  2 23:28:07 2015 
+Analysis completed Tue Jan  6 21:39:49 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 441 MB
+Peak Memory Usage: 439 MB
 
 
 

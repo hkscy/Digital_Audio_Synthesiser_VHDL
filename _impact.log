@@ -1,11 +1,9 @@
 iMPACT Version: 13.4
 
-iMPACT log file Started on Fri Jan  2 20:34:40 2015
+iMPACT log file Started on Tue Jan  6 19:43:26 2015
 
 Welcome to iMPACT
 iMPACT Version: 13.4
-Project: '/home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/foutBitMultiplier//auto_project.ipf' already exists.
-Original project has been renamed to '/home/meccastreissand/Documents/FourthYear/EE4G - VHDL assignment/designs/foutBitMultiplier//auto_project_1.ipf'.
 Project: /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/foutBitMultiplier//auto_project.ipf created.
 // *** BATCH CMD : setMode -bs
 GUI --- Auto connect to cable...
@@ -20,7 +18,7 @@ INFO:iMPACT - Digilent Plugin: Firmware Version: 0306
 INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
 INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 1600000 Hz
 Attempting to identify devices in the boundary-scan chain configuration...
-INFO:iMPACT - Current time: 02/01/2015 20:34
+INFO:iMPACT - Current time: 06/01/2015 19:43
 // *** BATCH CMD : Identify -inferir 
 PROGRESS_START - Starting Operation.
 Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx16, Version : 3
@@ -41,7 +39,7 @@ UserID read from the bitstream file = 0xFFFFFFFF.
 Data width read from the bitstream file = 1.
 INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
 ----------------------------------------------------------------------
-INFO:iMPACT - Current time: 02/01/2015 20:34
+INFO:iMPACT - Current time: 06/01/2015 19:43
 // *** BATCH CMD : Program -p 1 
 Maximum TCK operating frequency for this device chain: 0.
 Validating chain...
@@ -77,8 +75,8 @@ LCK cycle: NoWait
 INFO:iMPACT - '1': Checking done pin....done.
 '1': Programmed successfully.
 PROGRESS_END - End Operation.
-Elapsed time =      3 sec.
-INFO:iMPACT - Current time: 02/01/2015 20:43
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 06/01/2015 20:09
 Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
 INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
    but the original bitstream file remains unchanged.
@@ -118,167 +116,7 @@ INFO:iMPACT - '1': Checking done pin....done.
 '1': Programmed successfully.
 PROGRESS_END - End Operation.
 Elapsed time =      3 sec.
-INFO:iMPACT - Current time: 02/01/2015 21:23
-Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
-INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
-   but the original bitstream file remains unchanged.
-// *** BATCH CMD : Program -p 1 
-PROGRESS_START - Starting Operation.
-Maximum TCK operating frequency for this device chain: 0.
-Validating chain...
-Boundary-scan chain validated successfully.
-'1': Programming device...
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-done.
-'1': Reading status register contents...
-[0] CRC ERROR                                                              :        0
-[1] IDCODE ERROR                                                           :        0
-[2] DCM LOCK STATUS                                                        :        1
-[3] GTS_CFG_B STATUS                                                       :        1
-[4] GWE STATUS                                                             :        1
-[5] GHIGH STATUS                                                           :        1
-[6] DECRYPTION ERROR                                                       :        0
-[7] DECRYPTOR ENABLE                                                       :        0
-[8] HSWAPEN PIN                                                            :        1
-[9] MODE PIN M[0]                                                          :        1
-[10] MODE PIN M[1]                                                         :        1
-[11] RESERVED                                                              :        0
-[12] INIT_B PIN                                                            :        1
-[13] DONE PIN                                                              :        1
-[14] SUSPEND STATUS                                                        :        0
-[15] FALLBACK STATUS                                                       :        0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1100 1110 1100 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
-INFO:iMPACT:188 - '1': Programming completed successfully.
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      3 sec.
-INFO:iMPACT - Current time: 02/01/2015 21:31
-Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
-INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
-   but the original bitstream file remains unchanged.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 0.
-Validating chain...
-PROGRESS_START - Starting Operation.
-Boundary-scan chain validated successfully.
-'1': Programming device...
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-done.
-'1': Reading status register contents...
-[0] CRC ERROR                                                              :        0
-[1] IDCODE ERROR                                                           :        0
-[2] DCM LOCK STATUS                                                        :        1
-[3] GTS_CFG_B STATUS                                                       :        1
-[4] GWE STATUS                                                             :        1
-[5] GHIGH STATUS                                                           :        1
-[6] DECRYPTION ERROR                                                       :        0
-[7] DECRYPTOR ENABLE                                                       :        0
-[8] HSWAPEN PIN                                                            :        1
-[9] MODE PIN M[0]                                                          :        1
-[10] MODE PIN M[1]                                                         :        1
-[11] RESERVED                                                              :        0
-[12] INIT_B PIN                                                            :        1
-[13] DONE PIN                                                              :        1
-[14] SUSPEND STATUS                                                        :        0
-[15] FALLBACK STATUS                                                       :        0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1100 1110 1100 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
-INFO:iMPACT:188 - '1': Programming completed successfully.
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      3 sec.
-INFO:iMPACT - Current time: 02/01/2015 21:36
-Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
-INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
-   but the original bitstream file remains unchanged.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 0.
-Validating chain...
-Boundary-scan chain validated successfully.
-PROGRESS_START - Starting Operation.
-'1': Programming device...
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-done.
-'1': Reading status register contents...
-[0] CRC ERROR                                                              :        0
-[1] IDCODE ERROR                                                           :        0
-[2] DCM LOCK STATUS                                                        :        1
-[3] GTS_CFG_B STATUS                                                       :        1
-[4] GWE STATUS                                                             :        1
-[5] GHIGH STATUS                                                           :        1
-[6] DECRYPTION ERROR                                                       :        0
-[7] DECRYPTOR ENABLE                                                       :        0
-[8] HSWAPEN PIN                                                            :        1
-[9] MODE PIN M[0]                                                          :        1
-[10] MODE PIN M[1]                                                         :        1
-[11] RESERVED                                                              :        0
-[12] INIT_B PIN                                                            :        1
-[13] DONE PIN                                                              :        1
-[14] SUSPEND STATUS                                                        :        0
-[15] FALLBACK STATUS                                                       :        0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1100 1110 1100 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
-INFO:iMPACT:188 - '1': Programming completed successfully.
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      3 sec.
-INFO:iMPACT - Current time: 02/01/2015 22:03
-Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
-INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
-   but the original bitstream file remains unchanged.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 0.
-Validating chain...
-Boundary-scan chain validated successfully.
-PROGRESS_START - Starting Operation.
-'1': Programming device...
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-done.
-'1': Reading status register contents...
-[0] CRC ERROR                                                              :        0
-[1] IDCODE ERROR                                                           :        0
-[2] DCM LOCK STATUS                                                        :        1
-[3] GTS_CFG_B STATUS                                                       :        1
-[4] GWE STATUS                                                             :        1
-[5] GHIGH STATUS                                                           :        1
-[6] DECRYPTION ERROR                                                       :        0
-[7] DECRYPTOR ENABLE                                                       :        0
-[8] HSWAPEN PIN                                                            :        1
-[9] MODE PIN M[0]                                                          :        1
-[10] MODE PIN M[1]                                                         :        1
-[11] RESERVED                                                              :        0
-[12] INIT_B PIN                                                            :        1
-[13] DONE PIN                                                              :        1
-[14] SUSPEND STATUS                                                        :        0
-[15] FALLBACK STATUS                                                       :        0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1100 1110 1100 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
-INFO:iMPACT:188 - '1': Programming completed successfully.
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      3 sec.
-INFO:iMPACT - Current time: 02/01/2015 22:36
+INFO:iMPACT - Current time: 06/01/2015 20:18
 Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
 INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
    but the original bitstream file remains unchanged.
@@ -318,7 +156,47 @@ INFO:iMPACT - '1': Checking done pin....done.
 '1': Programmed successfully.
 PROGRESS_END - End Operation.
 Elapsed time =      2 sec.
-INFO:iMPACT - Current time: 02/01/2015 22:40
+INFO:iMPACT - Current time: 06/01/2015 20:23
+Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+PROGRESS_START - Starting Operation.
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 06/01/2015 20:44
 Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
 INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
    but the original bitstream file remains unchanged.
@@ -358,127 +236,7 @@ INFO:iMPACT - '1': Checking done pin....done.
 '1': Programmed successfully.
 PROGRESS_END - End Operation.
 Elapsed time =      3 sec.
-INFO:iMPACT - Current time: 02/01/2015 22:44
-Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
-INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
-   but the original bitstream file remains unchanged.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 0.
-Validating chain...
-Boundary-scan chain validated successfully.
-PROGRESS_START - Starting Operation.
-'1': Programming device...
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-done.
-'1': Reading status register contents...
-[0] CRC ERROR                                                              :        0
-[1] IDCODE ERROR                                                           :        0
-[2] DCM LOCK STATUS                                                        :        1
-[3] GTS_CFG_B STATUS                                                       :        1
-[4] GWE STATUS                                                             :        1
-[5] GHIGH STATUS                                                           :        1
-[6] DECRYPTION ERROR                                                       :        0
-[7] DECRYPTOR ENABLE                                                       :        0
-[8] HSWAPEN PIN                                                            :        1
-[9] MODE PIN M[0]                                                          :        1
-[10] MODE PIN M[1]                                                         :        1
-[11] RESERVED                                                              :        0
-[12] INIT_B PIN                                                            :        1
-[13] DONE PIN                                                              :        1
-[14] SUSPEND STATUS                                                        :        0
-[15] FALLBACK STATUS                                                       :        0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1100 1110 1100 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
-INFO:iMPACT:188 - '1': Programming completed successfully.
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      2 sec.
-INFO:iMPACT - Current time: 02/01/2015 22:47
-Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
-INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
-   but the original bitstream file remains unchanged.
-// *** BATCH CMD : Program -p 1 
-PROGRESS_START - Starting Operation.
-Maximum TCK operating frequency for this device chain: 0.
-Validating chain...
-Boundary-scan chain validated successfully.
-'1': Programming device...
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-done.
-'1': Reading status register contents...
-[0] CRC ERROR                                                              :        0
-[1] IDCODE ERROR                                                           :        0
-[2] DCM LOCK STATUS                                                        :        1
-[3] GTS_CFG_B STATUS                                                       :        1
-[4] GWE STATUS                                                             :        1
-[5] GHIGH STATUS                                                           :        1
-[6] DECRYPTION ERROR                                                       :        0
-[7] DECRYPTOR ENABLE                                                       :        0
-[8] HSWAPEN PIN                                                            :        1
-[9] MODE PIN M[0]                                                          :        1
-[10] MODE PIN M[1]                                                         :        1
-[11] RESERVED                                                              :        0
-[12] INIT_B PIN                                                            :        1
-[13] DONE PIN                                                              :        1
-[14] SUSPEND STATUS                                                        :        0
-[15] FALLBACK STATUS                                                       :        0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1100 1110 1100 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
-INFO:iMPACT:188 - '1': Programming completed successfully.
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      3 sec.
-INFO:iMPACT - Current time: 02/01/2015 22:53
-Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
-INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
-   but the original bitstream file remains unchanged.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 0.
-Validating chain...
-Boundary-scan chain validated successfully.
-PROGRESS_START - Starting Operation.
-'1': Programming device...
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-done.
-'1': Reading status register contents...
-[0] CRC ERROR                                                              :        0
-[1] IDCODE ERROR                                                           :        0
-[2] DCM LOCK STATUS                                                        :        1
-[3] GTS_CFG_B STATUS                                                       :        1
-[4] GWE STATUS                                                             :        1
-[5] GHIGH STATUS                                                           :        1
-[6] DECRYPTION ERROR                                                       :        0
-[7] DECRYPTOR ENABLE                                                       :        0
-[8] HSWAPEN PIN                                                            :        1
-[9] MODE PIN M[0]                                                          :        1
-[10] MODE PIN M[1]                                                         :        1
-[11] RESERVED                                                              :        0
-[12] INIT_B PIN                                                            :        1
-[13] DONE PIN                                                              :        1
-[14] SUSPEND STATUS                                                        :        0
-[15] FALLBACK STATUS                                                       :        0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1100 1110 1100 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
-INFO:iMPACT:188 - '1': Programming completed successfully.
- LCK_cycle = NoWait.
-LCK cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      2 sec.
-INFO:iMPACT - Current time: 02/01/2015 23:01
+INFO:iMPACT - Current time: 06/01/2015 21:00
 Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
 INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
    but the original bitstream file remains unchanged.
@@ -518,15 +276,55 @@ INFO:iMPACT - '1': Checking done pin....done.
 '1': Programmed successfully.
 PROGRESS_END - End Operation.
 Elapsed time =      3 sec.
-INFO:iMPACT - Current time: 02/01/2015 23:09
+INFO:iMPACT - Current time: 06/01/2015 21:05
 Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
 INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
    but the original bitstream file remains unchanged.
 // *** BATCH CMD : Program -p 1 
 Maximum TCK operating frequency for this device chain: 0.
 Validating chain...
-Boundary-scan chain validated successfully.
 PROGRESS_START - Starting Operation.
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+INFO:iMPACT - Current time: 06/01/2015 21:26
+Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+PROGRESS_START - Starting Operation.
+Boundary-scan chain validated successfully.
 '1': Programming device...
  LCK_cycle = NoWait.
 LCK cycle: NoWait
@@ -558,7 +356,7 @@ INFO:iMPACT - '1': Checking done pin....done.
 '1': Programmed successfully.
 PROGRESS_END - End Operation.
 Elapsed time =      2 sec.
-INFO:iMPACT - Current time: 02/01/2015 23:30
+INFO:iMPACT - Current time: 06/01/2015 21:40
 Updating config file /home/meccastreissand/Documents/Fourth Year/EE4G - VHDLassignment/designs/Digital_Audio_Synthesiser/nx3_audio.bit...
 INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
    but the original bitstream file remains unchanged.

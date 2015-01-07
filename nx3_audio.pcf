@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map O.87xd on Fri Jan 02 23:27:16 2015
+// Written by: Map O.87xd on Tue Jan 06 21:39:00 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -30,6 +30,8 @@ COMP "leds<4>" LOCATE = SITE "M11" LEVEL 1;
 COMP "leds<5>" LOCATE = SITE "N11" LEVEL 1;
 COMP "leds<6>" LOCATE = SITE "R11" LEVEL 1;
 COMP "leds<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "uart_rx" LOCATE = SITE "N17" LEVEL 1;
+COMP "uart_tx" LOCATE = SITE "N18" LEVEL 1;
 COMP "digit<0>" LOCATE = SITE "N16" LEVEL 1;
 COMP "digit<1>" LOCATE = SITE "N15" LEVEL 1;
 COMP "digit<2>" LOCATE = SITE "P18" LEVEL 1;

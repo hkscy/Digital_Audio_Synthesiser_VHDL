@@ -1,0 +1,2 @@
+vhdl isim_temp "audioClock.vhd"
+vhdl isim_temp "audioClock_tb.vhd"

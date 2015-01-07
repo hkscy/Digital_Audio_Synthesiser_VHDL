@@ -17,18 +17,17 @@ entity audioClock is
 end audioClock;
 
 architecture Behavioral of audioClock is
-	signal counter : std_logic_vector(2 downto 0) := "000";
+signal counter : std_logic_vector(2 downto 0) := "000";
 begin
 	process(clk_in2)
 	begin
 		if rising_edge(clk_in2) then -- Only count rising edges.
 			counter <= counter + 1;
-		end if;
-		if counter = "111" then
-			clk_out2 <= '1';
-			counter <= "000";
-		else
-			clk_out2 <= '0';
+			if counter = 0 then
+				clk_out2 <= '1';
+			else
+				clk_out2 <= '0';
+			end if;
 		end if;
 	end process;
 end Behavioral;

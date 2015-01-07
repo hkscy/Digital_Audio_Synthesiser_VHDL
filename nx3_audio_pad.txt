@@ -1,7 +1,7 @@
 Release 13.4 - par O.87xd (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Fri Jan  2 23:27:56 2015
+Tue Jan  6 21:39:39 2015
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -252,8 +252,8 @@ Pinout by Pin Number:
 |N14       |segments<5>|IOB      |IO_L53N_VREF_1               |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |N15       |digit<1>   |IOB      |IO_L50P_M1UDQS_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |N16       |digit<0>   |IOB      |IO_L50N_M1UDQSN_1            |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|N17       |           |IOBM     |IO_L48P_HDC_M1DQ8_1          |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|N18       |           |IOBS     |IO_L48N_M1DQ9_1              |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|N17       |uart_rx    |IOB      |IO_L48P_HDC_M1DQ8_1          |INPUT    |LVCMOS25*  |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|N18       |uart_tx    |IOB      |IO_L48N_M1DQ9_1              |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P1        |           |IOBS     |IO_L34N_M3UDQSN_3            |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |P2        |           |IOBM     |IO_L34P_M3UDQS_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |P3        |           |IOBS     |IO_L2N_3                     |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
