@@ -1,6 +1,5 @@
 ISim log file
-Running: /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/msClock_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/msClock_isim_beh.wdb 
-INFO: There is another simulation running in the same directory. Using database file name isim2.wdb.
+Running: /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/UART_RX_CTRL_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/UART_RX_CTRL_isim_beh.wdb 
 ISim O.87xd (signature 0x8ddf5b5d)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -12,8 +11,29 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# isim force add /msclock/clk_in3 0 -radix bin -value 1 -radix bin -time 177150 ps -repeat 354300 ps
-# run 100ms
-# exit 0
-# exit 0
+# isim force add /uart_rx_ctrl/clk 0 -radix bin -value 1 -radix bin -time 5 ns -repeat 10 ns
+# isim force add /uart_rx_ctrl/clk 0 -radix bin -value 1 -radix bin -time 5 ns -repeat 10 ns
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
 # exit 0

@@ -1,7 +1,7 @@
 Release 13.4 - par O.87xd (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Tue Jan  6 21:39:39 2015
+Thu Jan  8 23:16:07 2015
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -228,7 +228,7 @@ Pinout by Pin Number:
 |M8        |switches<3>|IOB      |IO_L40P_2                    |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |M9        |           |         |VCCAUX                       |         |           |              |          |         |           |         |2.5      |          |           |                |
 |M10       |           |IOBM     |IO_L22P_2                    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|M11       |leds<4>    |IOB      |IO_L15P_2                    |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|M11       |leds<4>    |IOB      |IO_L15P_2                    |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |M12       |           |         |VCCINT                       |         |           |              |          |         |           |         |1.2      |          |           |                |
 |M13       |segments<7>|IOB      |IO_L61N_1                    |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |M14       |segments<4>|IOB      |IO_L53P_1                    |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
@@ -246,7 +246,7 @@ Pinout by Pin Number:
 |N8        |switches<4>|IOB      |IO_L40N_2                    |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |N9        |           |IOBS     |IO_L22N_2                    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |N10       |audioOut<0>|IOB      |IO_L20P_2                    |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|N11       |leds<5>    |IOB      |IO_L15N_2                    |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|N11       |leds<5>    |IOB      |IO_L15N_2                    |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |N12       |           |IOBM     |IO_L13P_M1_2                 |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |N13       |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
 |N14       |segments<5>|IOB      |IO_L53N_VREF_1               |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
@@ -282,7 +282,7 @@ Pinout by Pin Number:
 |R8        |           |IOBM     |IO_L31P_GCLK31_D14_2         |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |R9        |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
 |R10       |           |IOBM     |IO_L29P_GCLK3_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|R11       |leds<6>    |IOB      |IO_L16P_2                    |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|R11       |leds<6>    |IOB      |IO_L16P_2                    |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |R12       |           |         |VCCO_2                       |         |           |2             |          |         |           |         |2.50     |          |           |                |
 |R13       |           |IOBM     |IO_L3P_D0_DIN_MISO_MISO1_2   |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |R14       |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
@@ -300,7 +300,7 @@ Pinout by Pin Number:
 |T8        |           |IOBS     |IO_L31N_GCLK30_D15_2         |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |T9        |switches<1>|IOB      |IO_L32P_GCLK29_2             |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |T10       |switches<0>|IOB      |IO_L29N_GCLK2_2              |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
-|T11       |leds<7>    |IOB      |IO_L16N_VREF_2               |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|T11       |leds<7>    |IOB      |IO_L16N_VREF_2               |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |T12       |audioOut<1>|IOB      |IO_L19P_2                    |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |T13       |           |IOBS     |IO_L3N_MOSI_CSI_B_MISO0_2    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |T14       |           |IOBM     |IO_L12P_D1_MISO2_2           |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
@@ -322,8 +322,8 @@ Pinout by Pin Number:
 |U12       |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
 |U13       |           |IOBM     |IO_L14P_D11_2                |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |U14       |           |         |VCCO_2                       |         |           |2             |          |         |           |         |2.50     |          |           |                |
-|U15       |leds<2>    |IOB      |IO_L5P_2                     |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|U16       |leds<0>    |IOB      |IO_L2P_CMPCLK_2              |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|U15       |leds<2>    |IOB      |IO_L5P_2                     |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|U16       |leds<0>    |IOB      |IO_L2P_CMPCLK_2              |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |U17       |segments<2>|IOB      |IO_L52P_M1DQ14_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |U18       |segments<3>|IOB      |IO_L52N_M1DQ15_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |V1        |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
@@ -340,8 +340,8 @@ Pinout by Pin Number:
 |V12       |           |IOBS     |IO_L19N_2                    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |V13       |           |IOBS     |IO_L14N_D12_2                |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |V14       |           |IOBS     |IO_L12N_D2_MISO3_2           |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|V15       |leds<3>    |IOB      |IO_L5N_2                     |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|V16       |leds<1>    |IOB      |IO_L2N_CMPMOSI_2             |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|V15       |leds<3>    |IOB      |IO_L5N_2                     |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|V16       |leds<1>    |IOB      |IO_L2N_CMPMOSI_2             |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |V17       |           |         |DONE_2                       |         |           |              |          |         |           |         |         |          |           |                |
 |V18       |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

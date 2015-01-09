@@ -54,6 +54,9 @@ architecture Behavioral of nx3_audio is
 	-- Input buttons signal
 	signal buttons_deb: std_logic_vector(4 downto 0);
 	
+	-- Asynchronous control signals.
+	--signal sweep_trigger: std_logic := '0';
+	
 	-- Display driving signals.
 	signal displayBigCount: std_logic_vector(14 downto 0); --Controls the display refresh rate.
 	signal displaySmallCount: std_logic_vector(1 downto 0); --bigCount subset which multiplexes display digits.
@@ -62,13 +65,21 @@ architecture Behavioral of nx3_audio is
 	signal number: std_logic_vector(15 downto 0) := (others => '0');
 	signal num: std_logic_vector(3 downto 0) := "0000";
 	
+	-- UART signals
+	signal uart_rx_word: std_logic_vector(7 downto 0);
+	signal word_ready: std_logic;
+	
+	--MIDI state machine
+	type state_type is (idle, status, data1, data2);
+	signal midi_state, midi_state_n: state_type;		  --Current state, next state
+	
 	component dcm --22.5792MHz sample clock, 22.582Mhz actual.
 		port (
 			clk_in1  : in std_logic;
 			clk_out1 : out std_logic );
 	end component;
 	
-	component audioClock --Divides by 8, yields 2.8224 Mhz, 8.228Mhz actual
+	component audioClock --Divides by 8, yields 2.8224 Mhz, 2.8228Mhz actual
 		port (
 			clk_in2	: in std_logic;
 			clk_out2	: out std_logic );
@@ -84,7 +95,7 @@ architecture Behavioral of nx3_audio is
 		generic(N : integer);
 		port(
 			clock: in std_logic;
-			count: out std_logic_vector(N-1 downto 0));
+			count: inout std_logic_vector(N-1 downto 0));
 	end component counter;
 	
 	component sineGen --Sine Wave Oscillator
@@ -115,6 +126,16 @@ architecture Behavioral of nx3_audio is
 			btn_o : out std_logic_vector(4 downto 0));
 	end component btn_debounce;
 	
+	component UART_RX_CTRL -- Asynchronous receiver turns rx serial into 8bit words.
+		port(
+			clk 			 : in std_logic;
+			uart_rx 		 : in std_logic;
+			uart_rx_word : out std_logic_vector(7 downto 0);
+			word_ready	 : out std_logic);
+	end component UART_RX_CTRL;
+	
+	signal internal_state : std_logic_vector(7 downto 0) := (others => '0');	
+	
 begin
 	sample_clock: dcm port map( clk_in1 => clk, -- Create sample clock @ 22.5792Mhz.
 										clk_out1 => sampleClock );
@@ -122,8 +143,8 @@ begin
 	dcm_clock: audioClock port map ( clk_in2 => sampleClock,
 											  clk_out2 => pdmClock ); -- Derive pdm clock @ 2.8224Mhz.
 
-	ms_clk: msClock port map ( clk_in3 => pdmClock,
-											clk_out3 => msclk ); -- 1kHz clock.
+--	ms_clk: msClock port map ( clk_in3 => pdmClock,
+--											clk_out3 => msclk ); -- 1kHz clock.
 
 	dd: display_driver port map( mode => mode,
 										  number => num, 
@@ -144,33 +165,50 @@ begin
 	button_debounce: btn_debounce port map( btn_i => buttons, -- Debounces the buttons
 															clk => pdmClock,
 														 btn_o => buttons_deb );
-	
+														 
+	uartrx: UART_RX_CTRL port map( clk => sampleClock,
+										uart_rx => uart_rx,
+								 uart_rx_word => uart_rx_word,
+									word_ready => word_ready );							
 	process(buttons_deb)
 	begin
 		case buttons_deb is
 			when CENTRE_BUTTON =>
-				leds(7 downto 0) <= (others => '1'); -- light 'em up!
+				--leds(7 downto 0) <= (others => '1'); -- light 'em up!
 				number <= X"0DC1"; --"0"-"u"-"c"-"h" 
-				modeVector <= "01100110"; -- number-letter-number-letter				
+				modeVector <= "01100110"; -- number-letter-number-letter	
+			when LEFT_BUTTON =>
+				--leds(7 downto 0) <= "11110000";
+				number <= X"5EFC"; --"L"-"e"-"f"-"t" 
+				modeVector <= "10010110"; -- let-num-num-let
+			when RIGHT_BUTTON =>
+				--leds(7 downto 0) <= "00001111";
+				number <= X"B2CE"; --"r"-"I"-"t"-"E" 
+				modeVector <= "10101001"; -- let-let-let-num
 			when others =>
-				leds(7 downto 0) <= (others => '0');
+				--leds(7 downto 0) <= (others => '0');
 				number <= X"0087"; --OffOff"o""n"
 				modeVector <= "00001010"; -- off-off-letter-letter
 		end case;
 	end process;
 	
-	--Sweep audible spectrum. 
-	sweep_spectrum : process(msclk)
-	begin
-		if rising_edge(msclk) then
-			freqSweep <= freqSweep + 10;
-			if freqSweep < MAX_FREQUENCY then
-				frequency(14 downto 0) <= freqSweep;	
-			else
-				freqSweep <= (others => '0');
-			end if;
-		end if;
-	end process sweep_spectrum;
+	--Make some noise! 
+--	noisy : process(msclk)
+--	begin
+--		if sweep_trigger = '1' then	
+--			if rising_edge(msclk) then
+--				freqSweep <= freqSweep + 10;
+--				if freqSweep < MAX_FREQUENCY then
+--					frequency(14 downto 0) <= freqSweep;	
+--				else
+--					freqSweep <= (others => '0');
+--				end if;
+--			end if;
+--		else --Not pressing button
+--			freqSweep <= (others => '0');
+--			frequency(14 downto 0) <= freqSweep;
+--		end if;	
+--	end process noisy;
 	
 	-- Control the seven segment display output defined by number and modeVector.
 	displaySmallCount <= displayBigCount(14 downto 13);
@@ -197,6 +235,26 @@ begin
 				digit <= "1111";
 			end case;
 	end process multiplex_display;
+	
+	rx_word: process(word_ready)
+	begin
+		if rising_edge(word_ready) then
+			leds <= uart_rx_word;
+			if uart_rx_word = 60 then
+				frequency(23 downto 15) <= (others => '0');
+				frequency(14 downto 0) <= C3_FREQ;
+			else
+				frequency(23 downto 0) <= (others => '0');
+			end if;
+		end if;
+	end process rx_word;
+	
+	midi_fsm: process(clk)
+	begin	
+		if rising_edge(clk) then 
+			
+		end if;
+	end process midi_fsm;
 	
 	-- Audio output pins, output the PDM signal both left and right.
 	audioOut(0) <= audioOutMono;

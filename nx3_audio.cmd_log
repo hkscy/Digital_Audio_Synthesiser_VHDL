@@ -414,3 +414,191 @@ par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
 bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
 xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 
+bitgen -intstyle ise -f nx3_audio.ut nx3_audio.ncd 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+xst -intstyle ise -ifn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.xst" -ofn "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2 "nx3_audio.ngc" nx3_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_audio_map.ncd nx3_audio.ngd nx3_audio.pcf 
+par -w -intstyle ise -ol high -mt off nx3_audio_map.ncd nx3_audio.ncd nx3_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_audio.twx nx3_audio.ncd -o nx3_audio.twr nx3_audio.pcf -ucf nx3_audio.ucf 

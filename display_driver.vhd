@@ -33,7 +33,7 @@ begin
 --  4 |   | 2
 --     ---
 --      3
-	process(mode)
+	process(mode, number)
 	begin 
 		case mode is
 			when "00" => -- Display off.
