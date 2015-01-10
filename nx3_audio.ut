@@ -1,3 +1,4 @@
+-g INIT_9K:Yes
 -w
 -g DebugBitstream:No
 -g Binary:no

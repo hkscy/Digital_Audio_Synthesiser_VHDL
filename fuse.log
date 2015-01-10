@@ -1,23 +1,25 @@
-Running: /opt/Xilinx/13.4/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/UART_RX_CTRL_isim_beh.exe -prj /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/UART_RX_CTRL_beh.prj work.UART_RX_CTRL 
+Running: /opt/Xilinx/13.4/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ntof_tb_isim_beh.exe -prj /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ntof_tb_beh.prj work.ntof_tb 
 ISim O.87xd (signature 0x8ddf5b5d)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/UART_RX_CTRL.vhd" into library work
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/note_to_frequency.vhd" into library work
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ntof_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 97512 KB
-Fuse CPU Usage: 1570 ms
+Fuse CPU Usage: 1950 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling package numeric_std
-Compiling architecture behavioral of entity uart_rx_ctrl
+Compiling architecture behavioral of entity note_to_frequency [note_to_frequency_default]
+Compiling architecture behavior of entity ntof_tb
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 6 VHDL Units
-Built simulation executable /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/UART_RX_CTRL_isim_beh.exe
-Fuse Memory Usage: 673260 KB
-Fuse CPU Usage: 1760 ms
-GCC CPU Usage: 1980 ms
+Compiled 8 VHDL Units
+Built simulation executable /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ntof_tb_isim_beh.exe
+Fuse Memory Usage: 673468 KB
+Fuse CPU Usage: 2140 ms
+GCC CPU Usage: 360 ms

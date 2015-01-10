@@ -1,12 +1,16 @@
 Release 13.4 Drc O.87xd (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Thu Jan  8 22:57:08 2015
+Sat Jan 10 09:47:30 2015
 
 drc -z nx3_audio.ncd nx3_audio.pcf
 
 WARNING:PhysDesignRules:372 - Gated clock. Clock net word_ready is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-DRC detected 0 errors and 1 warnings.  Please see the previously displayed
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

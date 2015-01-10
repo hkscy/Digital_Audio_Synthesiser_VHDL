@@ -125,6 +125,12 @@ WARNING:HDLCompiler:946 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VH
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/pdmModule.vhd" into library work
 Parsing entity <pdmModule>.
 Parsing architecture <Behavioral> of entity <pdmmodule>.
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/note_to_frequency.vhd" into library work
+Parsing entity <note_to_frequency>.
+Parsing architecture <Behavioral> of entity <note_to_frequency>.
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm/example_design/dcm_exdes.vhd" into library work
+Parsing entity <dcm_exdes>.
+Parsing architecture <xilinx> of entity <dcm_exdes>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm.vhd" into library work
 Parsing entity <dcm>.
 Parsing architecture <xilinx> of entity <dcm>.
@@ -143,9 +149,6 @@ Parsing architecture <Behavioral> of entity <audioclock>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" into library work
 Parsing entity <nx3_audio>.
 Parsing architecture <Behavioral> of entity <nx3_audio>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm/example_design/dcm_exdes.vhd" into library work
-Parsing entity <dcm_exdes>.
-Parsing architecture <xilinx> of entity <dcm_exdes>.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -171,7 +174,9 @@ Elaborating entity <pdmModule> (architecture <Behavioral>) from library <work>.
 Elaborating entity <btn_debounce> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <UART_RX_CTRL> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 235. Case statement is complete. others clause is never selected
+
+Elaborating entity <note_to_frequency> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 249. Case statement is complete. others clause is never selected
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -180,14 +185,16 @@ INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL 
 Synthesizing Unit <nx3_audio>.
     Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd".
 WARNING:Xst:647 - Input <switches<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 24-bit register for signal <frequency>.
+    Found 8-bit register for signal <note>.
     Found 8-bit register for signal <leds>.
+    Found 15-bit register for signal <frequency>.
     Found 4x4-bit Read Only RAM for signal <digit>
-    Found 2-bit 4-to-1 multiplexer for signal <mode> created at line 218.
-    Found 4-bit 4-to-1 multiplexer for signal <num> created at line 218.
+    Found 2-bit 4-to-1 multiplexer for signal <mode> created at line 232.
+    Found 4-bit 4-to-1 multiplexer for signal <num> created at line 232.
+    WARNING:Xst:2404 -  FFs/Latches <frequency<23:15>> (without init value) have a constant value of 0 in block <nx3_audio>.
     Summary:
 	inferred   1 RAM(s).
-	inferred  32 D-type flip-flop(s).
+	inferred  31 D-type flip-flop(s).
 	inferred   2 Multiplexer(s).
 Unit <nx3_audio> synthesized.
 
@@ -301,11 +308,19 @@ Synthesizing Unit <UART_RX_CTRL>.
 	inferred   1 Finite State Machine(s).
 Unit <UART_RX_CTRL> synthesized.
 
+Synthesizing Unit <note_to_frequency>.
+    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/note_to_frequency.vhd".
+    Found 256x15-bit Read Only RAM for signal <frequency>
+    Summary:
+	inferred   1 RAM(s).
+Unit <note_to_frequency> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 3
+ 256x15-bit single-port Read Only RAM                  : 1
  4x4-bit single-port Read Only RAM                     : 1
  64x8-bit single-port Read Only RAM                    : 1
 # Adders/Subtractors                                   : 13
@@ -316,15 +331,15 @@ Macro Statistics
  3-bit adder                                           : 2
  4-bit adder                                           : 1
  6-bit adder                                           : 1
-# Registers                                            : 24
+# Registers                                            : 25
  1-bit register                                        : 9
- 15-bit register                                       : 1
+ 15-bit register                                       : 2
  16-bit register                                       : 5
- 24-bit register                                       : 3
+ 24-bit register                                       : 2
  3-bit register                                        : 2
  4-bit register                                        : 1
  6-bit register                                        : 1
- 8-bit register                                        : 2
+ 8-bit register                                        : 3
 # Comparators                                          : 1
  24-bit comparator greater                             : 1
 # Multiplexers                                         : 13
@@ -346,26 +361,6 @@ Macro Statistics
 Reading core <ipcore_dir/SinCos.ngc>.
 Loading core <SinCos> for timing and area information for instance <sc>.
 INFO:Xst:2261 - The FF/Latch <sample.pdmBit> in Unit <pdm> is equivalent to the following FF/Latch, which will be removed : <pdmOutput> 
-WARNING:Xst:1293 - FF/Latch <frequency_23> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_22> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_21> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_20> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_19> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_18> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_17> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_16> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_15> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_14> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_13> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_12> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_11> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_10> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_9> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_6> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_5> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_4> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_3> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_1> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <UART_RX_CTRL>.
 The following registers are absorbed into counter <overcounter>: 1 register on signal <overcounter>.
@@ -403,6 +398,21 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segs> will be implemented on LUTs ei
 Unit <display_driver> synthesized (advanced).
 
 Synthesizing (advanced) Unit <nx3_audio>.
+INFO:Xst:3226 - The RAM <n2f/Mram_frequency> will be implemented as a BLOCK RAM, absorbing the following register(s): <frequency>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 15-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <word_ready>    | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <note>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_digit> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
@@ -428,7 +438,8 @@ Unit <sineGen> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 3
+ 256x15-bit single-port block Read Only RAM            : 1
  4x4-bit single-port distributed Read Only RAM         : 1
  64x8-bit single-port distributed Read Only RAM        : 1
 # Adders/Subtractors                                   : 3
@@ -442,8 +453,8 @@ Macro Statistics
  6-bit up counter                                      : 1
 # Accumulators                                         : 2
  24-bit up accumulator                                 : 2
-# Registers                                            : 53
- Flip-Flops                                            : 53
+# Registers                                            : 37
+ Flip-Flops                                            : 37
 # Comparators                                          : 1
  24-bit comparator greater                             : 1
 # Multiplexers                                         : 12
@@ -460,28 +471,15 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1293 - FF/Latch <frequency_23> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_22> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_21> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_20> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_19> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_18> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_17> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_16> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_15> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_14> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_13> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_12> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_11> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_10> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_9> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_6> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_5> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_4> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_3> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <frequency_1> has a constant value of 0 in block <nx3_audio>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <sample.pdmBit> in Unit <pdmModule> is equivalent to the following FF/Latch, which will be removed : <pdmOutput> 
-INFO:Xst:2261 - The FF/Latch <frequency_0> in Unit <nx3_audio> is equivalent to the following 3 FFs/Latches, which will be removed : <frequency_2> <frequency_7> <frequency_8> 
+INFO:Xst:2261 - The FF/Latch <note_0> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <leds_0> 
+INFO:Xst:2261 - The FF/Latch <note_1> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <leds_1> 
+INFO:Xst:2261 - The FF/Latch <note_2> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <leds_2> 
+INFO:Xst:2261 - The FF/Latch <note_3> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <leds_3> 
+INFO:Xst:2261 - The FF/Latch <note_4> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <leds_4> 
+INFO:Xst:2261 - The FF/Latch <note_5> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <leds_5> 
+INFO:Xst:2261 - The FF/Latch <note_6> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <leds_6> 
+INFO:Xst:2261 - The FF/Latch <note_7> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <leds_7> 
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <uartrx/FSM_0> on signal <state[1:2]> with gray encoding.
 -------------------
@@ -509,6 +507,14 @@ INFO:Xst:2261 - The FF/Latch <dcm_clock/counter_1> in Unit <nx3_audio> is equiva
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block nx3_audio, actual ratio is 16.
+FlipFlop note_7 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop note_6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop note_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop note_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop note_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop note_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop note_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop note_0 has been replicated 1 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -516,8 +522,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 182
- Flip-Flops                                            : 182
+# Registers                                            : 189
+ Flip-Flops                                            : 189
 
 =========================================================================
 
@@ -543,20 +549,22 @@ Primitive and Black Box Usage:
 # BELS                             : 7302
 #      GND                         : 2
 #      INV                         : 34
-#      LUT1                        : 130
-#      LUT2                        : 764
-#      LUT3                        : 1280
+#      LUT1                        : 119
+#      LUT2                        : 774
+#      LUT3                        : 1278
 #      LUT4                        : 67
-#      LUT5                        : 196
-#      LUT6                        : 87
+#      LUT5                        : 198
+#      LUT6                        : 88
 #      MUXCY                       : 2330
 #      MUXF7                       : 1
 #      VCC                         : 2
 #      XORCY                       : 2409
-# FlipFlops/Latches                : 182
-#      FD                          : 81
+# FlipFlops/Latches                : 189
+#      FD                          : 89
 #      FDE                         : 16
-#      FDR                         : 85
+#      FDR                         : 84
+# RAMS                             : 1
+#      RAMB8BWER                   : 1
 # Clock Buffers                    : 3
 #      BUFG                        : 3
 # IO Buffers                       : 30
@@ -573,16 +581,16 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             174  out of  18224     0%  
+ Number of Slice Registers:             181  out of  18224     0%  
  Number of Slice LUTs:                 2558  out of   9112    28%  
     Number used as Logic:              2558  out of   9112    28%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2585
-   Number with an unused Flip Flop:    2411  out of   2585    93%  
-   Number with an unused LUT:            27  out of   2585     1%  
-   Number of fully used LUT-FF pairs:   147  out of   2585     5%  
-   Number of unique control sets:        17
+ Number of LUT Flip Flop pairs used:   2593
+   Number with an unused Flip Flop:    2412  out of   2593    93%  
+   Number with an unused LUT:            35  out of   2593     1%  
+   Number of fully used LUT-FF pairs:   146  out of   2593     5%  
+   Number of unique control sets:        16
 
 IO Utilization: 
  Number of IOs:                          38
@@ -590,6 +598,8 @@ IO Utilization:
     IOB Flip Flops/Latches:               8
 
 Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
  Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
  Number of PLL_ADVs:                      1  out of      2    50%  
 
@@ -614,7 +624,7 @@ Clock Information:
 --------------------------------------+------------------------+-------+
 Clock Signal                          | Clock buffer(FF name)  | Load  |
 --------------------------------------+------------------------+-------+
-word_ready(uartrx/Mmux_word_ready11:O)| NONE(*)(frequency_0)   | 9     |
+word_ready(uartrx/Mmux_word_ready11:O)| NONE(*)(note_0)        | 17    |
 sample_clock/pll_base_inst/CLKOUT0    | BUFG                   | 41    |
 dcm_clock/clk_out2                    | BUFG                   | 132   |
 --------------------------------------+------------------------+-------+
@@ -633,7 +643,7 @@ Speed Grade: -2
 
    Minimum period: 103.067ns (Maximum Frequency: 9.702MHz)
    Minimum input arrival time before clock: 4.113ns
-   Maximum output required time after clock: 10.347ns
+   Maximum output required time after clock: 10.476ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -666,7 +676,7 @@ Delay:               4.523ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'dcm_clock/clk_out2'
   Clock period: 103.067ns (frequency: 9.702MHz)
-  Total number of paths / destination ports: 148958562541386937106728835275299839414580019200 / 217
+  Total number of paths / destination ports: 148958562541386916824319231623629415467328733184 / 217
 -------------------------------------------------------------------------
 Delay:               103.067ns (Levels of Logic = 719)
   Source:            sGen/phaseCounter_21 (FF)
@@ -1405,6 +1415,27 @@ Delay:               103.067ns (Levels of Logic = 719)
                                        (29.8% logic, 70.2% route)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'word_ready'
+  Clock period: 1.606ns (frequency: 622.665MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               1.606ns (Levels of Logic = 0)
+  Source:            note_7 (FF)
+  Destination:       n2f/Mram_frequency (RAM)
+  Source Clock:      word_ready rising
+  Destination Clock: word_ready rising
+
+  Data Path: note_7 to n2f/Mram_frequency
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  note_7 (note_7)
+     RAMB8BWER:ADDRAWRADDR11        0.400          n2f/Mram_frequency
+    ----------------------------------------
+    Total                      1.606ns (0.925ns logic, 0.681ns route)
+                                       (57.6% logic, 42.4% route)
+
+=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'dcm_clock/clk_out2'
   Total number of paths / destination ports: 80 / 80
 -------------------------------------------------------------------------
@@ -1438,7 +1469,7 @@ Offset:              2.695ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             6   1.328   0.876  uart_rx_IBUF (uart_rx_IBUF)
-     LUT5:I4->O            1   0.254   0.000  uartrx/Mmux_nticks_next23_F (N27)
+     LUT5:I4->O            1   0.254   0.000  uartrx/Mmux_nticks_next23_F (N22)
      MUXF7:I0->O           1   0.163   0.000  uartrx/Mmux_nticks_next23 (uartrx/nticks_next<1>)
      FD:D                      0.074          uartrx/nticks_1
     ----------------------------------------
@@ -1450,15 +1481,15 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'word_ready'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
 Offset:              4.118ns (Levels of Logic = 1)
-  Source:            leds_7 (FF)
+  Source:            note_7_1 (FF)
   Destination:       leds<7> (PAD)
   Source Clock:      word_ready rising
 
-  Data Path: leds_7 to leds<7>
+  Data Path: note_7_1 to leds<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.525   0.681  leds_7 (leds_7)
+     FD:C->Q               1   0.525   0.681  note_7_1 (note_7_1)
      OBUF:I->O                 2.912          leds_7_OBUF (leds<7>)
     ----------------------------------------
     Total                      4.118ns (3.437ns logic, 0.681ns route)
@@ -1466,9 +1497,9 @@ Offset:              4.118ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sample_clock/pll_base_inst/CLKOUT0'
-  Total number of paths / destination ports: 232 / 12
+  Total number of paths / destination ports: 264 / 12
 -------------------------------------------------------------------------
-Offset:              9.051ns (Levels of Logic = 4)
+Offset:              9.830ns (Levels of Logic = 5)
   Source:            c/count_14 (FF)
   Destination:       segments<7> (PAD)
   Source Clock:      sample_clock/pll_base_inst/CLKOUT0 rising
@@ -1477,20 +1508,21 @@ Offset:              9.051ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              11   0.525   1.494  c/count_14 (c/count_14)
-     LUT6:I0->O           12   0.254   1.297  Mmux_mode2 (mode<1>)
-     LUT3:I0->O            8   0.235   1.399  dd/digit<0>1 (dd/digit<0>)
+     FD:C->Q              13   0.525   1.553  c/count_14 (c/count_14)
+     LUT6:I0->O            1   0.254   0.958  Mmux_num12 (Mmux_num11)
+     LUT5:I1->O            1   0.254   0.790  Mmux_num13 (num<0>)
+     LUT3:I1->O            8   0.250   1.399  dd/digit<0>1 (dd/digit<0>)
      LUT6:I0->O            1   0.254   0.681  dd_Mram_segs71 (segments_7_OBUF)
      OBUF:I->O                 2.912          segments_7_OBUF (segments<7>)
     ----------------------------------------
-    Total                      9.051ns (4.180ns logic, 4.871ns route)
-                                       (46.2% logic, 53.8% route)
+    Total                      9.830ns (4.449ns logic, 5.381ns route)
+                                       (45.3% logic, 54.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'dcm_clock/clk_out2'
-  Total number of paths / destination ports: 842 / 10
+  Total number of paths / destination ports: 922 / 10
 -------------------------------------------------------------------------
-Offset:              10.347ns (Levels of Logic = 5)
+Offset:              10.476ns (Levels of Logic = 5)
   Source:            button_debounce/btn4_reg (FF)
   Destination:       segments<7> (PAD)
   Source Clock:      dcm_clock/clk_out2 rising
@@ -1499,15 +1531,15 @@ Offset:              10.347ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              7   0.525   1.340  button_debounce/btn4_reg (button_debounce/btn4_reg)
-     LUT5:I0->O            3   0.254   1.196  PWR_5_o_buttons_deb[4]_equal_1_o<4>1 (modeVector<6>)
+     FDE:C->Q             11   0.525   1.469  button_debounce/btn4_reg (button_debounce/btn4_reg)
+     LUT5:I0->O            3   0.254   1.196  GND_5_o_buttons_deb[4]_equal_2_o<4>1 (modeVector<4>)
      LUT6:I1->O           12   0.254   1.297  Mmux_mode2 (mode<1>)
      LUT3:I0->O            8   0.235   1.399  dd/digit<0>1 (dd/digit<0>)
      LUT6:I0->O            1   0.254   0.681  dd_Mram_segs71 (segments_7_OBUF)
      OBUF:I->O                 2.912          segments_7_OBUF (segments<7>)
     ----------------------------------------
-    Total                     10.347ns (4.434ns logic, 5.913ns route)
-                                       (42.9% logic, 57.1% route)
+    Total                     10.476ns (4.434ns logic, 6.042ns route)
+                                       (42.3% logic, 57.7% route)
 
 =========================================================================
 
@@ -1520,7 +1552,7 @@ Clock to Setup on destination clock dcm_clock/clk_out2
 Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------+---------+---------+---------+---------+
 dcm_clock/clk_out2|  103.067|         |         |         |
-word_ready        |    2.543|         |         |         |
+word_ready        |    3.696|         |         |         |
 ------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sample_clock/pll_base_inst/CLKOUT0
@@ -1536,21 +1568,22 @@ Clock to Setup on destination clock word_ready
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-sample_clock/pll_base_inst/CLKOUT0|    3.790|         |         |         |
+sample_clock/pll_base_inst/CLKOUT0|    1.364|         |         |         |
+word_ready                        |    1.606|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.78 secs
+Total CPU time to Xst completion: 14.06 secs
  
 --> 
 
 
-Total memory usage is 431252 kilobytes
+Total memory usage is 431716 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   44 (   0 filtered)
-Number of infos    :   11 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
 

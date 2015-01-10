@@ -69,9 +69,16 @@ architecture Behavioral of nx3_audio is
 	signal uart_rx_word: std_logic_vector(7 downto 0);
 	signal word_ready: std_logic;
 	
-	--MIDI state machine
-	type state_type is (idle, status, data1, data2);
-	signal midi_state, midi_state_n: state_type;		  --Current state, next state
+	--MIDI note constants
+	constant NOTE_ON: std_logic_vector(7 downto 0) := "10010000";
+	constant NOTE_OFF: std_logic_vector(7 downto 0) := "10000000";
+	
+	--MIDI FSM signals.
+	type state_type is (status, data1_on, data1_off, data2);
+	signal midi_state: state_type := status;	--Current state
+	signal midi_state_n: state_type;				--Next state
+	signal note: std_logic_vector(7 downto 0) := (others => '0');
+	signal note_frequency: std_logic_vector(14 downto 0) := (others => '0');
 	
 	component dcm --22.5792MHz sample clock, 22.582Mhz actual.
 		port (
@@ -134,8 +141,12 @@ architecture Behavioral of nx3_audio is
 			word_ready	 : out std_logic);
 	end component UART_RX_CTRL;
 	
-	signal internal_state : std_logic_vector(7 downto 0) := (others => '0');	
-	
+	component note_to_frequency --Converts note numbers (48-104) to scaled frequencies.
+		port(
+			note			: in std_logic_vector(7 downto 0);
+			frequency	: out std_logic_vector(14 downto 0));
+	end component note_to_frequency;
+		
 begin
 	sample_clock: dcm port map( clk_in1 => clk, -- Create sample clock @ 22.5792Mhz.
 										clk_out1 => sampleClock );
@@ -169,7 +180,11 @@ begin
 	uartrx: UART_RX_CTRL port map( clk => sampleClock,
 										uart_rx => uart_rx,
 								 uart_rx_word => uart_rx_word,
-									word_ready => word_ready );							
+									word_ready => word_ready );					
+	
+	n2f: note_to_frequency port map ( note => note,
+										  frequency => note_frequency );
+									
 	process(buttons_deb)
 	begin
 		case buttons_deb is
@@ -236,25 +251,71 @@ begin
 			end case;
 	end process multiplex_display;
 	
+--	midi_fsm: process(sampleClock)
+--	begin	
+--		if rising_edge(sampleClock) then 
+--			midi_state <= midi_state_n; 
+--		end if;
+--	end process midi_fsm;
+--	
+--	process(word_ready)
+--	begin
+--		case midi_state is
+--			when status => --Waiting for a new MIDI note/Incoming MIDI note status byte (On/Off)
+--				leds <= "11000000";
+--				if word_ready = '1' then
+--					if (uart_rx_word = NOTE_ON) then
+--						midi_state_n <= data1_on;
+--					elsif uart_rx_word = NOTE_OFF then
+--						midi_state_n <= data1_off;
+--					else
+--						midi_state_n <= status;
+--					end if;
+--				end if;
+--			when data1_on =>	--Incoming MIDI data byte 1, contains note number to turn ON.
+--				if word_ready = '1' then
+--					leds <= "00110000";
+--					note <= uart_rx_word;
+--					frequency(23 downto 15) <= (others => '0');
+--					frequency(14 downto 0) <= note_frequency;
+--					midi_state_n <= data2;
+--				end if;
+--			when data1_off =>	--Incoming MIDI data byte 1, contains note number to turn OFF.
+--				if word_ready = '1' then
+--					leds <= "00001100";
+--					if (note = uart_rx_word) then --If we're currently playing this note,
+--							note <= (others => '0'); --Turn the note off.
+--							frequency(23 downto 15) <= (others => '0');
+--							frequency(14 downto 0) <= note_frequency;
+--					end if;
+--					midi_state_n <= data2;
+--				end if;
+--			when data2 =>	--Incoming MIDI data byte 2, contains velocity.
+--				leds <= "00000011";
+--				if word_ready = '1' then
+--					-- In future check that this = '0' and do something useful if not.
+--					midi_state_n <= status;
+--				end if;
+--		end case;	
+--	end process;
+
 	rx_word: process(word_ready)
 	begin
 		if rising_edge(word_ready) then
 			leds <= uart_rx_word;
-			if uart_rx_word = 60 then
-				frequency(23 downto 15) <= (others => '0');
-				frequency(14 downto 0) <= C3_FREQ;
-			else
-				frequency(23 downto 0) <= (others => '0');
-			end if;
+			note <= uart_rx_word;
+			frequency(23 downto 15) <= (others => '0');
+			frequency(14 downto 0) <= note_frequency;
 		end if;
 	end process rx_word;
 	
-	midi_fsm: process(clk)
-	begin	
-		if rising_edge(clk) then 
-			
-		end if;
-	end process midi_fsm;
+--	process(sampleClock)
+--	begin
+--		if rising_edge(sampleClock) then
+--			frequency(24 downto 15) <= (others => '0');
+--			frequency(14 downto 0) <= note_frequency;
+--		end if;
+--	end process;
 	
 	-- Audio output pins, output the PDM signal both left and right.
 	audioOut(0) <= audioOutMono;
