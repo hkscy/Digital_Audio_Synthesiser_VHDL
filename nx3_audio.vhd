@@ -54,9 +54,6 @@ architecture Behavioral of nx3_audio is
 	-- Input buttons signal
 	signal buttons_deb: std_logic_vector(4 downto 0);
 	
-	-- Asynchronous control signals.
-	--signal sweep_trigger: std_logic := '0';
-	
 	-- Display driving signals.
 	signal displayBigCount: std_logic_vector(14 downto 0); --Controls the display refresh rate.
 	signal displaySmallCount: std_logic_vector(1 downto 0); --bigCount subset which multiplexes display digits.
@@ -77,6 +74,7 @@ architecture Behavioral of nx3_audio is
 	type state_type is (status, data1_on, data1_off, data2);
 	signal midi_state: state_type := status;	--Current state
 	signal midi_state_n: state_type;				--Next state
+	signal last_word: std_logic_vector(7 downto 0) := (others => '0');
 	signal note: std_logic_vector(7 downto 0) := (others => '0');
 	signal note_frequency: std_logic_vector(14 downto 0) := (others => '0');
 	
@@ -299,23 +297,18 @@ begin
 --		end case;	
 --	end process;
 
-	rx_word: process(word_ready)
+	rx_word: process(word_ready, last_word)
 	begin
 		if rising_edge(word_ready) then
-			leds <= uart_rx_word;
-			note <= uart_rx_word;
-			frequency(23 downto 15) <= (others => '0');
-			frequency(14 downto 0) <= note_frequency;
-		end if;
+			leds <= uart_rx_word;		--Display current word received.
+			last_word <= uart_rx_word;	--Asign the current rx_word to the register.
+		end if;	
+		if last_word = "10010000" then--If the registered rx_word was NOTE_ON then
+				note <= uart_rx_word;	--Assign the current rx_word to the register.
+				frequency(23 downto 15) <= (others => '0');
+				frequency(14 downto 0) <= note_frequency;
+			end if;
 	end process rx_word;
-	
---	process(sampleClock)
---	begin
---		if rising_edge(sampleClock) then
---			frequency(24 downto 15) <= (others => '0');
---			frequency(14 downto 0) <= note_frequency;
---		end if;
---	end process;
 	
 	-- Audio output pins, output the PDM signal both left and right.
 	audioOut(0) <= audioOutMono;
