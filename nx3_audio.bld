@@ -32,7 +32,7 @@ NGDBUILD Design Results Summary:
 Total memory usage is 416788 kilobytes
 
 Writing NGD file "nx3_audio.ngd" ...
-Total REAL time to NGDBUILD completion:  7 sec
-Total CPU time to NGDBUILD completion:   7 sec
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   5 sec
 
 Writing NGDBUILD log file "nx3_audio.bld"...

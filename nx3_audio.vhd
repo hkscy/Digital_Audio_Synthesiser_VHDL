@@ -62,9 +62,14 @@ architecture Behavioral of nx3_audio is
 	signal number: std_logic_vector(15 downto 0) := (others => '0');
 	signal num: std_logic_vector(3 downto 0) := "0000";
 	
-	-- UART signals
+	-- Raw UART signals
 	signal uart_rx_word: std_logic_vector(7 downto 0);
 	signal word_ready: std_logic;
+	
+	-- Filtered UART signals
+	signal rx_data: std_logic_vector(7 downto 0) := (others => '0');
+	signal data_ready: std_logic := '0';
+	signal clear_flag: std_logic := '0';
 	
 	--MIDI note constants
 	constant NOTE_ON: std_logic_vector(7 downto 0) := "10010000";
@@ -133,11 +138,27 @@ architecture Behavioral of nx3_audio is
 	
 	component UART_RX_CTRL -- Asynchronous receiver turns rx serial into 8bit words.
 		port(
-			clk 			 : in std_logic;
-			uart_rx 		 : in std_logic;
+			clk 			 : in  std_logic;
+			uart_rx 		 : in  std_logic;
 			uart_rx_word : out std_logic_vector(7 downto 0);
 			word_ready	 : out std_logic);
 	end component UART_RX_CTRL;
+	
+	component UART_RX_interface	--Latches and buffers uart_rx.
+		port (
+			clk 			: in  STD_LOGIC;
+         clear_flag 	: in  STD_LOGIC;
+         set_flag 	: in  STD_LOGIC;
+         rx_word_in  : in  STD_LOGIC_VECTOR (7 downto 0);
+         rx_word_out : out STD_LOGIC_VECTOR (7 downto 0);
+         ready 		: out STD_LOGIC);
+	end component UART_RX_interface;
+	
+--	component MIDI_parser
+--		port (
+--			clk			: in	std_logic;
+--			d
+--	end component MIDI_parser;
 	
 	component note_to_frequency --Converts note numbers (48-104) to scaled frequencies.
 		port(
@@ -178,7 +199,14 @@ begin
 	uartrx: UART_RX_CTRL port map( clk => sampleClock,
 										uart_rx => uart_rx,
 								 uart_rx_word => uart_rx_word,
-									word_ready => word_ready );					
+									word_ready => word_ready );	
+									
+	uartrxinter: UART_RX_interface port map( clk => sampleClock,
+												 clear_flag => clear_flag,--Assert one clock cycle after retreiving the word.
+													set_flag => word_ready,	--rx unit flags ready
+												 rx_word_in => uart_rx_word,
+												rx_word_out => rx_data,
+														ready => data_ready);
 	
 	n2f: note_to_frequency port map ( note => note,
 										  frequency => note_frequency );
@@ -198,6 +226,11 @@ begin
 				--leds(7 downto 0) <= "00001111";
 				number <= X"B2CE"; --"r"-"I"-"t"-"E" 
 				modeVector <= "10101001"; -- let-let-let-num
+			when UP_BUTTON =>
+				number <= X"00d9";--"u"--"P"
+				modeVector <= "00001010";
+			when DOWN_BUTTON =>
+				
 			when others =>
 				--leds(7 downto 0) <= (others => '0');
 				number <= X"0087"; --OffOff"o""n"
@@ -248,14 +281,7 @@ begin
 				digit <= "1111";
 			end case;
 	end process multiplex_display;
-	
---	midi_fsm: process(sampleClock)
---	begin	
---		if rising_edge(sampleClock) then 
---			midi_state <= midi_state_n; 
---		end if;
---	end process midi_fsm;
---	
+
 --	process(word_ready)
 --	begin
 --		case midi_state is
@@ -297,17 +323,14 @@ begin
 --		end case;	
 --	end process;
 
-	rx_word: process(word_ready, last_word)
+	rx_word: process(word_ready, sampleClock)
 	begin
-		if rising_edge(word_ready) then
-			leds <= uart_rx_word;		--Display current word received.
-			last_word <= uart_rx_word;	--Asign the current rx_word to the register.
-		end if;	
-		if last_word = "10010000" then--If the registered rx_word was NOTE_ON then
-				note <= uart_rx_word;	--Assign the current rx_word to the register.
-				frequency(23 downto 15) <= (others => '0');
-				frequency(14 downto 0) <= note_frequency;
-			end if;
+		if rising_edge(word_ready) then	--When new serial word is made available.
+			leds <= rx_data;					--Display current word received.
+			note <= rx_data;		
+			frequency(14 downto 0) <= note_frequency;
+		end if;
+		clear_flag <= '1';				--Set clear one clock cycle after reading data
 	end process rx_word;
 	
 	-- Audio output pins, output the PDM signal both left and right.
