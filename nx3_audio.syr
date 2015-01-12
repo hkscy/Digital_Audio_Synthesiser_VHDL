@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Reading design: nx3_audio.prj
@@ -115,6 +115,9 @@ INFO:Xst - Part-select index evaluated to out of bound value may lead to incorre
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/SinCos.vhd" into library work
 Parsing entity <SinCos>.
 Parsing architecture <SinCos_a> of entity <sincos>.
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/note_to_frequency.vhd" into library work
+Parsing entity <note_to_frequency>.
+Parsing architecture <Behavioral> of entity <note_to_frequency>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/uart_rx_interface.vhd" into library work
 Parsing entity <uart_rx_interface>.
 Parsing architecture <Behavioral> of entity <uart_rx_interface>.
@@ -131,9 +134,9 @@ Parsing architecture <Behavioral> of entity <pdmmodule>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm/example_design/dcm_exdes.vhd" into library work
 Parsing entity <dcm_exdes>.
 Parsing architecture <xilinx> of entity <dcm_exdes>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/note_to_frequency.vhd" into library work
-Parsing entity <note_to_frequency>.
-Parsing architecture <Behavioral> of entity <note_to_frequency>.
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" into library work
+Parsing entity <MIDI_parser>.
+Parsing architecture <Behavioral> of entity <midi_parser>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm.vhd" into library work
 Parsing entity <dcm>.
 Parsing architecture <xilinx> of entity <dcm>.
@@ -180,8 +183,15 @@ Elaborating entity <UART_RX_CTRL> (architecture <Behavioral>) from library <work
 
 Elaborating entity <uart_rx_interface> (architecture <Behavioral>) from library <work>.
 
+Elaborating entity <MIDI_parser> (architecture <Behavioral>) from library <work>.
+
 Elaborating entity <note_to_frequency> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 280. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" Line 54: data should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" Line 56: data should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" Line 63: data should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" Line 73: data should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" Line 45: Assignment to velocity ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 283. Case statement is complete. others clause is never selected
 WARNING:HDLCompiler:634 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 42: Net <frequency[23]> does not have a driver.
 
 =========================================================================
@@ -191,48 +201,15 @@ WARNING:HDLCompiler:634 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VH
 Synthesizing Unit <nx3_audio>.
     Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd".
 WARNING:Xst:647 - Input <switches<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" line 204: Output port <ready> of the instance <uartrxinter> is unconnected or connected to loadless signal.
 WARNING:Xst:2935 - Signal 'frequency<23:15>', unconnected in block 'nx3_audio', is tied to its initial value (000000000).
     Found 8-bit register for signal <leds>.
-    Found 8-bit register for signal <note>.
-    Found 1-bit register for signal <frequency<14>>.
-    Found 1-bit register for signal <frequency<13>>.
-    Found 1-bit register for signal <frequency<12>>.
-    Found 1-bit register for signal <frequency<11>>.
-    Found 1-bit register for signal <frequency<10>>.
-    Found 1-bit register for signal <frequency<9>>.
-    Found 1-bit register for signal <frequency<8>>.
-    Found 1-bit register for signal <frequency<7>>.
-    Found 1-bit register for signal <frequency<6>>.
-    Found 1-bit register for signal <frequency<5>>.
-    Found 1-bit register for signal <frequency<4>>.
-    Found 1-bit register for signal <frequency<3>>.
-    Found 1-bit register for signal <frequency<2>>.
-    Found 1-bit register for signal <frequency<1>>.
-    Found 1-bit register for signal <frequency<0>>.
     Found 4x4-bit Read Only RAM for signal <digit>
-    Found 32x15-bit Read Only RAM for signal <_n0121>
-    Found 2-bit 4-to-1 multiplexer for signal <mode> created at line 263.
-    Found 4-bit 4-to-1 multiplexer for signal <num> created at line 263.
-WARNING:Xst:737 - Found 1-bit latch for signal <number<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <number<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <number<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <number<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <number<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <number<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <number<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <number<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <number<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <number<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <number<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <number<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <modeVector<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <modeVector<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <modeVector<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32x24-bit Read Only RAM for signal <_n0060>
+    Found 2-bit 4-to-1 multiplexer for signal <mode> created at line 266.
+    Found 4-bit 4-to-1 multiplexer for signal <num> created at line 266.
     Summary:
 	inferred   2 RAM(s).
-	inferred  31 D-type flip-flop(s).
-	inferred  15 Latch(s).
+	inferred   8 D-type flip-flop(s).
 	inferred   2 Multiplexer(s).
 Unit <nx3_audio> synthesized.
 
@@ -354,6 +331,34 @@ Synthesizing Unit <uart_rx_interface>.
 	inferred   9 D-type flip-flop(s).
 Unit <uart_rx_interface> synthesized.
 
+Synthesizing Unit <MIDI_parser>.
+    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd".
+    Found 3-bit register for signal <state>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | status                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <note<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   8 Latch(s).
+	inferred  10 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <MIDI_parser> synthesized.
+
 Synthesizing Unit <note_to_frequency>.
     Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/note_to_frequency.vhd".
     Found 256x15-bit Read Only RAM for signal <frequency>
@@ -367,7 +372,7 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 4
  256x15-bit single-port Read Only RAM                  : 1
- 32x15-bit single-port Read Only RAM                   : 1
+ 32x24-bit single-port Read Only RAM                   : 1
  4x4-bit single-port Read Only RAM                     : 1
  64x8-bit single-port Read Only RAM                    : 1
 # Adders/Subtractors                                   : 13
@@ -378,26 +383,26 @@ Macro Statistics
  3-bit adder                                           : 2
  4-bit adder                                           : 1
  6-bit adder                                           : 1
-# Registers                                            : 41
- 1-bit register                                        : 25
+# Registers                                            : 25
+ 1-bit register                                        : 10
  15-bit register                                       : 1
  16-bit register                                       : 5
  24-bit register                                       : 2
  3-bit register                                        : 2
  4-bit register                                        : 1
  6-bit register                                        : 1
- 8-bit register                                        : 4
-# Latches                                              : 15
- 1-bit latch                                           : 15
+ 8-bit register                                        : 3
+# Latches                                              : 8
+ 1-bit latch                                           : 8
 # Comparators                                          : 1
  24-bit comparator greater                             : 1
-# Multiplexers                                         : 13
- 1-bit 2-to-1 multiplexer                              : 2
+# Multiplexers                                         : 23
+ 1-bit 2-to-1 multiplexer                              : 12
  2-bit 4-to-1 multiplexer                              : 1
  3-bit 2-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 7
  4-bit 4-to-1 multiplexer                              : 2
-# FSMs                                                 : 1
+# FSMs                                                 : 2
 # Xors                                                 : 5
  1-bit xor2                                            : 5
 
@@ -410,8 +415,6 @@ Macro Statistics
 Reading core <ipcore_dir/SinCos.ngc>.
 Loading core <SinCos> for timing and area information for instance <sc>.
 INFO:Xst:2261 - The FF/Latch <sample.pdmBit> in Unit <pdm> is equivalent to the following FF/Latch, which will be removed : <pdmOutput> 
-WARNING:Xst:1426 - The value init of the FF/Latch number_7 hinder the constant cleaning in the block nx3_audio.
-   You should achieve better results by setting this init to 1.
 
 Synthesizing (advanced) Unit <UART_RX_CTRL>.
 The following registers are absorbed into counter <overcounter>: 1 register on signal <overcounter>.
@@ -448,28 +451,27 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segs> will be implemented on LUTs ei
     -----------------------------------------------------------------------
 Unit <display_driver> synthesized (advanced).
 
-Synthesizing (advanced) Unit <nx3_audio>.
-INFO:Xst:3226 - The RAM <n2f/Mram_frequency> will be implemented as a BLOCK RAM, absorbing the following register(s): <note>
-    -----------------------------------------------------------------------
-    | ram_type           | Block                               |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 256-word x 15-bit                   |          |
-    |     mode           | write-first                         |          |
-    |     clkA           | connected to signal <word_ready>    | rise     |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <rx_data>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <note_frequency> |          |
-    -----------------------------------------------------------------------
-    | optimization       | speed                               |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0121> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+Synthesizing (advanced) Unit <note_to_frequency>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_frequency> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 32-word x 15-bit                    |          |
+    |     aspect ratio   | 256-word x 15-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <note>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <frequency>     |          |
+    -----------------------------------------------------------------------
+Unit <note_to_frequency> synthesized (advanced).
+
+Synthesizing (advanced) Unit <nx3_audio>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0060> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 24-bit                    |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <buttons_deb>   |          |
     |     diA            | connected to signal <GND>           |          |
@@ -501,8 +503,8 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 4
- 256x15-bit single-port block Read Only RAM            : 1
- 32x15-bit single-port distributed Read Only RAM       : 1
+ 256x15-bit single-port distributed Read Only RAM      : 1
+ 32x24-bit single-port distributed Read Only RAM       : 1
  4x4-bit single-port distributed Read Only RAM         : 1
  64x8-bit single-port distributed Read Only RAM        : 1
 # Adders/Subtractors                                   : 3
@@ -516,16 +518,16 @@ Macro Statistics
  6-bit up counter                                      : 1
 # Accumulators                                         : 2
  24-bit up accumulator                                 : 2
-# Registers                                            : 53
- Flip-Flops                                            : 53
+# Registers                                            : 38
+ Flip-Flops                                            : 38
 # Comparators                                          : 1
  24-bit comparator greater                             : 1
-# Multiplexers                                         : 16
- 1-bit 2-to-1 multiplexer                              : 2
- 1-bit 4-to-1 multiplexer                              : 6
+# Multiplexers                                         : 22
+ 1-bit 2-to-1 multiplexer                              : 12
+ 2-bit 4-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 7
- 4-bit 4-to-1 multiplexer                              : 1
-# FSMs                                                 : 1
+ 4-bit 4-to-1 multiplexer                              : 2
+# FSMs                                                 : 2
 # Xors                                                 : 5
  1-bit xor2                                            : 5
 
@@ -534,8 +536,6 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1426 - The value init of the FF/Latch number_7 hinder the constant cleaning in the block nx3_audio.
-   You should achieve better results by setting this init to 1.
 INFO:Xst:2261 - The FF/Latch <sample.pdmBit> in Unit <pdmModule> is equivalent to the following FF/Latch, which will be removed : <pdmOutput> 
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <uartrx/FSM_0> on signal <state[1:2]> with gray encoding.
@@ -547,6 +547,17 @@ Optimizing FSM <uartrx/FSM_0> on signal <state[1:2]> with gray encoding.
  data  | 11
  stop  | 10
 -------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <midi/FSM_1> on signal <state[1:3]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 000
+ status    | 001
+ data1_on  | 010
+ data1_off | 011
+ data2     | 100
+-----------------------
 WARNING:Xst:2677 - Node <sGen/phaseCounter_22> of sequential type is unconnected in block <nx3_audio>.
 WARNING:Xst:2677 - Node <sGen/phaseCounter_23> of sequential type is unconnected in block <nx3_audio>.
 INFO:Xst:1901 - Instance sample_clock/pll_base_inst in unit sample_clock/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
@@ -559,8 +570,9 @@ Optimizing unit <UART_RX_CTRL> ...
 
 Optimizing unit <uart_rx_interface> ...
 
+Optimizing unit <MIDI_parser> ...
+
 Optimizing unit <display_driver> ...
-WARNING:Xst:2677 - Node <uartrxinter/flagReg> of sequential type is unconnected in block <nx3_audio>.
 INFO:Xst:2261 - The FF/Latch <dcm_clock/counter_0> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <uartrx/overcounter_0> 
 INFO:Xst:2261 - The FF/Latch <dcm_clock/counter_1> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <uartrx/overcounter_1> 
 
@@ -574,8 +586,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 204
- Flip-Flops                                            : 204
+# Registers                                            : 193
+ Flip-Flops                                            : 193
 
 =========================================================================
 
@@ -598,28 +610,26 @@ Top Level Output File Name         : nx3_audio.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 7311
+# BELS                             : 7359
 #      GND                         : 2
 #      INV                         : 34
 #      LUT1                        : 119
-#      LUT2                        : 773
-#      LUT3                        : 1278
-#      LUT4                        : 67
-#      LUT5                        : 210
-#      LUT6                        : 86
+#      LUT2                        : 781
+#      LUT3                        : 1282
+#      LUT4                        : 82
+#      LUT5                        : 203
+#      LUT6                        : 110
 #      MUXCY                       : 2330
-#      MUXF7                       : 1
+#      MUXF7                       : 5
 #      VCC                         : 2
 #      XORCY                       : 2409
-# FlipFlops/Latches                : 219
-#      FD                          : 96
+# FlipFlops/Latches                : 201
+#      FD                          : 84
 #      FDE                         : 24
-#      FDR                         : 84
-#      LD                          : 15
-# RAMS                             : 1
-#      RAMB8BWER                   : 1
-# Clock Buffers                    : 4
-#      BUFG                        : 4
+#      FDR                         : 85
+#      LD                          : 8
+# Clock Buffers                    : 3
+#      BUFG                        : 3
 # IO Buffers                       : 30
 #      IBUF                        : 6
 #      IBUFG                       : 1
@@ -634,16 +644,16 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             211  out of  18224     1%  
- Number of Slice LUTs:                 2567  out of   9112    28%  
-    Number used as Logic:              2567  out of   9112    28%  
+ Number of Slice Registers:             193  out of  18224     1%  
+ Number of Slice LUTs:                 2611  out of   9112    28%  
+    Number used as Logic:              2611  out of   9112    28%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2618
-   Number with an unused Flip Flop:    2407  out of   2618    91%  
-   Number with an unused LUT:            51  out of   2618     1%  
-   Number of fully used LUT-FF pairs:   160  out of   2618     6%  
-   Number of unique control sets:        18
+ Number of LUT Flip Flop pairs used:   2643
+   Number with an unused Flip Flop:    2450  out of   2643    92%  
+   Number with an unused LUT:            32  out of   2643     1%  
+   Number of fully used LUT-FF pairs:   161  out of   2643     6%  
+   Number of unique control sets:        19
 
 IO Utilization: 
  Number of IOs:                          38
@@ -651,9 +661,7 @@ IO Utilization:
     IOB Flip Flops/Latches:               8
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                1  out of     32     3%  
-    Number using Block RAM only:          1
- Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
  Number of PLL_ADVs:                      1  out of      2    50%  
 
 ---------------------------
@@ -674,14 +682,14 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
---------------------------------------+------------------------+-------+
-Clock Signal                          | Clock buffer(FF name)  | Load  |
---------------------------------------+------------------------+-------+
-word_ready(uartrx/Mmux_word_ready11:O)| BUFG(*)(leds_0)        | 24    |
-Mram__n012113(Mram__n0121131:O)       | NONE(*)(number_14)     | 15    |
-sample_clock/pll_base_inst/CLKOUT0    | BUFG                   | 49    |
-dcm_clock/clk_out2                    | BUFG                   | 132   |
---------------------------------------+------------------------+-------+
+-------------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                             | Clock buffer(FF name)  | Load  |
+-------------------------------------------------------------------------+------------------------+-------+
+word_ready(uartrx/Mmux_word_ready11:O)                                   | NONE(*)(leds_0)        | 8     |
+sample_clock/pll_base_inst/CLKOUT0                                       | BUFG                   | 53    |
+dcm_clock/clk_out2                                                       | BUFG                   | 132   |
+midi/state[2]_PWR_23_o_Mux_16_o(midi/Mmux_state[2]_PWR_23_o_Mux_16_o11:O)| NONE(*)(midi/note_0)   | 8     |
+-------------------------------------------------------------------------+------------------------+-------+
 (*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -697,7 +705,7 @@ Speed Grade: -2
 
    Minimum period: 103.067ns (Maximum Frequency: 9.702MHz)
    Minimum input arrival time before clock: 4.113ns
-   Maximum output required time after clock: 9.051ns
+   Maximum output required time after clock: 10.355ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -705,32 +713,11 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'word_ready'
-  Clock period: 2.555ns (frequency: 391.389MHz)
-  Total number of paths / destination ports: 15 / 15
--------------------------------------------------------------------------
-Delay:               2.555ns (Levels of Logic = 0)
-  Source:            n2f/Mram_frequency (RAM)
-  Destination:       frequency_13 (FF)
-  Source Clock:      word_ready rising
-  Destination Clock: word_ready rising
-
-  Data Path: n2f/Mram_frequency to frequency_13
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     RAMB8BWER:CLKAWRCLK->DOADO13    1   1.800   0.681  n2f/Mram_frequency (note_frequency<13>)
-     FD:D                      0.074          frequency_13
-    ----------------------------------------
-    Total                      2.555ns (1.874ns logic, 0.681ns route)
-                                       (73.3% logic, 26.7% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'sample_clock/pll_base_inst/CLKOUT0'
-  Clock period: 4.547ns (frequency: 219.925MHz)
-  Total number of paths / destination ports: 392 / 71
+  Clock period: 4.854ns (frequency: 206.016MHz)
+  Total number of paths / destination ports: 433 / 75
 -------------------------------------------------------------------------
-Delay:               4.547ns (Levels of Logic = 2)
+Delay:               4.854ns (Levels of Logic = 2)
   Source:            uartrx/overclk (FF)
   Destination:       uartrxinter/bufferReg_7 (FF)
   Source Clock:      sample_clock/pll_base_inst/CLKOUT0 rising
@@ -740,18 +727,18 @@ Delay:               4.547ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               5   0.525   1.117  uartrx/overclk (uartrx/overclk)
-     LUT4:I0->O            6   0.254   1.152  uartrx/Mmux_nticks_next411 (uartrx/Mmux_nticks_next41)
-     LUT4:I0->O            8   0.254   0.943  uartrx/Mmux_word_ready11 (word_ready)
+     FD:C->Q               6   0.525   1.152  uartrx/overclk (uartrx/overclk)
+     LUT4:I0->O            7   0.254   1.186  uartrx/Mmux_nticks_next411 (uartrx/Mmux_nticks_next41)
+     LUT4:I0->O           16   0.254   1.181  uartrx/Mmux_word_ready11 (word_ready)
      FDE:CE                    0.302          uartrxinter/bufferReg_0
     ----------------------------------------
-    Total                      4.547ns (1.335ns logic, 3.212ns route)
-                                       (29.4% logic, 70.6% route)
+    Total                      4.854ns (1.335ns logic, 3.519ns route)
+                                       (27.5% logic, 72.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'dcm_clock/clk_out2'
   Clock period: 103.067ns (frequency: 9.702MHz)
-  Total number of paths / destination ports: 148958562541386997953957646230311111256333877248 / 217
+  Total number of paths / destination ports: 148958562541386957389138438926970263361831305216 / 217
 -------------------------------------------------------------------------
 Delay:               103.067ns (Levels of Logic = 719)
   Source:            sGen/phaseCounter_21 (FF)
@@ -1513,22 +1500,22 @@ Offset:              4.113ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sample_clock/pll_base_inst/CLKOUT0'
   Total number of paths / destination ports: 6 / 6
 -------------------------------------------------------------------------
-Offset:              2.695ns (Levels of Logic = 3)
+Offset:              2.707ns (Levels of Logic = 3)
   Source:            uart_rx (PAD)
-  Destination:       uartrx/nticks_1 (FF)
+  Destination:       uartrx/nticks_2 (FF)
   Destination Clock: sample_clock/pll_base_inst/CLKOUT0 rising
 
-  Data Path: uart_rx to uartrx/nticks_1
+  Data Path: uart_rx to uartrx/nticks_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             6   1.328   0.876  uart_rx_IBUF (uart_rx_IBUF)
-     LUT5:I4->O            1   0.254   0.000  uartrx/Mmux_nticks_next23_F (N12)
-     MUXF7:I0->O           1   0.163   0.000  uartrx/Mmux_nticks_next23 (uartrx/nticks_next<1>)
-     FD:D                      0.074          uartrx/nticks_1
+     LUT5:I4->O            1   0.254   0.000  uartrx/Mmux_nticks_next34_G (N17)
+     MUXF7:I1->O           1   0.175   0.000  uartrx/Mmux_nticks_next34 (uartrx/nticks_next<2>)
+     FD:D                      0.074          uartrx/nticks_2
     ----------------------------------------
-    Total                      2.695ns (1.819ns logic, 0.876ns route)
-                                       (67.5% logic, 32.5% route)
+    Total                      2.707ns (1.831ns logic, 0.876ns route)
+                                       (67.6% logic, 32.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'word_ready'
@@ -1551,95 +1538,78 @@ Offset:              4.118ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sample_clock/pll_base_inst/CLKOUT0'
-  Total number of paths / destination ports: 232 / 12
+  Total number of paths / destination ports: 344 / 12
 -------------------------------------------------------------------------
-Offset:              9.051ns (Levels of Logic = 4)
+Offset:              9.513ns (Levels of Logic = 5)
   Source:            c/count_13 (FF)
-  Destination:       segments<7> (PAD)
+  Destination:       segments<1> (PAD)
   Source Clock:      sample_clock/pll_base_inst/CLKOUT0 rising
 
-  Data Path: c/count_13 to segments<7>
+  Data Path: c/count_13 to segments<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              11   0.525   1.494  c/count_13 (c/count_13)
-     LUT6:I0->O           12   0.254   1.297  mux111 (mode<1>)
-     LUT3:I0->O            8   0.235   1.399  dd/digit<0>1 (dd/digit<0>)
-     LUT6:I0->O            1   0.254   0.681  dd_Mram_segs71 (segments_7_OBUF)
-     OBUF:I->O                 2.912          segments_7_OBUF (segments<7>)
+     FD:C->Q              15   0.525   1.585  c/count_13 (c/count_13)
+     LUT6:I1->O            1   0.254   0.000  Mmux_mode24_G (N15)
+     MUXF7:I1->O          12   0.175   1.499  Mmux_mode24 (mode<1>)
+     LUT5:I0->O            8   0.254   1.374  dd/digit<2>1 (dd/digit<2>)
+     LUT6:I1->O            1   0.254   0.681  dd_Mram_segs111 (segments_1_OBUF)
+     OBUF:I->O                 2.912          segments_1_OBUF (segments<1>)
     ----------------------------------------
-    Total                      9.051ns (4.180ns logic, 4.871ns route)
-                                       (46.2% logic, 53.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n012113'
-  Total number of paths / destination ports: 448 / 8
--------------------------------------------------------------------------
-Offset:              8.588ns (Levels of Logic = 4)
-  Source:            number_12 (LATCH)
-  Destination:       segments<7> (PAD)
-  Source Clock:      Mram__n012113 falling
-
-  Data Path: number_12 to segments<7>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               3   0.581   0.994  number_12 (number_12)
-     LUT6:I3->O           12   0.235   1.297  mux111 (mode<1>)
-     LUT3:I0->O            8   0.235   1.399  dd/digit<0>1 (dd/digit<0>)
-     LUT6:I0->O            1   0.254   0.681  dd_Mram_segs71 (segments_7_OBUF)
-     OBUF:I->O                 2.912          segments_7_OBUF (segments<7>)
-    ----------------------------------------
-    Total                      8.588ns (4.217ns logic, 4.371ns route)
-                                       (49.1% logic, 50.9% route)
+    Total                      9.513ns (4.374ns logic, 5.139ns route)
+                                       (46.0% logic, 54.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'dcm_clock/clk_out2'
-  Total number of paths / destination ports: 2 / 2
+  Total number of paths / destination ports: 1194 / 10
 -------------------------------------------------------------------------
-Offset:              4.872ns (Levels of Logic = 1)
-  Source:            pdm/sample.pdmBit (FF)
-  Destination:       audioOut<1> (PAD)
+Offset:              10.355ns (Levels of Logic = 5)
+  Source:            button_debounce/btn3_reg (FF)
+  Destination:       segments<7> (PAD)
   Source Clock:      dcm_clock/clk_out2 rising
 
-  Data Path: pdm/sample.pdmBit to audioOut<1>
+  Data Path: button_debounce/btn3_reg to segments<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              27   0.525   1.435  pdm/sample.pdmBit (pdm/sample.pdmBit)
-     OBUF:I->O                 2.912          audioOut_1_OBUF (audioOut<1>)
+     FDE:C->Q             14   0.525   1.557  button_debounce/btn3_reg (button_debounce/btn3_reg)
+     LUT5:I0->O            3   0.254   1.196  Mram__n0060221 (Mram__n006022)
+     LUT6:I1->O           12   0.254   1.069  Mmux_mode11 (mode<0>)
+     LUT3:I2->O            8   0.254   1.399  dd/digit<0>1 (dd/digit<0>)
+     LUT6:I0->O            1   0.254   0.681  dd_Mram_segs71 (segments_7_OBUF)
+     OBUF:I->O                 2.912          segments_7_OBUF (segments<7>)
     ----------------------------------------
-    Total                      4.872ns (3.437ns logic, 1.435ns route)
-                                       (70.5% logic, 29.5% route)
+    Total                     10.355ns (4.453ns logic, 5.902ns route)
+                                       (43.0% logic, 57.0% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock Mram__n012113
-------------------+---------+---------+---------+---------+
-                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------+---------+---------+---------+---------+
-dcm_clock/clk_out2|         |         |    2.454|         |
-------------------+---------+---------+---------+---------+
-
 Clock to Setup on destination clock dcm_clock/clk_out2
-------------------+---------+---------+---------+---------+
-                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------+---------+---------+---------+---------+
-dcm_clock/clk_out2|  103.067|         |         |         |
-word_ready        |    2.421|         |         |         |
-------------------+---------+---------+---------+---------+
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+dcm_clock/clk_out2             |  103.067|         |         |         |
+midi/state[2]_PWR_23_o_Mux_16_o|         |    5.536|         |         |
+-------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock midi/state[2]_PWR_23_o_Mux_16_o
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+sample_clock/pll_base_inst/CLKOUT0|         |         |    1.884|         |
+----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sample_clock/pll_base_inst/CLKOUT0
 ----------------------------------+---------+---------+---------+---------+
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-sample_clock/pll_base_inst/CLKOUT0|    4.547|         |         |         |
+sample_clock/pll_base_inst/CLKOUT0|    4.854|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock word_ready
@@ -1647,22 +1617,21 @@ Clock to Setup on destination clock word_ready
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-sample_clock/pll_base_inst/CLKOUT0|    1.650|         |         |         |
-word_ready                        |    2.555|         |         |         |
+sample_clock/pll_base_inst/CLKOUT0|    1.364|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 15.18 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.92 secs
  
 --> 
 
 
-Total memory usage is 431868 kilobytes
+Total memory usage is 431832 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   24 (   0 filtered)
-Number of infos    :   13 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
 

@@ -37,7 +37,7 @@ Setup/Hold to clock clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-uart_rx     |    4.106(R)|      SLOW  |   -1.658(R)|      FAST  |sampleClock       |   0.000|
+uart_rx     |    4.581(R)|      SLOW  |   -1.460(R)|      FAST  |sampleClock       |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -45,18 +45,18 @@ Clock clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-digit<0>    |         7.864(R)|      SLOW  |         3.671(R)|      FAST  |sampleClock       |   0.000|
-digit<1>    |         7.877(R)|      SLOW  |         3.686(R)|      FAST  |sampleClock       |   0.000|
-digit<2>    |         7.698(R)|      SLOW  |         3.579(R)|      FAST  |sampleClock       |   0.000|
-digit<3>    |         7.711(R)|      SLOW  |         3.594(R)|      FAST  |sampleClock       |   0.000|
-segments<0> |        11.403(R)|      SLOW  |         4.518(R)|      FAST  |sampleClock       |   0.000|
-segments<1> |        11.230(R)|      SLOW  |         4.683(R)|      FAST  |sampleClock       |   0.000|
-segments<2> |        11.489(R)|      SLOW  |         4.800(R)|      FAST  |sampleClock       |   0.000|
-segments<3> |        12.612(R)|      SLOW  |         4.714(R)|      FAST  |sampleClock       |   0.000|
-segments<4> |        11.817(R)|      SLOW  |         4.592(R)|      FAST  |sampleClock       |   0.000|
-segments<5> |        11.196(R)|      SLOW  |         4.500(R)|      FAST  |sampleClock       |   0.000|
-segments<6> |        11.886(R)|      SLOW  |         4.634(R)|      FAST  |sampleClock       |   0.000|
-segments<7> |        11.183(R)|      SLOW  |         4.628(R)|      FAST  |sampleClock       |   0.000|
+digit<0>    |         8.443(R)|      SLOW  |         4.016(R)|      FAST  |sampleClock       |   0.000|
+digit<1>    |         8.456(R)|      SLOW  |         4.031(R)|      FAST  |sampleClock       |   0.000|
+digit<2>    |         8.431(R)|      SLOW  |         3.756(R)|      FAST  |sampleClock       |   0.000|
+digit<3>    |         8.444(R)|      SLOW  |         3.771(R)|      FAST  |sampleClock       |   0.000|
+segments<0> |        11.450(R)|      SLOW  |         4.872(R)|      FAST  |sampleClock       |   0.000|
+segments<1> |        11.106(R)|      SLOW  |         4.505(R)|      FAST  |sampleClock       |   0.000|
+segments<2> |        11.288(R)|      SLOW  |         4.640(R)|      FAST  |sampleClock       |   0.000|
+segments<3> |        11.069(R)|      SLOW  |         4.329(R)|      FAST  |sampleClock       |   0.000|
+segments<4> |        11.538(R)|      SLOW  |         4.545(R)|      FAST  |sampleClock       |   0.000|
+segments<5> |        11.513(R)|      SLOW  |         4.532(R)|      FAST  |sampleClock       |   0.000|
+segments<6> |        11.729(R)|      SLOW  |         4.829(R)|      FAST  |sampleClock       |   0.000|
+segments<7> |        11.350(R)|      SLOW  |         4.773(R)|      FAST  |sampleClock       |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -64,11 +64,11 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.320|         |         |         |
+clk            |    4.762|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun Jan 11 21:18:08 2015 
+Analysis completed Mon Jan 12 13:30:53 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:

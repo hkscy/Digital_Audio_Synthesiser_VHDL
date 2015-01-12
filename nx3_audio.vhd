@@ -46,7 +46,7 @@ architecture Behavioral of nx3_audio is
 	-- Timing signals.
 	signal sampleClock: std_logic := '0'; --@22.528Mhz
 	signal pdmClock: std_logic := '0'; --@2.8228Mhz
-	signal msclk: std_logic := '0'; --@100Hz, 10ms.
+	--signal msclk: std_logic := '0'; --@100Hz, 10ms.
 	
 	-- Audio signals.
 	signal audioOutMono: std_logic := '0';
@@ -75,11 +75,7 @@ architecture Behavioral of nx3_audio is
 	constant NOTE_ON: std_logic_vector(7 downto 0) := "10010000";
 	constant NOTE_OFF: std_logic_vector(7 downto 0) := "10000000";
 	
-	--MIDI FSM signals.
-	type state_type is (status, data1_on, data1_off, data2);
-	signal midi_state: state_type := status;	--Current state
-	signal midi_state_n: state_type;				--Next state
-	signal last_word: std_logic_vector(7 downto 0) := (others => '0');
+	--Synthesiser signals
 	signal note: std_logic_vector(7 downto 0) := (others => '0');
 	signal note_frequency: std_logic_vector(14 downto 0) := (others => '0');
 	
@@ -154,17 +150,19 @@ architecture Behavioral of nx3_audio is
          ready 		: out STD_LOGIC);
 	end component UART_RX_interface;
 	
---	component MIDI_parser
---		port (
---			clk			: in	std_logic;
---			d
---	end component MIDI_parser;
-	
-	component note_to_frequency --Converts note numbers (48-104) to scaled frequencies.
-		port(
-			note			: in std_logic_vector(7 downto 0);
+	component MIDI_parser
+		port (
+			clk			: in	std_logic;
+			data_ready	: in std_logic;
+			data			: in std_logic_vector(7 downto 0);
 			frequency	: out std_logic_vector(14 downto 0));
-	end component note_to_frequency;
+	end component MIDI_parser;
+	
+--	component note_to_frequency --Converts note numbers (48-104) to scaled frequencies.
+--		port(
+--			note			: in std_logic_vector(7 downto 0);
+--			frequency	: out std_logic_vector(14 downto 0));
+--	end component note_to_frequency;
 		
 begin
 	sample_clock: dcm port map( clk_in1 => clk, -- Create sample clock @ 22.5792Mhz.
@@ -207,9 +205,13 @@ begin
 												 rx_word_in => uart_rx_word,
 												rx_word_out => rx_data,
 														ready => data_ready);
+	midi:	MIDI_parser port map( clk => sampleClock,
+								data_ready => data_ready,
+										data => rx_data,
+								 frequency => frequency(14 downto 0));
 	
-	n2f: note_to_frequency port map ( note => note,
-										  frequency => note_frequency );
+--	n2f: note_to_frequency port map ( note => note,
+--										  frequency => note_frequency );
 									
 	process(buttons_deb)
 	begin
@@ -230,7 +232,8 @@ begin
 				number <= X"00d9";--"u"--"P"
 				modeVector <= "00001010";
 			when DOWN_BUTTON =>
-				
+				number <= X"0000";
+				modeVector <= "00000000";
 			when others =>
 				--leds(7 downto 0) <= (others => '0');
 				number <= X"0087"; --OffOff"o""n"
@@ -282,53 +285,12 @@ begin
 			end case;
 	end process multiplex_display;
 
---	process(word_ready)
---	begin
---		case midi_state is
---			when status => --Waiting for a new MIDI note/Incoming MIDI note status byte (On/Off)
---				leds <= "11000000";
---				if word_ready = '1' then
---					if (uart_rx_word = NOTE_ON) then
---						midi_state_n <= data1_on;
---					elsif uart_rx_word = NOTE_OFF then
---						midi_state_n <= data1_off;
---					else
---						midi_state_n <= status;
---					end if;
---				end if;
---			when data1_on =>	--Incoming MIDI data byte 1, contains note number to turn ON.
---				if word_ready = '1' then
---					leds <= "00110000";
---					note <= uart_rx_word;
---					frequency(23 downto 15) <= (others => '0');
---					frequency(14 downto 0) <= note_frequency;
---					midi_state_n <= data2;
---				end if;
---			when data1_off =>	--Incoming MIDI data byte 1, contains note number to turn OFF.
---				if word_ready = '1' then
---					leds <= "00001100";
---					if (note = uart_rx_word) then --If we're currently playing this note,
---							note <= (others => '0'); --Turn the note off.
---							frequency(23 downto 15) <= (others => '0');
---							frequency(14 downto 0) <= note_frequency;
---					end if;
---					midi_state_n <= data2;
---				end if;
---			when data2 =>	--Incoming MIDI data byte 2, contains velocity.
---				leds <= "00000011";
---				if word_ready = '1' then
---					-- In future check that this = '0' and do something useful if not.
---					midi_state_n <= status;
---				end if;
---		end case;	
---	end process;
-
 	rx_word: process(word_ready, sampleClock)
 	begin
 		if rising_edge(word_ready) then	--When new serial word is made available.
 			leds <= rx_data;					--Display current word received.
-			note <= rx_data;		
-			frequency(14 downto 0) <= note_frequency;
+			--note <= rx_data;		
+			--frequency(14 downto 0) <= note_frequency;
 		end if;
 		clear_flag <= '1';				--Set clear one clock cycle after reading data
 	end process rx_word;

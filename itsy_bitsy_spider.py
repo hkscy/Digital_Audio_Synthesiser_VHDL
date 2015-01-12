@@ -1,7 +1,7 @@
 import serial
 import time
 
-ser = serial.Serial('/dev/ttyUSB0', 31250)
+ser = serial.Serial('/dev/ttyUSB1', 31250)
 print ser
 print "Sending Itsy Bitsy Spider"
 
