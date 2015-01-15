@@ -1,0 +1,5 @@
+vhdl isim_temp "note_to_frequency.vhd"
+vhdl isim_temp "uart_rx_interface.vhd"
+vhdl isim_temp "UART_RX_CTRL.vhd"
+vhdl isim_temp "MIDI_parser.vhd"
+vhdl isim_temp "UART_RX_tb.vhd"

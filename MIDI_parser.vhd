@@ -13,17 +13,22 @@ use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_unsigned.all;
 
 entity MIDI_parser is
-    Port ( clk : in  STD_LOGIC;										--22.582Mhz clock in.
-           data_ready : in  STD_LOGIC;								--Lets us know rx_word availability.
-           data : in  STD_LOGIC_VECTOR (7 downto 0);			--Most recent word received.
-           frequency : out  STD_LOGIC_VECTOR (14 downto 0));--Frequency we should be producing.
+    Port ( clk : in  STD_LOGIC;							 --22.582Mhz clock in.
+           data_ready : in  STD_LOGIC;					 --Lets us know rx_word availability.
+           data : in  std_logic_vector (7 downto 0);			 --Most recent word received.
+           frequency : out  std_logic_vector (14 downto 0));--Frequency we should be producing.
 end MIDI_parser;
 
 architecture Behavioral of MIDI_parser is
+
+	--MIDI note constants
+	constant NOTE_ON: std_logic_vector(7 downto 0) := "10010000";
+	constant NOTE_OFF: std_logic_vector(7 downto 0) := "10000000";
+	
+	--MIDI state signals
 	type state_type is (idle, status, data1_on, data1_off, data2);
 	signal state, state_next : state_type := status;
 	signal note: std_logic_vector(7 downto 0) := (others => '0');
-	signal velocity: std_logic_vector(7 downto 0) := (others => '0');
 	
 	component note_to_frequency --Converts note numbers (48-104) to scaled frequencies.
 		port(
@@ -42,7 +47,7 @@ begin
 		end if;
 	end process;
 	
-	process(data_ready, state)
+	process(data_ready, state, data)
 	begin
 		state_next <= state;
 		case state is
@@ -51,9 +56,9 @@ begin
 					state_next <= status;
 				end if;
 			when status => --Waiting for a new MIDI note/Incoming MIDI note status byte (On/Off)
-				if data = "10010000" then
+				if data = NOTE_ON then
 					state_next <= data1_on;	--Note on.
-				elsif data = "10000000" then
+				elsif data = NOTE_OFF then
 					state_next <= data1_off;	--Note off.
 				else
 					state_next <= idle; --Return to idle.
@@ -66,11 +71,11 @@ begin
 			when data1_off =>	--Incoming MIDI data byte 1, contains note number to turn OFF.
 				if data_ready = '1' then
 					note <= (others => '0');
-					state_next <= idle;
+					state_next <= data2;
 				end if;
 			when data2 =>	--Incoming MIDI data byte 2, contains velocity.
 				if data_ready = '1' then
-					velocity <= data;
+					--velocity is discarded here.
 					state_next <= idle;
 				end if;
 		end case;	

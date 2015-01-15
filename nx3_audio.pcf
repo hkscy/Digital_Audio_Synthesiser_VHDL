@@ -1,11 +1,11 @@
 //! **************************************************************************
-// Written by: Map O.87xd on Mon Jan 12 13:30:05 2015
+// Written by: Map O.87xd on Thu Jan 15 08:58:38 2015
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "clk" LOCATE = SITE "V10" LEVEL 1;
 COMP "audioOut<0>" LOCATE = SITE "N10" LEVEL 1;
-COMP "audioOut<1>" LOCATE = SITE "T12" LEVEL 1;
+COMP "audioOut<1>" LOCATE = SITE "P11" LEVEL 1;
 COMP "segments<0>" LOCATE = SITE "T17" LEVEL 1;
 COMP "segments<1>" LOCATE = SITE "T18" LEVEL 1;
 COMP "segments<2>" LOCATE = SITE "U17" LEVEL 1;

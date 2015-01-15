@@ -14,10 +14,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_unsigned.all;
 use ieee.numeric_std.all;
 
+
 entity UART_RX_CTRL is
     Port ( clk 			: in  STD_LOGIC;							 --22.582Mhz clock in.
            uart_rx 		: in  STD_LOGIC;							 --Serial UART RX
-           uart_rx_word : out  STD_LOGIC_VECTOR (7 downto 0);--8Bit output word.
+           uart_rx_word : out std_logic_vector (7 downto 0); --8Bit output word.
 			  word_ready	: out	std_logic );						 --High when word ready.
 end UART_RX_CTRL;
 

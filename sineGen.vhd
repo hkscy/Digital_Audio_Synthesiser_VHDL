@@ -13,15 +13,15 @@
 --						 radians.
 ----------------------------------------------------------------------------------
 library IEEE;
-USE ieee.std_logic_unsigned.all;
+use ieee.std_logic_unsigned.all;
 USE ieee.std_logic_1164.ALL; 
-USE IEEE.STD_LOGIC_ARITH.ALL;
+use ieee.std_logic_arith.all;
 
 entity sineGen is
     Port ( phaseInc : in  std_logic_vector(23 downto 0); -- s = sin(2πf) = sin(2πfi/fs)
 												 -- i.e 40kHz on a 100Mhz clock = sin(2π40000i/10^8)
-           clk : in  STD_LOGIC;
-           output : out  STD_LOGIC_VECTOR(23 downto 0));
+           clk : in  std_logic;
+           output : out  std_logic_vector(23 downto 0));
 end sineGen;
 
 architecture Behavioral of sineGen is
@@ -31,7 +31,7 @@ architecture Behavioral of sineGen is
 		port (
 			s_axis_phase_tvalid : in std_logic;
 			s_axis_phase_tdata  : in std_logic_vector(23 downto 0);
-			m_axis_dout_tvalid  : out std_logic;
+			m_axis_dout_tvalid : out std_logic;
 			m_axis_dout_tdata   : out std_logic_vector(47 downto 0)
 			);
 	end component;
@@ -50,6 +50,6 @@ begin
 		end if;
 	end process;
 	
-	output <= sincosout(47 downto 24);
+	output <= std_logic_vector(sincosout(47 downto 24));
 	
 end Behavioral;

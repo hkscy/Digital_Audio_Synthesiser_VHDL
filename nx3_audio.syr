@@ -131,15 +131,18 @@ WARNING:HDLCompiler:946 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VH
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/pdmModule.vhd" into library work
 Parsing entity <pdmModule>.
 Parsing architecture <Behavioral> of entity <pdmmodule>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm/example_design/dcm_exdes.vhd" into library work
-Parsing entity <dcm_exdes>.
-Parsing architecture <xilinx> of entity <dcm_exdes>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" into library work
 Parsing entity <MIDI_parser>.
 Parsing architecture <Behavioral> of entity <midi_parser>.
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm/example_design/dcm_exdes.vhd" into library work
+Parsing entity <dcm_exdes>.
+Parsing architecture <xilinx> of entity <dcm_exdes>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm.vhd" into library work
 Parsing entity <dcm>.
 Parsing architecture <xilinx> of entity <dcm>.
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" into library work
+Parsing entity <fmOp>.
+Parsing architecture <Behavioral> of entity <fmop>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/display_driver.vhd" into library work
 Parsing entity <display_driver>.
 Parsing architecture <Behavioral> of entity <display_driver>.
@@ -167,15 +170,9 @@ Elaborating entity <dcm> (architecture <xilinx>) from library <work>.
 Elaborating entity <audioClock> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <display_driver> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/display_driver.vhd" Line 49. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/display_driver.vhd" Line 50. Case statement is complete. others clause is never selected
 
 Elaborating entity <counter> (architecture <Behavioral>) with generics from library <work>.
-
-Elaborating entity <sineGen> (architecture <Behavioral>) from library <work>.
-
-Elaborating entity <SinCos> (architecture <SinCos_a>) from library <work>.
-
-Elaborating entity <pdmModule> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <btn_debounce> (architecture <Behavioral>) from library <work>.
 
@@ -186,13 +183,16 @@ Elaborating entity <uart_rx_interface> (architecture <Behavioral>) from library 
 Elaborating entity <MIDI_parser> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <note_to_frequency> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" Line 54: data should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" Line 56: data should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" Line 63: data should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" Line 73: data should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" Line 45: Assignment to velocity ignored, since the identifier is never used
-INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 283. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:634 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 42: Net <frequency[23]> does not have a driver.
+
+Elaborating entity <sineGen> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <SinCos> (architecture <SinCos_a>) from library <work>.
+
+Elaborating entity <fmOp> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <pdmModule> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 268. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 41: Net <frequency[23]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -204,9 +204,9 @@ WARNING:Xst:647 - Input <switches<7:0>> is never used. This port will be preserv
 WARNING:Xst:2935 - Signal 'frequency<23:15>', unconnected in block 'nx3_audio', is tied to its initial value (000000000).
     Found 8-bit register for signal <leds>.
     Found 4x4-bit Read Only RAM for signal <digit>
-    Found 32x24-bit Read Only RAM for signal <_n0060>
-    Found 2-bit 4-to-1 multiplexer for signal <mode> created at line 266.
-    Found 4-bit 4-to-1 multiplexer for signal <num> created at line 266.
+    Found 32x24-bit Read Only RAM for signal <_n0061>
+    Found 2-bit 4-to-1 multiplexer for signal <mode> created at line 251.
+    Found 4-bit 4-to-1 multiplexer for signal <num> created at line 251.
     Summary:
 	inferred   2 RAM(s).
 	inferred   8 D-type flip-flop(s).
@@ -246,31 +246,6 @@ Synthesizing Unit <counter>.
 	inferred  15 D-type flip-flop(s).
 Unit <counter> synthesized.
 
-Synthesizing Unit <sineGen>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen.vhd".
-INFO:Xst:3210 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen.vhd" line 40: Output port <m_axis_dout_tvalid> of the instance <sc> is unconnected or connected to loadless signal.
-    Found 24-bit register for signal <phaseCounter>.
-    Found 24-bit adder for signal <phaseCounter[23]_phaseInc[23]_add_0_OUT> created at line 49.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  24 D-type flip-flop(s).
-Unit <sineGen> synthesized.
-
-Synthesizing Unit <pdmModule>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/pdmModule.vhd".
-    Found 1-bit register for signal <sample.pdmBit>.
-    Found 1-bit register for signal <pdmOutput>.
-    Found 24-bit register for signal <sample.sigma>.
-    Found 24-bit adder for signal <sineIn[23]_GND_16_o_add_1_OUT> created at line 34.
-    Found 24-bit adder for signal <sample.sigma[23]_sineIn[23]_add_3_OUT> created at line 36.
-    Found 24-bit subtractor for signal <sineIn[23]_GND_16_o_sub_1_OUT<23:0>> created at line 32.
-    Found 24-bit comparator greater for signal <sample.sigma[23]_GND_16_o_LessThan_5_o> created at line 37
-    Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  26 D-type flip-flop(s).
-	inferred   1 Comparator(s).
-Unit <pdmModule> synthesized.
-
 Synthesizing Unit <btn_debounce>.
     Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/btn_debounce.vhd".
     Found 16-bit register for signal <btn0_cntr>.
@@ -283,11 +258,11 @@ Synthesizing Unit <btn_debounce>.
     Found 1-bit register for signal <btn4_reg>.
     Found 16-bit register for signal <btn4_cntr>.
     Found 1-bit register for signal <btn0_reg>.
-    Found 16-bit adder for signal <btn0_cntr[15]_GND_17_o_add_2_OUT> created at line 71.
-    Found 16-bit adder for signal <btn1_cntr[15]_GND_17_o_add_8_OUT> created at line 95.
-    Found 16-bit adder for signal <btn2_cntr[15]_GND_17_o_add_14_OUT> created at line 119.
-    Found 16-bit adder for signal <btn3_cntr[15]_GND_17_o_add_20_OUT> created at line 143.
-    Found 16-bit adder for signal <btn4_cntr[15]_GND_17_o_add_26_OUT> created at line 167.
+    Found 16-bit adder for signal <btn0_cntr[15]_GND_13_o_add_2_OUT> created at line 71.
+    Found 16-bit adder for signal <btn1_cntr[15]_GND_13_o_add_8_OUT> created at line 95.
+    Found 16-bit adder for signal <btn2_cntr[15]_GND_13_o_add_14_OUT> created at line 119.
+    Found 16-bit adder for signal <btn3_cntr[15]_GND_13_o_add_20_OUT> created at line 143.
+    Found 16-bit adder for signal <btn4_cntr[15]_GND_13_o_add_26_OUT> created at line 167.
     Summary:
 	inferred   5 Adder/Subtractor(s).
 	inferred  85 D-type flip-flop(s).
@@ -312,10 +287,10 @@ Synthesizing Unit <UART_RX_CTRL>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 6-bit adder for signal <overcounter[5]_GND_18_o_add_1_OUT> created at line 48.
-    Found 3-bit adder for signal <nbits[2]_GND_18_o_add_20_OUT> created at line 1241.
-    Found 4-bit adder for signal <nticks[3]_GND_18_o_add_33_OUT> created at line 1241.
-    Found 4-bit 4-to-1 multiplexer for signal <nticks_next> created at line 74.
+    Found 6-bit adder for signal <overcounter[5]_GND_14_o_add_1_OUT> created at line 49.
+    Found 3-bit adder for signal <nbits[2]_GND_14_o_add_20_OUT> created at line 1241.
+    Found 4-bit adder for signal <nticks[3]_GND_14_o_add_33_OUT> created at line 1241.
+    Found 4-bit 4-to-1 multiplexer for signal <nticks_next> created at line 75.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  22 D-type flip-flop(s).
@@ -365,6 +340,38 @@ Synthesizing Unit <note_to_frequency>.
     Summary:
 	inferred   1 RAM(s).
 Unit <note_to_frequency> synthesized.
+
+Synthesizing Unit <sineGen>.
+    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen.vhd".
+INFO:Xst:3210 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen.vhd" line 40: Output port <m_axis_dout_tvalid> of the instance <sc> is unconnected or connected to loadless signal.
+    Found 24-bit register for signal <phaseCounter>.
+    Found 24-bit adder for signal <phaseCounter[23]_phaseInc[23]_add_0_OUT> created at line 49.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+Unit <sineGen> synthesized.
+
+Synthesizing Unit <fmOp>.
+    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <fmOp> synthesized.
+
+Synthesizing Unit <pdmModule>.
+    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/pdmModule.vhd".
+    Found 1-bit register for signal <sample.pdmBit>.
+    Found 1-bit register for signal <pdmOutput>.
+    Found 24-bit register for signal <sample.sigma>.
+    Found 24-bit adder for signal <sineIn[23]_GND_30_o_add_1_OUT> created at line 34.
+    Found 24-bit adder for signal <sample.sigma[23]_sineIn[23]_add_3_OUT> created at line 36.
+    Found 24-bit subtractor for signal <sineIn[23]_GND_30_o_sub_1_OUT<23:0>> created at line 32.
+    Found 24-bit comparator greater for signal <sample.sigma[23]_GND_30_o_LessThan_5_o> created at line 37
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <pdmModule> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -466,7 +473,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_frequency> will be implemented on LU
 Unit <note_to_frequency> synthesized (advanced).
 
 Synthesizing (advanced) Unit <nx3_audio>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0060> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0061> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -615,8 +622,8 @@ Primitive and Black Box Usage:
 #      INV                         : 34
 #      LUT1                        : 119
 #      LUT2                        : 781
-#      LUT3                        : 1282
-#      LUT4                        : 82
+#      LUT3                        : 1283
+#      LUT4                        : 81
 #      LUT5                        : 203
 #      LUT6                        : 110
 #      MUXCY                       : 2330
@@ -688,7 +695,7 @@ Clock Signal                                                             | Clock
 word_ready(uartrx/Mmux_word_ready11:O)                                   | NONE(*)(leds_0)        | 8     |
 sample_clock/pll_base_inst/CLKOUT0                                       | BUFG                   | 53    |
 dcm_clock/clk_out2                                                       | BUFG                   | 132   |
-midi/state[2]_PWR_23_o_Mux_16_o(midi/Mmux_state[2]_PWR_23_o_Mux_16_o11:O)| NONE(*)(midi/note_0)   | 8     |
+midi/state[2]_PWR_17_o_Mux_14_o(midi/Mmux_state[2]_PWR_17_o_Mux_14_o11:O)| NONE(*)(midi/note_0)   | 8     |
 -------------------------------------------------------------------------+------------------------+-------+
 (*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -715,7 +722,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sample_clock/pll_base_inst/CLKOUT0'
   Clock period: 4.854ns (frequency: 206.016MHz)
-  Total number of paths / destination ports: 433 / 75
+  Total number of paths / destination ports: 432 / 75
 -------------------------------------------------------------------------
 Delay:               4.854ns (Levels of Logic = 2)
   Source:            uartrx/overclk (FF)
@@ -1467,10 +1474,10 @@ Delay:               103.067ns (Levels of Logic = 719)
      LUT2:I1->O            1   0.254   0.000  pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_lut<14> (pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_lut<14>)
      MUXCY:S->O            1   0.215   0.000  pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_cy<14> (pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_cy<14>)
      XORCY:CI->O           1   0.206   1.112  pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_xor<15> (pdm/sample.sigma[23]_sineIn[23]_add_3_OUT<15>)
-     LUT5:I0->O            1   0.254   0.000  pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_lut<3> (pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_lut<3>)
-     MUXCY:S->O            1   0.215   0.000  pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_cy<3> (pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_cy<3>)
-     MUXCY:CI->O           1   0.235   0.681  pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_cy<4> (pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_cy<4>)
-     INV:I->O              1   0.255   0.681  pdm/Mcompar_sample.sigma[23]_GND_16_o_LessThan_5_o_cy<4>_inv1_INV_0 (pdm/sample.sigma[23]_GND_16_o_LessThan_5_o)
+     LUT5:I0->O            1   0.254   0.000  pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_lut<3> (pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_lut<3>)
+     MUXCY:S->O            1   0.215   0.000  pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_cy<3> (pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           1   0.235   0.681  pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_cy<4> (pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_cy<4>)
+     INV:I->O              1   0.255   0.681  pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_cy<4>_inv1_INV_0 (pdm/sample.sigma[23]_GND_30_o_LessThan_5_o)
      FD:D                      0.074          pdm/sample.pdmBit
     ----------------------------------------
     Total                    103.067ns (30.705ns logic, 72.362ns route)
@@ -1573,7 +1580,7 @@ Offset:              10.355ns (Levels of Logic = 5)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q             14   0.525   1.557  button_debounce/btn3_reg (button_debounce/btn3_reg)
-     LUT5:I0->O            3   0.254   1.196  Mram__n0060221 (Mram__n006022)
+     LUT5:I0->O            3   0.254   1.196  Mram__n0061221 (Mram__n006122)
      LUT6:I1->O           12   0.254   1.069  Mmux_mode11 (mode<0>)
      LUT3:I2->O            8   0.254   1.399  dd/digit<0>1 (dd/digit<0>)
      LUT6:I0->O            1   0.254   0.681  dd_Mram_segs71 (segments_7_OBUF)
@@ -1593,15 +1600,15 @@ Clock to Setup on destination clock dcm_clock/clk_out2
 Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------+---------+---------+---------+---------+
 dcm_clock/clk_out2             |  103.067|         |         |         |
-midi/state[2]_PWR_23_o_Mux_16_o|         |    5.536|         |         |
+midi/state[2]_PWR_17_o_Mux_14_o|         |    5.536|         |         |
 -------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock midi/state[2]_PWR_23_o_Mux_16_o
+Clock to Setup on destination clock midi/state[2]_PWR_17_o_Mux_14_o
 ----------------------------------+---------+---------+---------+---------+
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-sample_clock/pll_base_inst/CLKOUT0|         |         |    1.884|         |
+sample_clock/pll_base_inst/CLKOUT0|         |         |    1.854|         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sample_clock/pll_base_inst/CLKOUT0
@@ -1624,14 +1631,14 @@ sample_clock/pll_base_inst/CLKOUT0|    1.364|         |         |         |
 
 
 Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.92 secs
+Total CPU time to Xst completion: 13.41 secs
  
 --> 
 
 
-Total memory usage is 431832 kilobytes
+Total memory usage is 432104 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   19 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
 Number of infos    :   12 (   0 filtered)
 

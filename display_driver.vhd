@@ -11,11 +11,12 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_unsigned.all;
 
 entity display_driver is
-    Port ( mode : in std_logic_vector(1 downto 0); --00 Off, 01 Numbers, 10 Letters , 11 On.
-			number : in  STD_LOGIC_VECTOR (3 downto 0);	  
-           segs : out  STD_LOGIC_VECTOR (7 downto 0));
+    Port ( mode : in  std_logic_vector(1 downto 0); --00 Off, 01 Numbers, 10 Letters , 11 On.
+			number : in  std_logic_vector(3 downto 0);	  
+           segs : out std_logic_vector (7 downto 0));
 end display_driver;
 
 architecture Behavioral of display_driver is			

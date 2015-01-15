@@ -10,19 +10,20 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_unsigned.all;
 
 entity uart_rx_interface is
     Port ( clk : in  STD_LOGIC;
            clear_flag : in  STD_LOGIC;
            set_flag : in  STD_LOGIC;
-           rx_word_in : in  STD_LOGIC_VECTOR (7 downto 0);
-           rx_word_out : out  STD_LOGIC_VECTOR (7 downto 0);
+           rx_word_in : in  std_logic_vector (7 downto 0);
+           rx_word_out : out  std_logic_vector (7 downto 0);
            ready : out  STD_LOGIC);
 end uart_rx_interface;
 
 architecture Behavioral of uart_rx_interface is
 	signal bufferReg, bufferNext: std_logic_vector(7 downto 0);	--Buffer space for uart_rx_word
-	signal flagReg, flagNext: std_logic;								--Buffer space for word_ready
+	signal flagReg, flagNext: std_logic;						--Buffer space for word_ready
 begin
 
 	--Flip flop and register

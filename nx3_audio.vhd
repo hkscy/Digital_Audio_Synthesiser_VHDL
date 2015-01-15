@@ -1,19 +1,18 @@
-----------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 -- Company:        University of Birmingham
 -- Engineer:       Christopher Hicks
 -- Create Date:    20/12/2014
 -- Design Name:    Lab 3 
 -- Module Name:    nx3_audio - Behavioral 
--- Project Name:   Lab 3
+-- Project Name:   Digital_Audio_Synthesiser
 -- Target Devices: xc6slx16
 -- Description:    First complete test system. 
 --						 Uses the same parameters as the Direct Stream Digital system used
 --						 by Super Audio CDs. i.e. One bit sampled at 2.8224Mhz.
-----------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 library ieee;
+use ieee.numeric_std.all;
 use ieee.std_logic_1164.ALL;
-use ieee.std_logic_arith.ALL;
-use ieee.std_logic_unsigned.ALL;
 
 entity nx3_audio is
   Port ( clk      : in  std_logic; 								--100Mhz board clock.
@@ -43,8 +42,11 @@ architecture Behavioral of nx3_audio is
 	signal freqSweep: std_logic_vector(14 downto 0) := (others => '0');
 	signal sineGenOut: std_logic_vector(23 downto 0);
 	
+	--signal modOut: std_logic_vector(23 downto 0) := (others => '0');
+	signal carrierOut: std_logic_vector(23 downto 0) := (others => '0');
+	
 	-- Timing signals.
-	signal sampleClock: std_logic := '0'; --@22.528Mhz
+	signal sampleClock: std_logic := '0'; --@22.581Mhz
 	signal pdmClock: std_logic := '0'; --@2.8228Mhz
 	--signal msclk: std_logic := '0'; --@100Hz, 10ms.
 	
@@ -55,10 +57,10 @@ architecture Behavioral of nx3_audio is
 	signal buttons_deb: std_logic_vector(4 downto 0);
 	
 	-- Display driving signals.
-	signal displayBigCount: std_logic_vector(14 downto 0); --Controls the display refresh rate.
-	signal displaySmallCount: std_logic_vector(1 downto 0); --bigCount subset which multiplexes display digits.
-	signal modeVector: std_logic_vector(7 downto 0) := "00000000"; --So we can alternatley display numbers and letters.
-	signal mode: std_logic_vector(1 downto 0) := "00"; --00 Off, 01 Numbers, 10 Letters , 11 On.
+	signal displayBigCount: std_logic_vector(14 downto 0); 			--Controls the display refresh rate.
+	signal displaySmallCount: std_logic_vector(1 downto 0); 		--bigCount subset which multiplexes display digits.
+	signal modeVector: std_logic_vector(7 downto 0) := "00000000";--So we can alternatley display numbers and letters.
+	signal mode: std_logic_vector(1 downto 0) := "00"; 				--00 Off, 01 Numbers, 10 Letters , 11 On.
 	signal number: std_logic_vector(15 downto 0) := (others => '0');
 	signal num: std_logic_vector(3 downto 0) := "0000";
 	
@@ -71,15 +73,11 @@ architecture Behavioral of nx3_audio is
 	signal data_ready: std_logic := '0';
 	signal clear_flag: std_logic := '0';
 	
-	--MIDI note constants
-	constant NOTE_ON: std_logic_vector(7 downto 0) := "10010000";
-	constant NOTE_OFF: std_logic_vector(7 downto 0) := "10000000";
-	
 	--Synthesiser signals
-	signal note: std_logic_vector(7 downto 0) := (others => '0');
-	signal note_frequency: std_logic_vector(14 downto 0) := (others => '0');
+	--signal note: std_logic_vector(7 downto 0) := (others => '0');
+	--signal note_frequency: std_logic_vector(14 downto 0) := (others => '0');
 	
-	component dcm --22.5792MHz sample clock, 22.582Mhz actual.
+	component dcm --22.5792MHz sample clock, 22.581 Mhz actual.
 		port (
 			clk_in1  : in std_logic;
 			clk_out1 : out std_logic );
@@ -108,8 +106,15 @@ architecture Behavioral of nx3_audio is
 		port (
 			phaseInc : in  std_logic_vector(23 downto 0); --s = sin(2πfi/system_clk_Hz)
 				  clk : in  STD_LOGIC;
-			  output : out  STD_LOGIC_VECTOR(23 downto 0));
+			  output : out  std_logic_vector(23 downto 0));
 	end component sineGen;
+	
+	component fmOp
+		port (
+			centre_freq : in 	std_logic_vector(23 downto 0);
+			clk 			: in 	std_logic;
+			fmOut			: out std_logic_vector(23 downto 0));
+	end component fmOp;	
 	
 	component pdmModule -- PDM output
 		port (
@@ -145,24 +150,18 @@ architecture Behavioral of nx3_audio is
 			clk 			: in  STD_LOGIC;
          clear_flag 	: in  STD_LOGIC;
          set_flag 	: in  STD_LOGIC;
-         rx_word_in  : in  STD_LOGIC_VECTOR (7 downto 0);
-         rx_word_out : out STD_LOGIC_VECTOR (7 downto 0);
+         rx_word_in  : in  std_logic_vector (7 downto 0);
+         rx_word_out : out std_logic_vector (7 downto 0);
          ready 		: out STD_LOGIC);
 	end component UART_RX_interface;
 	
 	component MIDI_parser
 		port (
-			clk			: in	std_logic;
-			data_ready	: in std_logic;
-			data			: in std_logic_vector(7 downto 0);
+			clk			: in 	std_logic;
+			data_ready	: in 	std_logic;
+			data			: in 	std_logic_vector(7 downto 0);
 			frequency	: out std_logic_vector(14 downto 0));
 	end component MIDI_parser;
-	
---	component note_to_frequency --Converts note numbers (48-104) to scaled frequencies.
---		port(
---			note			: in std_logic_vector(7 downto 0);
---			frequency	: out std_logic_vector(14 downto 0));
---	end component note_to_frequency;
 		
 begin
 	sample_clock: dcm port map( clk_in1 => clk, -- Create sample clock @ 22.5792Mhz.
@@ -170,9 +169,6 @@ begin
 	
 	dcm_clock: audioClock port map ( clk_in2 => sampleClock,
 											  clk_out2 => pdmClock ); -- Derive pdm clock @ 2.8224Mhz.
-
---	ms_clk: msClock port map ( clk_in3 => pdmClock,
---											clk_out3 => msclk ); -- 1kHz clock.
 
 	dd: display_driver port map( mode => mode,
 										  number => num, 
@@ -182,22 +178,20 @@ begin
 				  port map ( clock => sampleClock,
 								 count => displayBigCount );
 
-	sGen: sineGen port map( phaseInc => frequency, --Generates sine wave at given frequency.
-										  clk => pdmClock,
-									  output => sineGenOut );
-	
-	pdm: pdmModule port map( sineIn => sineGenOut, -- Generates PDM signal for audio out.
-										 clk => pdmClock,
-								 pdmOutput => audioOutMono );
+									  
+--	modulator: fmOp port map ( centre_freq => sineGenOut,
+--												  clk => sampleClock,
+--												fmOut => modOut	);									
+--	
 								 
 	button_debounce: btn_debounce port map( btn_i => buttons, -- Debounces the buttons
-															clk => pdmClock,
+															clk => pdmClock, 
 														 btn_o => buttons_deb );
 														 
 	uartrx: UART_RX_CTRL port map( clk => sampleClock,
 										uart_rx => uart_rx,
 								 uart_rx_word => uart_rx_word,
-									word_ready => word_ready );	
+									word_ready => word_ready );
 									
 	uartrxinter: UART_RX_interface port map( clk => sampleClock,
 												 clear_flag => clear_flag,--Assert one clock cycle after retreiving the word.
@@ -209,9 +203,18 @@ begin
 								data_ready => data_ready,
 										data => rx_data,
 								 frequency => frequency(14 downto 0));
+								 
+	sGen: sineGen port map( phaseInc => frequency, --Generates sine wave at given frequency.
+										  clk => pdmClock,
+									  output => sineGenOut );
+									  
+	carrier: fmOp port map ( centre_freq => sineGenOut,
+												clk => pdmClock,
+											 fmOut => carrierOut );	
 	
---	n2f: note_to_frequency port map ( note => note,
---										  frequency => note_frequency );
+	pdm: pdmModule port map( sineIn => carrierOut, -- Generates PDM signal for audio out.
+										 clk => pdmClock,
+								 pdmOutput => audioOutMono );								
 									
 	process(buttons_deb)
 	begin
@@ -240,24 +243,6 @@ begin
 				modeVector <= "00001010"; -- off-off-letter-letter
 		end case;
 	end process;
-	
-	--Make some noise! 
---	noisy : process(msclk)
---	begin
---		if sweep_trigger = '1' then	
---			if rising_edge(msclk) then
---				freqSweep <= freqSweep + 10;
---				if freqSweep < MAX_FREQUENCY then
---					frequency(14 downto 0) <= freqSweep;	
---				else
---					freqSweep <= (others => '0');
---				end if;
---			end if;
---		else --Not pressing button
---			freqSweep <= (others => '0');
---			frequency(14 downto 0) <= freqSweep;
---		end if;	
---	end process noisy;
 	
 	-- Control the seven segment display output defined by number and modeVector.
 	displaySmallCount <= displayBigCount(14 downto 13);
@@ -289,8 +274,6 @@ begin
 	begin
 		if rising_edge(word_ready) then	--When new serial word is made available.
 			leds <= rx_data;					--Display current word received.
-			--note <= rx_data;		
-			--frequency(14 downto 0) <= note_frequency;
 		end if;
 		clear_flag <= '1';				--Set clear one clock cycle after reading data
 	end process rx_word;

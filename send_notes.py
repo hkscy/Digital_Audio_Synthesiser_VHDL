@@ -1,56 +1,45 @@
 import serial
 import time
 
-ser = serial.Serial('/dev/ttyUSB1', 31250)
+def noteOn( str ):
+	ser.write('\x90')  #Note on MIDI status message
+	ser.write( str )   #Write note number
+	ser.write('\x00')  #Write velocity
+	return
+
+def noteOff( str ):
+	ser.write('\x80')  #Note off MIDI status message
+	ser.write( str )   #Write note number
+	ser.write(b'\x00')  #Write velocity
+	return
+
+def playNote( str, float ):
+	noteOn(str)		#Turn note on
+	time.sleep(float)	#Sustain for duration
+	noteOff(str)		#Turn note off
+
+ser = serial.Serial('/dev/ttyUSB1', 32077)
 print ser
 
-ser.write('\x90')
-time.sleep(1)
-ser.write('\x3c')#middle C
-time.sleep(1)	#Pause for 1 second
-ser.write('\x00')
-time.sleep(1)
 
-ser.write('\x90')
-time.sleep(1)
-ser.write('\x3d')
-time.sleep(1)	#Pause for 1 second
-ser.write('\x00')
-time.sleep(1)
+playNote('\x40', 0.2)
+playNote('\x41', 0.2)
+playNote('\x42', 0.2)
+playNote('\x43', 0.2)
+playNote('\x44', 0.2)
+playNote('\x45', 0.2)
+playNote('\x46', 0.2)
+playNote('\x47', 0.2)
+playNote('\x48', 0.2)
+playNote('\x49', 0.2)
+playNote('\x48', 0.2)
+playNote('\x47', 0.2)
+playNote('\x46', 0.2)
+playNote('\x45', 0.2)
+playNote('\x44', 0.2)
+playNote('\x43', 0.2)
+playNote('\x42', 0.2)
+playNote('\x41', 0.2)
+playNote('\x40', 0.2)
 
-ser.write('\x90')
-time.sleep(1)
-ser.write('\x3e')
-time.sleep(1)	#Pause for 1 second
-ser.write('\x00')
-time.sleep(1)
-
-ser.write('\x90')
-time.sleep(1)
-ser.write('\x3f')
-time.sleep(1)	#Pause for 1 second
-ser.write('\x00')
-time.sleep(1)
-
-ser.write('\x90')
-time.sleep(1)
-ser.write('\x40')
-time.sleep(1)	#Pause for 1 second
-ser.write('\x00')
-time.sleep(1)
-
-time.sleep(3)
-ser.write('\x80')
-ser.write('\x40')
-ser.write('\00')
-
-#ser.write('\x80')
-#time.sleep(1)
-#ser.write('\x3c')#middle C
-#time.sleep(1)	#Pause for 1 second
-#ser.write('\x00')
-#time.sleep(1)
-
-#ser.write('\x45') #Concert Pitch
-#time.sleep(1)
-
+ser.close()

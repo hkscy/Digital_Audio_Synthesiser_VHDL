@@ -29,9 +29,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_unsigned.all;
 
 entity btn_debounce is
-    Port ( BTN_I : in  STD_LOGIC_VECTOR (4 downto 0);
+    Port ( BTN_I : in  std_logic_vector (4 downto 0);
            CLK : in  STD_LOGIC;
-           BTN_O : out  STD_LOGIC_VECTOR (4 downto 0));
+           BTN_O : out  std_logic_vector (4 downto 0));
 end btn_debounce;
 
 architecture Behavioral of btn_debounce is
