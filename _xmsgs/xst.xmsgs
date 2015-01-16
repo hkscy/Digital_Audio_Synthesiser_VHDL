@@ -8,82 +8,460 @@
 <msg type="info" file="Xst" num="0" delta="new" >Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen.vhd" Line 41: Actual for formal port <arg fmt="%s" index="1">s_axis_phase_tdata</arg> is neither a static name nor a globally static expression
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 41: Net &lt;<arg fmt="%s" index="1">frequency[23]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">switches&lt;7:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">switches&lt;7:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">frequency&lt;23:15&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">nx3_audio</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">frequency&lt;23:15&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">nx3_audio</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen.vhd</arg>&quot; line <arg fmt="%s" index="2">40</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_dout_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sc</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmSynth.vhd</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_dout_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sc</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">modulator&lt;23:22&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">sample.pdmBit</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pdm</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pdmOutput&gt; </arg>
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">m_axis_dout_tdata&lt;23:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_segs</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">sample.pdmBit</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pdm</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pdmOutput&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_frequency</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sincosout_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">modulator</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0061</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sincosout_47</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">modulator</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_digit</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">sample.pdmBit</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pdmModule</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pdmOutput&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sGen/phaseCounter_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sGen/phaseCounter_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">sample_clock/pll_base_inst</arg> in unit <arg fmt="%s" index="2">sample_clock/pll_base_inst</arg> of type <arg fmt="%s" index="3">PLL_BASE</arg> has been replaced by <arg fmt="%s" index="4">PLL_ADV</arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dcm_clock/counter_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;uartrx/overcounter_0&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dcm_clock/counter_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;uartrx/overcounter_1&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cordicModOut_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cordicModOut_47</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_segs</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_frequency</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0060</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_digit</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">sample.pdmBit</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pdmModule</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pdmOutput&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">phaseCounter_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fmOp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">phaseCounter_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fmOp</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">sample_clock/pll_base_inst</arg> in unit <arg fmt="%s" index="2">sample_clock/pll_base_inst</arg> of type <arg fmt="%s" index="3">PLL_BASE</arg> has been replaced by <arg fmt="%s" index="4">PLL_ADV</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_47</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicModOut_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/cordicCarrierOut_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/modulator/sincosout_47</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/modulator/sincosout_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_20&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_18&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_19&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dcm_clock/counter_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;uartrx/overcounter_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dcm_clock/counter_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;uartrx/overcounter_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

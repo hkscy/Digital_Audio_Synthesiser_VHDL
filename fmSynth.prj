@@ -1,0 +1,4 @@
+vhdl work "ipcore_dir/SinCos.vhd"
+vhdl work "fmOperator.vhd"
+vhdl work "fmSynth.vhd"
+vhdl work "ipcore_dir/dcm/example_design/dcm_exdes.vhd"

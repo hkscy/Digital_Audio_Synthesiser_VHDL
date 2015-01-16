@@ -1,5 +1,0 @@
-vhdl work "note_to_frequency.vhd"
-vhdl work "uart_rx_interface.vhd"
-vhdl work "UART_RX_CTRL.vhd"
-vhdl work "MIDI_parser.vhd"
-vhdl work "UART_RX_tb.vhd"

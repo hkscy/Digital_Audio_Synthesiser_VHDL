@@ -1,0 +1,79 @@
+Release 13.4 - xst O.87xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Reading design: fmOperator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" into library work
+Parsing entity <fmOp>.
+Parsing architecture <Behavioral> of entity <fmop>.
+Parsing entity <fmOperator>.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 31: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 32: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 33: <unsigned> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 34: <unsigned> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 35: <unsigned> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 36: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:854 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 29: Unit <fmoperator> ignored due to previous errors.
+Parsing architecture <rtl> of entity <fmoperator>.
+ERROR:HDLCompiler:374 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 40: Entity <fmoperator> is not yet compiled.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 41: <unsigned> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 42: <unsigned> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 44: <unsigned> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 45: <unsigned> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 47: <unsigned> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 51: <fm_out> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 53: <temp> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 59: <sin_counter> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 60: <freq_counter> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 63: <freq_counter> is not declared.
+ERROR:HDLCompiler:69 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" Line 64: <sin_counter> is not declared.
+Sorry, too many errors..
+--> 
+
+
+Total memory usage is 299312 kilobytes
+
+Number of errors   :   19 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

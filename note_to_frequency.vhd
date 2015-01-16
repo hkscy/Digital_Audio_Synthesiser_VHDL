@@ -21,7 +21,7 @@ end note_to_frequency;
 
 	--Using bin(int(pow(2,21)/(1/((2*f)/(22.581e6))))) = scaled frequency.
 	architecture Behavioral of note_to_frequency is
-		constant C2: std_logic_vector(14 downto 0) := "000000011000010"; --130.813
+	constant C2: std_logic_vector(14 downto 0) := "000000011000010"; --130.813
 	constant Csh2: std_logic_vector(14 downto 0) := "000000011001101"; --138.591
 	constant D2: std_logic_vector(14 downto 0) := "000000011011010"; --146.832
 	constant Dsh2: std_logic_vector(14 downto 0) := "000000011100111"; --155.563
@@ -94,7 +94,7 @@ begin
 									  A3 when "00111001", --57
 									Ash3 when "00111010", --58
 									  B3 when "00111011", --59
-									  C3 when "00111100", --60 Middle C
+									  C3 when "00111100", --60 Middle C, 3c
 									Csh3 when "00111101", --61
 									  D3 when "00111110", --62
 									Dsh3 when "00111111", --63

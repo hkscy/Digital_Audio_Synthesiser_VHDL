@@ -1,0 +1,2 @@
+vhdl work "fmOperator.vhd"
+vhdl work "ipcore_dir/dcm/example_design/dcm_exdes.vhd"

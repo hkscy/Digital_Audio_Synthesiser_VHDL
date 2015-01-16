@@ -118,31 +118,27 @@ Parsing architecture <SinCos_a> of entity <sincos>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/note_to_frequency.vhd" into library work
 Parsing entity <note_to_frequency>.
 Parsing architecture <Behavioral> of entity <note_to_frequency>.
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" into library work
+Parsing entity <fmOp>.
+Parsing architecture <behavioural> of entity <fmop>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/uart_rx_interface.vhd" into library work
 Parsing entity <uart_rx_interface>.
 Parsing architecture <Behavioral> of entity <uart_rx_interface>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/UART_RX_CTRL.vhd" into library work
 Parsing entity <UART_RX_CTRL>.
 Parsing architecture <Behavioral> of entity <uart_rx_ctrl>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen.vhd" into library work
-Parsing entity <sineGen>.
-Parsing architecture <Behavioral> of entity <sinegen>.
-WARNING:HDLCompiler:946 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen.vhd" Line 41: Actual for formal port s_axis_phase_tdata is neither a static name nor a globally static expression
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/pdmModule.vhd" into library work
 Parsing entity <pdmModule>.
 Parsing architecture <Behavioral> of entity <pdmmodule>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" into library work
 Parsing entity <MIDI_parser>.
 Parsing architecture <Behavioral> of entity <midi_parser>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm/example_design/dcm_exdes.vhd" into library work
-Parsing entity <dcm_exdes>.
-Parsing architecture <xilinx> of entity <dcm_exdes>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm.vhd" into library work
 Parsing entity <dcm>.
 Parsing architecture <xilinx> of entity <dcm>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" into library work
-Parsing entity <fmOp>.
-Parsing architecture <Behavioral> of entity <fmop>.
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmSynth.vhd" into library work
+Parsing entity <fmSynth>.
+Parsing architecture <Behavioral> of entity <fmsynth>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/display_driver.vhd" into library work
 Parsing entity <display_driver>.
 Parsing architecture <Behavioral> of entity <display_driver>.
@@ -158,6 +154,9 @@ Parsing architecture <Behavioral> of entity <audioclock>.
 Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" into library work
 Parsing entity <nx3_audio>.
 Parsing architecture <Behavioral> of entity <nx3_audio>.
+Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm/example_design/dcm_exdes.vhd" into library work
+Parsing entity <dcm_exdes>.
+Parsing architecture <xilinx> of entity <dcm_exdes>.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -184,14 +183,14 @@ Elaborating entity <MIDI_parser> (architecture <Behavioral>) from library <work>
 
 Elaborating entity <note_to_frequency> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <sineGen> (architecture <Behavioral>) from library <work>.
+Elaborating entity <fmSynth> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <SinCos> (architecture <SinCos_a>) from library <work>.
 
-Elaborating entity <fmOp> (architecture <Behavioral>) from library <work>.
+Elaborating entity <fmOp> (architecture <behavioural>) from library <work>.
 
 Elaborating entity <pdmModule> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 282. Case statement is complete. others clause is never selected
 WARNING:HDLCompiler:634 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 41: Net <frequency[23]> does not have a driver.
 
 =========================================================================
@@ -204,9 +203,9 @@ WARNING:Xst:647 - Input <switches<7:0>> is never used. This port will be preserv
 WARNING:Xst:2935 - Signal 'frequency<23:15>', unconnected in block 'nx3_audio', is tied to its initial value (000000000).
     Found 8-bit register for signal <leds>.
     Found 4x4-bit Read Only RAM for signal <digit>
-    Found 32x24-bit Read Only RAM for signal <_n0061>
-    Found 2-bit 4-to-1 multiplexer for signal <mode> created at line 251.
-    Found 4-bit 4-to-1 multiplexer for signal <num> created at line 251.
+    Found 32x24-bit Read Only RAM for signal <_n0060>
+    Found 2-bit 4-to-1 multiplexer for signal <mode> created at line 265.
+    Found 4-bit 4-to-1 multiplexer for signal <num> created at line 265.
     Summary:
 	inferred   2 RAM(s).
 	inferred   8 D-type flip-flop(s).
@@ -341,21 +340,31 @@ Synthesizing Unit <note_to_frequency>.
 	inferred   1 RAM(s).
 Unit <note_to_frequency> synthesized.
 
-Synthesizing Unit <sineGen>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen.vhd".
-INFO:Xst:3210 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/sineGen.vhd" line 40: Output port <m_axis_dout_tvalid> of the instance <sc> is unconnected or connected to loadless signal.
-    Found 24-bit register for signal <phaseCounter>.
-    Found 24-bit adder for signal <phaseCounter[23]_phaseInc[23]_add_0_OUT> created at line 49.
+Synthesizing Unit <fmSynth>.
+    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmSynth.vhd".
+INFO:Xst:3210 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmSynth.vhd" line 58: Output port <m_axis_dout_tvalid> of the instance <sc> is unconnected or connected to loadless signal.
+    Found 48-bit register for signal <cordicModOut>.
+    Found 1-bit register for signal <multiplex>.
+    Found 48-bit register for signal <cordicCarrierOut>.
+    Found 24-bit register for signal <cordicIn>.
     Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  24 D-type flip-flop(s).
-Unit <sineGen> synthesized.
+	inferred 121 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <fmSynth> synthesized.
 
 Synthesizing Unit <fmOp>.
     Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd".
-WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <modulator<23:22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <m_axis_dout_tdata<23:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 24-bit register for signal <sincosout<47:24>>.
+    Found 24-bit register for signal <phaseCounter>.
+    Found 27-bit adder for signal <n0010> created at line 34.
+    Found 24-bit adder for signal <phaseCounter[23]_osc_freq[23]_add_3_OUT> created at line 43.
+    Found 5x22-bit multiplier for signal <n0018> created at line 34.
     Summary:
-	no macro.
+	inferred   1 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  48 D-type flip-flop(s).
 Unit <fmOp> synthesized.
 
 Synthesizing Unit <pdmModule>.
@@ -363,10 +372,10 @@ Synthesizing Unit <pdmModule>.
     Found 1-bit register for signal <sample.pdmBit>.
     Found 1-bit register for signal <pdmOutput>.
     Found 24-bit register for signal <sample.sigma>.
-    Found 24-bit adder for signal <sineIn[23]_GND_30_o_add_1_OUT> created at line 34.
+    Found 24-bit adder for signal <sineIn[23]_GND_62_o_add_1_OUT> created at line 34.
     Found 24-bit adder for signal <sample.sigma[23]_sineIn[23]_add_3_OUT> created at line 36.
-    Found 24-bit subtractor for signal <sineIn[23]_GND_30_o_sub_1_OUT<23:0>> created at line 32.
-    Found 24-bit comparator greater for signal <sample.sigma[23]_GND_30_o_LessThan_5_o> created at line 37
+    Found 24-bit subtractor for signal <sineIn[23]_GND_62_o_sub_1_OUT<23:0>> created at line 32.
+    Found 24-bit comparator greater for signal <sample.sigma[23]_GND_62_o_LessThan_5_o> created at line 37
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  26 D-type flip-flop(s).
@@ -382,30 +391,35 @@ Macro Statistics
  32x24-bit single-port Read Only RAM                   : 1
  4x4-bit single-port Read Only RAM                     : 1
  64x8-bit single-port Read Only RAM                    : 1
-# Adders/Subtractors                                   : 13
+# Multipliers                                          : 2
+ 22x5-bit multiplier                                   : 2
+# Adders/Subtractors                                   : 16
  15-bit adder                                          : 1
  16-bit adder                                          : 5
- 24-bit adder                                          : 2
+ 24-bit adder                                          : 3
  24-bit addsub                                         : 1
+ 27-bit adder                                          : 2
  3-bit adder                                           : 2
  4-bit adder                                           : 1
  6-bit adder                                           : 1
-# Registers                                            : 25
- 1-bit register                                        : 10
+# Registers                                            : 32
+ 1-bit register                                        : 11
  15-bit register                                       : 1
  16-bit register                                       : 5
- 24-bit register                                       : 2
+ 24-bit register                                       : 6
  3-bit register                                        : 2
  4-bit register                                        : 1
+ 48-bit register                                       : 2
  6-bit register                                        : 1
  8-bit register                                        : 3
 # Latches                                              : 8
  1-bit latch                                           : 8
 # Comparators                                          : 1
  24-bit comparator greater                             : 1
-# Multiplexers                                         : 23
+# Multiplexers                                         : 24
  1-bit 2-to-1 multiplexer                              : 12
  2-bit 4-to-1 multiplexer                              : 1
+ 24-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 7
  4-bit 4-to-1 multiplexer                              : 2
@@ -422,6 +436,58 @@ Macro Statistics
 Reading core <ipcore_dir/SinCos.ngc>.
 Loading core <SinCos> for timing and area information for instance <sc>.
 INFO:Xst:2261 - The FF/Latch <sample.pdmBit> in Unit <pdm> is equivalent to the following FF/Latch, which will be removed : <pdmOutput> 
+WARNING:Xst:2677 - Node <sincosout_46> of sequential type is unconnected in block <modulator>.
+WARNING:Xst:2677 - Node <sincosout_47> of sequential type is unconnected in block <modulator>.
+WARNING:Xst:2677 - Node <cordicModOut_0> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_1> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_2> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_3> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_4> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_5> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_6> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_7> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_8> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_9> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_10> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_11> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_12> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_13> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_14> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_15> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_16> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_17> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_18> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_19> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_20> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_21> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_22> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_23> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_46> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicModOut_47> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_0> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_1> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_2> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_3> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_4> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_5> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_6> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_7> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_8> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_9> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_10> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_11> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_12> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_13> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_14> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_15> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_16> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_17> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_18> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_19> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_20> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_21> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_22> of sequential type is unconnected in block <fm>.
+WARNING:Xst:2677 - Node <cordicCarrierOut_23> of sequential type is unconnected in block <fm>.
 
 Synthesizing (advanced) Unit <UART_RX_CTRL>.
 The following registers are absorbed into counter <overcounter>: 1 register on signal <overcounter>.
@@ -458,6 +524,10 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segs> will be implemented on LUTs ei
     -----------------------------------------------------------------------
 Unit <display_driver> synthesized (advanced).
 
+Synthesizing (advanced) Unit <fmOp>.
+The following registers are absorbed into accumulator <phaseCounter>: 1 register on signal <phaseCounter>.
+Unit <fmOp> synthesized (advanced).
+
 Synthesizing (advanced) Unit <note_to_frequency>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_frequency> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
@@ -473,7 +543,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_frequency> will be implemented on LU
 Unit <note_to_frequency> synthesized (advanced).
 
 Synthesizing (advanced) Unit <nx3_audio>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0061> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0060> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -501,10 +571,6 @@ Synthesizing (advanced) Unit <pdmModule>.
 The following registers are absorbed into accumulator <sample.sigma>: 1 register on signal <sample.sigma>.
 Unit <pdmModule> synthesized (advanced).
 
-Synthesizing (advanced) Unit <sineGen>.
-The following registers are absorbed into accumulator <phaseCounter>: 1 register on signal <phaseCounter>.
-Unit <sineGen> synthesized (advanced).
-
 =========================================================================
 Advanced HDL Synthesis Report
 
@@ -514,8 +580,10 @@ Macro Statistics
  32x24-bit single-port distributed Read Only RAM       : 1
  4x4-bit single-port distributed Read Only RAM         : 1
  64x8-bit single-port distributed Read Only RAM        : 1
-# Adders/Subtractors                                   : 3
- 24-bit adder                                          : 1
+# Multipliers                                          : 2
+ 22x5-bit multiplier                                   : 2
+# Adders/Subtractors                                   : 5
+ 24-bit adder                                          : 3
  24-bit addsub                                         : 1
  4-bit adder                                           : 1
 # Counters                                             : 9
@@ -523,15 +591,16 @@ Macro Statistics
  16-bit up counter                                     : 5
  3-bit up counter                                      : 2
  6-bit up counter                                      : 1
-# Accumulators                                         : 2
- 24-bit up accumulator                                 : 2
-# Registers                                            : 38
- Flip-Flops                                            : 38
+# Accumulators                                         : 3
+ 24-bit up accumulator                                 : 3
+# Registers                                            : 207
+ Flip-Flops                                            : 207
 # Comparators                                          : 1
  24-bit comparator greater                             : 1
-# Multiplexers                                         : 22
+# Multiplexers                                         : 23
  1-bit 2-to-1 multiplexer                              : 12
  2-bit 4-to-1 multiplexer                              : 1
+ 24-bit 2-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 7
  4-bit 4-to-1 multiplexer                              : 2
 # FSMs                                                 : 2
@@ -565,9 +634,11 @@ Optimizing FSM <midi/FSM_1> on signal <state[1:3]> with user encoding.
  data1_off | 011
  data2     | 100
 -----------------------
-WARNING:Xst:2677 - Node <sGen/phaseCounter_22> of sequential type is unconnected in block <nx3_audio>.
-WARNING:Xst:2677 - Node <sGen/phaseCounter_23> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <phaseCounter_22> of sequential type is unconnected in block <fmOp>.
+WARNING:Xst:2677 - Node <phaseCounter_23> of sequential type is unconnected in block <fmOp>.
 INFO:Xst:1901 - Instance sample_clock/pll_base_inst in unit sample_clock/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <fmOp> ...
 
 Optimizing unit <nx3_audio> ...
 
@@ -579,13 +650,89 @@ Optimizing unit <uart_rx_interface> ...
 
 Optimizing unit <MIDI_parser> ...
 
+Optimizing unit <fmSynth> ...
+
 Optimizing unit <display_driver> ...
+WARNING:Xst:2677 - Node <fm/cordicModOut_47> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_46> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_23> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_22> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_21> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_20> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_19> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_18> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_17> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_16> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_15> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_14> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_13> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_12> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_11> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_10> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_9> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_8> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_7> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_6> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_5> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_4> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_3> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_2> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_1> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicModOut_0> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_23> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_22> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_21> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_20> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_19> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_18> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_17> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_16> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_15> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_14> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_13> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_12> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_11> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_10> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_9> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_8> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_7> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_6> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_5> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_4> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_3> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_2> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_1> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/cordicCarrierOut_0> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/modulator/sincosout_47> of sequential type is unconnected in block <nx3_audio>.
+WARNING:Xst:2677 - Node <fm/modulator/sincosout_46> of sequential type is unconnected in block <nx3_audio>.
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_20> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_20> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_15> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_15> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_21> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_21> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_16> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_16> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_17> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_17> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_18> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_18> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_19> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_19> 
 INFO:Xst:2261 - The FF/Latch <dcm_clock/counter_0> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <uartrx/overcounter_0> 
 INFO:Xst:2261 - The FF/Latch <dcm_clock/counter_1> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <uartrx/overcounter_1> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_0> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_0> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_1> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_1> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_2> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_2> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_3> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_3> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_4> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_4> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_5> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_5> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_6> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_6> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_7> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_7> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_8> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_8> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_9> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_9> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_10> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_10> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_11> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_11> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_12> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_12> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_13> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_13> 
+INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_14> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_14> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block nx3_audio, actual ratio is 17.
+Found area constraint ratio of 100 (+ 5) on block nx3_audio, actual ratio is 19.
 
 Final Macro Processing ...
 
@@ -593,8 +740,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 193
- Flip-Flops                                            : 193
+# Registers                                            : 310
+ Flip-Flops                                            : 310
 
 =========================================================================
 
@@ -617,22 +764,22 @@ Top Level Output File Name         : nx3_audio.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 7359
+# BELS                             : 7480
 #      GND                         : 2
-#      INV                         : 34
-#      LUT1                        : 119
-#      LUT2                        : 781
-#      LUT3                        : 1283
+#      INV                         : 35
+#      LUT1                        : 120
+#      LUT2                        : 805
+#      LUT3                        : 1307
 #      LUT4                        : 81
 #      LUT5                        : 203
 #      LUT6                        : 110
-#      MUXCY                       : 2330
+#      MUXCY                       : 2353
 #      MUXF7                       : 5
 #      VCC                         : 2
-#      XORCY                       : 2409
-# FlipFlops/Latches                : 201
-#      FD                          : 84
-#      FDE                         : 24
+#      XORCY                       : 2457
+# FlipFlops/Latches                : 318
+#      FD                          : 155
+#      FDE                         : 70
 #      FDR                         : 85
 #      LD                          : 8
 # Clock Buffers                    : 3
@@ -641,6 +788,8 @@ Primitive and Black Box Usage:
 #      IBUF                        : 6
 #      IBUFG                       : 1
 #      OBUF                        : 23
+# DSPs                             : 4
+#      DSP48A1                     : 4
 # Others                           : 1
 #      PLL_ADV                     : 1
 
@@ -651,16 +800,16 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             193  out of  18224     1%  
- Number of Slice LUTs:                 2611  out of   9112    28%  
-    Number used as Logic:              2611  out of   9112    28%  
+ Number of Slice Registers:             310  out of  18224     1%  
+ Number of Slice LUTs:                 2661  out of   9112    29%  
+    Number used as Logic:              2661  out of   9112    29%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2643
-   Number with an unused Flip Flop:    2450  out of   2643    92%  
-   Number with an unused LUT:            32  out of   2643     1%  
-   Number of fully used LUT-FF pairs:   161  out of   2643     6%  
-   Number of unique control sets:        19
+ Number of LUT Flip Flop pairs used:   2774
+   Number with an unused Flip Flop:    2464  out of   2774    88%  
+   Number with an unused LUT:           113  out of   2774     4%  
+   Number of fully used LUT-FF pairs:   197  out of   2774     7%  
+   Number of unique control sets:        21
 
 IO Utilization: 
  Number of IOs:                          38
@@ -669,6 +818,7 @@ IO Utilization:
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+ Number of DSP48A1s:                      4  out of     32    12%  
  Number of PLL_ADVs:                      1  out of      2    50%  
 
 ---------------------------
@@ -694,7 +844,7 @@ Clock Signal                                                             | Clock
 -------------------------------------------------------------------------+------------------------+-------+
 word_ready(uartrx/Mmux_word_ready11:O)                                   | NONE(*)(leds_0)        | 8     |
 sample_clock/pll_base_inst/CLKOUT0                                       | BUFG                   | 53    |
-dcm_clock/clk_out2                                                       | BUFG                   | 132   |
+dcm_clock/clk_out2                                                       | BUFG                   | 249   |
 midi/state[2]_PWR_17_o_Mux_14_o(midi/Mmux_state[2]_PWR_17_o_Mux_14_o11:O)| NONE(*)(midi/note_0)   | 8     |
 -------------------------------------------------------------------------+------------------------+-------+
 (*) These 2 clock signal(s) are generated by combinatorial logic,
@@ -710,7 +860,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 103.067ns (Maximum Frequency: 9.702MHz)
+   Minimum period: 97.107ns (Maximum Frequency: 10.298MHz)
    Minimum input arrival time before clock: 4.113ns
    Maximum output required time after clock: 10.355ns
    Maximum combinational path delay: No path found
@@ -744,21 +894,21 @@ Delay:               4.854ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'dcm_clock/clk_out2'
-  Clock period: 103.067ns (frequency: 9.702MHz)
-  Total number of paths / destination ports: 148958562541386957389138438926970263361831305216 / 217
+  Clock period: 97.107ns (frequency: 10.298MHz)
+  Total number of paths / destination ports: 1475598593224571435503487912062624741418074112 / 380
 -------------------------------------------------------------------------
-Delay:               103.067ns (Levels of Logic = 719)
-  Source:            sGen/phaseCounter_21 (FF)
-  Destination:       pdm/sample.pdmBit (FF)
+Delay:               97.107ns (Levels of Logic = 719)
+  Source:            fm/cordicIn_23 (FF)
+  Destination:       fm/cordicCarrierOut_47 (FF)
   Source Clock:      dcm_clock/clk_out2 rising
   Destination Clock: dcm_clock/clk_out2 rising
 
-  Data Path: sGen/phaseCounter_21 to pdm/sample.pdmBit
+  Data Path: fm/cordicIn_23 to fm/cordicCarrierOut_47
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q             430   0.525   2.451  sGen/phaseCounter_21 (sGen/phaseCounter_21)
-     begin scope: 'sGen/sc:s_axis_phase_tdata<23>'
+     FD:C->Q             420   0.525   2.449  fm/cordicIn_23 (fm/cordicIn_23)
+     begin scope: 'fm/sc:s_axis_phase_tdata<23>'
      LUT1:I0->O            1   0.254   0.000  blk000017d5 (sig0000189c)
      MUXCY:S->O            1   0.215   0.000  blk000000b4 (sig000000b2)
      MUXCY:CI->O           1   0.023   0.000  blk000000b5 (sig000000b3)
@@ -1466,22 +1616,22 @@ Delay:               103.067ns (Levels of Logic = 719)
      MUXCY:CI->O           1   0.023   0.000  blk00001100 (sig0000183a)
      MUXCY:CI->O           1   0.023   0.000  blk000010ff (sig00001839)
      MUXCY:CI->O           1   0.023   0.000  blk000010fe (sig00001838)
-     XORCY:CI->O           1   0.206   0.682  blk000010e1 (m_axis_dout_tdata<37>)
-     end scope: 'sGen/sc:m_axis_dout_tdata<37>'
-     LUT2:I1->O            1   0.254   0.000  pdm/Maddsub_n0020_lut<13> (pdm/Maddsub_n0020_lut<13>)
-     MUXCY:S->O            1   0.215   0.000  pdm/Maddsub_n0020_cy<13> (pdm/Maddsub_n0020_cy<13>)
-     XORCY:CI->O           2   0.206   0.726  pdm/Maddsub_n0020_xor<14> (pdm/n0020<14>)
-     LUT2:I1->O            1   0.254   0.000  pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_lut<14> (pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_lut<14>)
-     MUXCY:S->O            1   0.215   0.000  pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_cy<14> (pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_cy<14>)
-     XORCY:CI->O           1   0.206   1.112  pdm/Madd_sample.sigma[23]_sineIn[23]_add_3_OUT_xor<15> (pdm/sample.sigma[23]_sineIn[23]_add_3_OUT<15>)
-     LUT5:I0->O            1   0.254   0.000  pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_lut<3> (pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_lut<3>)
-     MUXCY:S->O            1   0.215   0.000  pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_cy<3> (pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_cy<3>)
-     MUXCY:CI->O           1   0.235   0.681  pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_cy<4> (pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_cy<4>)
-     INV:I->O              1   0.255   0.681  pdm/Mcompar_sample.sigma[23]_GND_30_o_LessThan_5_o_cy<4>_inv1_INV_0 (pdm/sample.sigma[23]_GND_30_o_LessThan_5_o)
-     FD:D                      0.074          pdm/sample.pdmBit
+     MUXCY:CI->O           1   0.023   0.000  blk000010fd (sig00001837)
+     MUXCY:CI->O           1   0.023   0.000  blk000010fc (sig00001836)
+     MUXCY:CI->O           1   0.023   0.000  blk000010fb (sig00001835)
+     MUXCY:CI->O           1   0.023   0.000  blk000010fa (sig00001834)
+     MUXCY:CI->O           1   0.023   0.000  blk000010f9 (sig00001833)
+     MUXCY:CI->O           1   0.023   0.000  blk000010f8 (sig00001832)
+     MUXCY:CI->O           1   0.023   0.000  blk000010f7 (sig00001831)
+     MUXCY:CI->O           1   0.023   0.000  blk000010f6 (sig00001830)
+     MUXCY:CI->O           1   0.023   0.000  blk000010f5 (sig0000182f)
+     MUXCY:CI->O           1   0.023   0.000  blk000010f4 (sig0000182e)
+     XORCY:CI->O           1   0.206   0.000  blk000010d7 (m_axis_dout_tdata<47>)
+     end scope: 'fm/sc:m_axis_dout_tdata<47>'
+     FDE:D                     0.074          fm/cordicCarrierOut_47
     ----------------------------------------
-    Total                    103.067ns (30.705ns logic, 72.362ns route)
-                                       (29.8% logic, 70.2% route)
+    Total                     97.107ns (28.628ns logic, 68.479ns route)
+                                       (29.5% logic, 70.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'dcm_clock/clk_out2'
@@ -1517,7 +1667,7 @@ Offset:              2.707ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             6   1.328   0.876  uart_rx_IBUF (uart_rx_IBUF)
-     LUT5:I4->O            1   0.254   0.000  uartrx/Mmux_nticks_next34_G (N17)
+     LUT5:I4->O            1   0.254   0.000  uartrx/Mmux_nticks_next34_G (N16)
      MUXF7:I1->O           1   0.175   0.000  uartrx/Mmux_nticks_next34 (uartrx/nticks_next<2>)
      FD:D                      0.074          uartrx/nticks_2
     ----------------------------------------
@@ -1557,7 +1707,7 @@ Offset:              9.513ns (Levels of Logic = 5)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q              15   0.525   1.585  c/count_13 (c/count_13)
-     LUT6:I1->O            1   0.254   0.000  Mmux_mode24_G (N15)
+     LUT6:I1->O            1   0.254   0.000  Mmux_mode24_G (N14)
      MUXF7:I1->O          12   0.175   1.499  Mmux_mode24 (mode<1>)
      LUT5:I0->O            8   0.254   1.374  dd/digit<2>1 (dd/digit<2>)
      LUT6:I1->O            1   0.254   0.681  dd_Mram_segs111 (segments_1_OBUF)
@@ -1580,7 +1730,7 @@ Offset:              10.355ns (Levels of Logic = 5)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q             14   0.525   1.557  button_debounce/btn3_reg (button_debounce/btn3_reg)
-     LUT5:I0->O            3   0.254   1.196  Mram__n0061221 (Mram__n006122)
+     LUT5:I0->O            3   0.254   1.196  Mram__n0060221 (Mram__n006022)
      LUT6:I1->O           12   0.254   1.069  Mmux_mode11 (mode<0>)
      LUT3:I2->O            8   0.254   1.399  dd/digit<0>1 (dd/digit<0>)
      LUT6:I0->O            1   0.254   0.681  dd_Mram_segs71 (segments_7_OBUF)
@@ -1599,7 +1749,7 @@ Clock to Setup on destination clock dcm_clock/clk_out2
                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------+---------+---------+---------+---------+
-dcm_clock/clk_out2             |  103.067|         |         |         |
+dcm_clock/clk_out2             |   97.107|         |         |         |
 midi/state[2]_PWR_17_o_Mux_14_o|         |    5.536|         |         |
 -------------------------------+---------+---------+---------+---------+
 
@@ -1630,15 +1780,15 @@ sample_clock/pll_base_inst/CLKOUT0|    1.364|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.41 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.27 secs
  
 --> 
 
 
-Total memory usage is 432104 kilobytes
+Total memory usage is 435172 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   15 (   0 filtered)
-Number of infos    :   12 (   0 filtered)
+Number of warnings :  119 (   0 filtered)
+Number of infos    :   34 (   0 filtered)
 

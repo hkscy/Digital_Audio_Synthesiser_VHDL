@@ -110,17 +110,26 @@ architecture Behavioral of nx3_audio is
 	end component sineGen;
 	
 	component fmOp
-		port (
-			centre_freq : in 	std_logic_vector(23 downto 0);
-			clk 			: in 	std_logic;
-			fmOut			: out std_logic_vector(23 downto 0));
+		port (		
+			osc_freq   : in  unsigned(23 downto 0); --Oscillator period	
+			modulator  : in  unsigned(23 downto 0); --Modulating signal
+			mod_factor : in  unsigned(4 downto 0);
+			clk 		  : in  std_logic;
+			fmOut 	  : out std_logic_vector(23 downto 0));
 	end component fmOp;	
+	
+	component fmSynth
+		port (
+			note_frequency : in  unsigned (23 downto 0);
+         clk : in  STD_LOGIC;
+         fmOut : out  STD_LOGIC_VECTOR (23 downto 0) );
+	end component fmSynth;
 	
 	component pdmModule -- PDM output
 		port (
 			sineIn 	 : in  std_logic_vector(23 downto 0);
          clk 		 : in  std_logic;
-         pdmOutput : out  std_logic);
+         pdmOutput : out std_logic);
 	end component;
 	
 	component display_driver -- Converts numbers to display segments.
@@ -147,12 +156,12 @@ architecture Behavioral of nx3_audio is
 	
 	component UART_RX_interface	--Latches and buffers uart_rx.
 		port (
-			clk 			: in  STD_LOGIC;
-         clear_flag 	: in  STD_LOGIC;
-         set_flag 	: in  STD_LOGIC;
+			clk 			: in  std_logic;
+         clear_flag 	: in  std_logic;
+         set_flag 	: in  std_logic;
          rx_word_in  : in  std_logic_vector (7 downto 0);
          rx_word_out : out std_logic_vector (7 downto 0);
-         ready 		: out STD_LOGIC);
+         ready 		: out std_logic);
 	end component UART_RX_interface;
 	
 	component MIDI_parser
@@ -204,15 +213,20 @@ begin
 										data => rx_data,
 								 frequency => frequency(14 downto 0));
 								 
-	sGen: sineGen port map( phaseInc => frequency, --Generates sine wave at given frequency.
-										  clk => pdmClock,
-									  output => sineGenOut );
+--	sGen: sineGen port map( phaseInc => frequency, --Generates sine wave at given frequency.
+--										  clk => pdmClock,
+--									  output => sineGenOut );
 									  
-	carrier: fmOp port map ( centre_freq => sineGenOut,
+--	carrier: fmOp port map ( osc_freq => unsigned(frequency), --Oscillator period	
+--									modulator => (others => '0'), --Modulator
+--								  mod_factor => "01000",
+--											clk => pdmClock,
+--										fmOut => sineGenOut );
+	fm: fmSynth port map( note_frequency => unsigned(frequency),
 												clk => pdmClock,
-											 fmOut => carrierOut );	
+											 fmOut => sineGenOut );
 	
-	pdm: pdmModule port map( sineIn => carrierOut, -- Generates PDM signal for audio out.
+	pdm: pdmModule port map( sineIn => sineGenOut, -- Generates PDM signal for audio out.
 										 clk => pdmClock,
 								 pdmOutput => audioOutMono );								
 									

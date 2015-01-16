@@ -15,8 +15,8 @@ use ieee.std_logic_signed.all;
 
 entity pdmModule is
     Port ( sineIn : in  STD_LOGIC_VECTOR (23 downto 0);
-           clk : in  STD_LOGIC;
-           pdmOutput : out  STD_LOGIC);
+				  clk : in  STD_LOGIC;
+		  pdmOutput : out STD_LOGIC );
 end pdmModule;
 
 architecture Behavioral of pdmModule is

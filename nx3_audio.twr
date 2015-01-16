@@ -37,7 +37,7 @@ Setup/Hold to clock clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-uart_rx     |    3.629(R)|      SLOW  |   -1.668(R)|      FAST  |sampleClock       |   0.000|
+uart_rx     |    3.766(R)|      SLOW  |   -1.710(R)|      FAST  |sampleClock       |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -45,18 +45,18 @@ Clock clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-digit<0>    |         8.063(R)|      SLOW  |         3.617(R)|      FAST  |sampleClock       |   0.000|
-digit<1>    |         8.076(R)|      SLOW  |         3.632(R)|      FAST  |sampleClock       |   0.000|
-digit<2>    |         7.613(R)|      SLOW  |         3.492(R)|      FAST  |sampleClock       |   0.000|
-digit<3>    |         7.626(R)|      SLOW  |         3.507(R)|      FAST  |sampleClock       |   0.000|
-segments<0> |        12.480(R)|      SLOW  |         4.726(R)|      FAST  |sampleClock       |   0.000|
-segments<1> |        12.451(R)|      SLOW  |         4.598(R)|      FAST  |sampleClock       |   0.000|
-segments<2> |        13.093(R)|      SLOW  |         4.901(R)|      FAST  |sampleClock       |   0.000|
-segments<3> |        13.232(R)|      SLOW  |         4.581(R)|      FAST  |sampleClock       |   0.000|
-segments<4> |        13.381(R)|      SLOW  |         4.872(R)|      FAST  |sampleClock       |   0.000|
-segments<5> |        13.061(R)|      SLOW  |         4.605(R)|      FAST  |sampleClock       |   0.000|
-segments<6> |        13.210(R)|      SLOW  |         5.119(R)|      FAST  |sampleClock       |   0.000|
-segments<7> |        13.202(R)|      SLOW  |         4.932(R)|      FAST  |sampleClock       |   0.000|
+digit<0>    |         9.705(R)|      SLOW  |         4.608(R)|      FAST  |sampleClock       |   0.000|
+digit<1>    |         9.565(R)|      SLOW  |         4.508(R)|      FAST  |sampleClock       |   0.000|
+digit<2>    |         8.909(R)|      SLOW  |         4.285(R)|      FAST  |sampleClock       |   0.000|
+digit<3>    |         8.922(R)|      SLOW  |         4.300(R)|      FAST  |sampleClock       |   0.000|
+segments<0> |        11.762(R)|      SLOW  |         4.932(R)|      FAST  |sampleClock       |   0.000|
+segments<1> |        11.740(R)|      SLOW  |         4.777(R)|      FAST  |sampleClock       |   0.000|
+segments<2> |        12.081(R)|      SLOW  |         4.844(R)|      FAST  |sampleClock       |   0.000|
+segments<3> |        13.681(R)|      SLOW  |         5.036(R)|      FAST  |sampleClock       |   0.000|
+segments<4> |        12.079(R)|      SLOW  |         5.052(R)|      FAST  |sampleClock       |   0.000|
+segments<5> |        12.564(R)|      SLOW  |         5.120(R)|      FAST  |sampleClock       |   0.000|
+segments<6> |        12.534(R)|      SLOW  |         5.141(R)|      FAST  |sampleClock       |   0.000|
+segments<7> |        12.089(R)|      SLOW  |         5.197(R)|      FAST  |sampleClock       |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -64,18 +64,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.813|         |         |         |
+clk            |    3.863|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Jan 15 08:59:25 2015 
+Analysis completed Fri Jan 16 10:37:05 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 440 MB
+Peak Memory Usage: 445 MB
 
 
 
