@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd";
+static const char *ng0 = "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_3620187407;
 
@@ -118,20 +118,20 @@ LAB9:    goto LAB2;
 LAB4:    xsi_set_current_line(59, ng0);
     t1 = (t0 + 1352U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7440U);
+    t1 = (t0 + 7368U);
     t4 = (t0 + 2288U);
     t5 = *((char **)t4);
-    t4 = (t0 + 7472U);
+    t4 = (t0 + 7400U);
     t3 = ieee_std_logic_unsigned_equal_stdv_stdv(IEEE_P_3620187407, t2, t1, t5, t4);
     if (t3 != 0)
         goto LAB11;
 
 LAB13:    t1 = (t0 + 1352U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7440U);
+    t1 = (t0 + 7368U);
     t4 = (t0 + 2408U);
     t5 = *((char **)t4);
-    t4 = (t0 + 7488U);
+    t4 = (t0 + 7416U);
     t3 = ieee_std_logic_unsigned_equal_stdv_stdv(IEEE_P_3620187407, t2, t1, t5, t4);
     if (t3 != 0)
         goto LAB14;
@@ -142,7 +142,7 @@ LAB15:    xsi_set_current_line(64, ng0);
     t4 = *((char **)t2);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
-    *((unsigned char *)t6) = (unsigned char)0;
+    *((unsigned char *)t6) = (unsigned char)4;
     xsi_driver_first_trans_fast(t1);
 
 LAB12:    goto LAB2;

@@ -2,13 +2,9 @@
 -- Company: UoB	
 -- Engineer: Christopher Hicks
 --
--- Create Date:   10:01:14 01/10/2015
--- Design Name:   
--- Module Name:   /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ntof_tb.vhd
+-- Create Date:   10:01:14 01/10/2015 
+-- Module Name:   ntof_tb.vhd
 -- Project Name:  Digital_Audio_Synthesiser
--- Target Device:  
--- Tool versions:  
--- Description:   
 -- 
 -- VHDL Test Bench Created by ISE for module: note_to_frequency
 --------------------------------------------------------------------------------

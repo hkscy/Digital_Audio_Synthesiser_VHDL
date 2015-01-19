@@ -23,23 +23,23 @@ architecture Behavioral of pdmModule is
 	
 begin
 	sample: process(clk)
-		variable pdmBit: std_logic := '1';			--mod <- '1'
+		variable pdmBit: std_logic := '1';  --mod <- '1'
 		variable sigma: std_logic_vector(23 downto 0) :=  X"000000";
 		variable delta: std_logic_vector(23 downto 0);
 	begin
-		if rising_edge(clk) then 				--loop
-			if pdmBit = '1' then	 				--if mod='1' then
-				delta := sineIn - X"400000";	--δ <- σ + X"400000"
-			else										--else
-				delta := sineIn + X"400000";	--δ <- σ + X"400000"
-			end if;									--end if			
-			sigma := sigma + delta;				--σ <- σ + δ
-			if sigma > X"000000" then			--if σ > X"000000" then
-				pdmBit := '1';						--mod <- '1'
-			else										--else
-				pdmBit := '0';						--mod <- '0'
-			end if;									--end if	
-			pdmOutput <= pdmBit;					--pdmOutput <- mod
-		end if; 										--end loop.
+		if rising_edge(clk) then            --loop
+			if pdmBit = '1' then             --if mod='1' then
+				delta := sineIn - X"400000";  --δ <-σ + X"400000"
+			else                             --else
+				delta := sineIn + X"400000";  --δ <- σ + X"400000"
+			end if;                          --end if			
+			sigma := sigma + delta;          --σ <- σ + δ
+			if sigma > X"000000" then        --if σ > X"000000" then
+				pdmBit := '1';                --mod <- '1'
+			else                             --else
+				pdmBit := '0';                --mod <- '0'
+			end if;                          --end if	
+			pdmOutput <= pdmBit;             --pdmOutput <- mod
+		end if;                             --end loop.
 	end process sample;
 end Behavioral;

@@ -112,51 +112,54 @@ INFO:Xst - Part-select index evaluated to out of bound value may lead to incorre
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/SinCos.vhd" into library work
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/ipcore_dir/SinCos.vhd" into library work
 Parsing entity <SinCos>.
 Parsing architecture <SinCos_a> of entity <sincos>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/note_to_frequency.vhd" into library work
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/note_to_frequency.vhd" into library work
 Parsing entity <note_to_frequency>.
 Parsing architecture <Behavioral> of entity <note_to_frequency>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" into library work
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd" into library work
 Parsing entity <fmOp>.
 Parsing architecture <behavioural> of entity <fmop>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/uart_rx_interface.vhd" into library work
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" into library work
+Parsing entity <uiState>.
+Parsing architecture <Behavioral> of entity <uistate>.
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uart_rx_interface.vhd" into library work
 Parsing entity <uart_rx_interface>.
 Parsing architecture <Behavioral> of entity <uart_rx_interface>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/UART_RX_CTRL.vhd" into library work
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/UART_RX_CTRL.vhd" into library work
 Parsing entity <UART_RX_CTRL>.
 Parsing architecture <Behavioral> of entity <uart_rx_ctrl>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/pdmModule.vhd" into library work
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/pdmModule.vhd" into library work
 Parsing entity <pdmModule>.
 Parsing architecture <Behavioral> of entity <pdmmodule>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" into library work
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd" into library work
 Parsing entity <MIDI_parser>.
 Parsing architecture <Behavioral> of entity <midi_parser>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm.vhd" into library work
-Parsing entity <dcm>.
-Parsing architecture <xilinx> of entity <dcm>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmSynth.vhd" into library work
-Parsing entity <fmSynth>.
-Parsing architecture <Behavioral> of entity <fmsynth>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/display_driver.vhd" into library work
-Parsing entity <display_driver>.
-Parsing architecture <Behavioral> of entity <display_driver>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/counter.vhd" into library work
-Parsing entity <counter>.
-Parsing architecture <Behavioral> of entity <counter>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/btn_debounce.vhd" into library work
-Parsing entity <btn_debounce>.
-Parsing architecture <Behavioral> of entity <btn_debounce>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/audioClock.vhd" into library work
-Parsing entity <audioClock>.
-Parsing architecture <Behavioral> of entity <audioclock>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" into library work
-Parsing entity <nx3_audio>.
-Parsing architecture <Behavioral> of entity <nx3_audio>.
-Parsing VHDL file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm/example_design/dcm_exdes.vhd" into library work
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm/example_design/dcm_exdes.vhd" into library work
 Parsing entity <dcm_exdes>.
 Parsing architecture <xilinx> of entity <dcm_exdes>.
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm.vhd" into library work
+Parsing entity <dcm>.
+Parsing architecture <xilinx> of entity <dcm>.
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/fmSynth.vhd" into library work
+Parsing entity <fmSynth>.
+Parsing architecture <Behavioral> of entity <fmsynth>.
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/display_driver.vhd" into library work
+Parsing entity <display_driver>.
+Parsing architecture <Behavioral> of entity <display_driver>.
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/counter.vhd" into library work
+Parsing entity <counter>.
+Parsing architecture <Behavioral> of entity <counter>.
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/btn_debounce.vhd" into library work
+Parsing entity <btn_debounce>.
+Parsing architecture <Behavioral> of entity <btn_debounce>.
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/audioClock.vhd" into library work
+Parsing entity <audioClock>.
+Parsing architecture <Behavioral> of entity <audioclock>.
+Parsing VHDL file "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" into library work
+Parsing entity <nx3_audio>.
+Parsing architecture <Behavioral> of entity <nx3_audio>.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -169,11 +172,40 @@ Elaborating entity <dcm> (architecture <xilinx>) from library <work>.
 Elaborating entity <audioClock> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <display_driver> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/display_driver.vhd" Line 50. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/display_driver.vhd" Line 47. Case statement is complete. others clause is never selected
 
 Elaborating entity <counter> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <btn_debounce> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <uiState> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 85: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 91: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 93: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 95: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 97: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 99: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 105: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 107: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 113: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 115: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 121: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 123: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 129: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 131: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 137: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 139: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 141: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 143: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 145: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 151: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 153: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 159: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 161: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 167: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 169: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 175: buttonreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 177: buttonreg should be on the sensitivity list of the process
 
 Elaborating entity <UART_RX_CTRL> (architecture <Behavioral>) from library <work>.
 
@@ -190,36 +222,35 @@ Elaborating entity <SinCos> (architecture <SinCos_a>) from library <work>.
 Elaborating entity <fmOp> (architecture <behavioural>) from library <work>.
 
 Elaborating entity <pdmModule> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 282. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:634 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 41: Net <frequency[23]> does not have a driver.
+INFO:HDLCompiler:679 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 243. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 40: Net <frequency[23]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <nx3_audio>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd".
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd".
 WARNING:Xst:647 - Input <switches<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2935 - Signal 'frequency<23:15>', unconnected in block 'nx3_audio', is tied to its initial value (000000000).
     Found 8-bit register for signal <leds>.
     Found 4x4-bit Read Only RAM for signal <digit>
-    Found 32x24-bit Read Only RAM for signal <_n0060>
-    Found 2-bit 4-to-1 multiplexer for signal <mode> created at line 265.
-    Found 4-bit 4-to-1 multiplexer for signal <num> created at line 265.
+    Found 2-bit 4-to-1 multiplexer for signal <mode> created at line 226.
+    Found 4-bit 4-to-1 multiplexer for signal <num> created at line 226.
     Summary:
-	inferred   2 RAM(s).
+	inferred   1 RAM(s).
 	inferred   8 D-type flip-flop(s).
 	inferred   2 Multiplexer(s).
 Unit <nx3_audio> synthesized.
 
 Synthesizing Unit <dcm>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm.vhd".
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/ipcore_dir/dcm.vhd".
     Summary:
 	no macro.
 Unit <dcm> synthesized.
 
 Synthesizing Unit <audioClock>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/audioClock.vhd".
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/audioClock.vhd".
     Found 1-bit register for signal <clk_out2>.
     Found 3-bit register for signal <counter>.
     Found 3-bit adder for signal <counter[2]_GND_10_o_add_0_OUT> created at line 25.
@@ -229,14 +260,14 @@ Synthesizing Unit <audioClock>.
 Unit <audioClock> synthesized.
 
 Synthesizing Unit <display_driver>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/display_driver.vhd".
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/display_driver.vhd".
     Found 64x8-bit Read Only RAM for signal <segs>
     Summary:
 	inferred   1 RAM(s).
 Unit <display_driver> synthesized.
 
 Synthesizing Unit <counter>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/counter.vhd".
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/counter.vhd".
         N = 15
     Found 15-bit register for signal <count>.
     Found 15-bit adder for signal <count[14]_GND_12_o_add_0_OUT> created at line 27.
@@ -246,7 +277,7 @@ Synthesizing Unit <counter>.
 Unit <counter> synthesized.
 
 Synthesizing Unit <btn_debounce>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/btn_debounce.vhd".
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/btn_debounce.vhd".
     Found 16-bit register for signal <btn0_cntr>.
     Found 1-bit register for signal <btn1_reg>.
     Found 16-bit register for signal <btn1_cntr>.
@@ -267,15 +298,52 @@ Synthesizing Unit <btn_debounce>.
 	inferred  85 D-type flip-flop(s).
 Unit <btn_debounce> synthesized.
 
+Synthesizing Unit <uiState>.
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd".
+    Found 5-bit register for signal <buttonReg>.
+    Found 5-bit register for signal <modAmpReg>.
+    Found 4-bit register for signal <modAttack>.
+    Found 4-bit register for signal <modRelease>.
+    Found 5-bit register for signal <carAmpReg>.
+    Found 4-bit register for signal <carAttack>.
+    Found 4-bit register for signal <carRelease>.
+    Found 4-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 41                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 10                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 5-bit adder for signal <carAmpReg[4]_GND_14_o_add_32_OUT> created at line 1253.
+    Found 4-bit adder for signal <carAttack[3]_GND_14_o_add_48_OUT> created at line 1253.
+    Found 4-bit adder for signal <carRelease[3]_GND_14_o_add_56_OUT> created at line 1253.
+    Found 5-bit adder for signal <modAmpReg[4]_GND_14_o_add_79_OUT> created at line 1253.
+    Found 4-bit adder for signal <modAttack[3]_GND_14_o_add_95_OUT> created at line 1241.
+    Found 4-bit adder for signal <modRelease[3]_GND_14_o_add_103_OUT> created at line 1241.
+    Found 5-bit subtractor for signal <carAmpReg[4]_GND_14_o_sub_41_OUT<4:0>> created at line 1320.
+    Found 5-bit subtractor for signal <modAmpReg[4]_GND_14_o_sub_88_OUT<4:0>> created at line 1320.
+    Found 5-bit comparator equal for signal <n0039> created at line 161
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Finite State Machine(s).
+Unit <uiState> synthesized.
+
 Synthesizing Unit <UART_RX_CTRL>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/UART_RX_CTRL.vhd".
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/UART_RX_CTRL.vhd".
     Found 1-bit register for signal <overclk>.
     Found 2-bit register for signal <state>.
     Found 4-bit register for signal <nticks>.
     Found 3-bit register for signal <nbits>.
     Found 8-bit register for signal <bits>.
     Found 6-bit register for signal <overcounter>.
-    Found finite state machine <FSM_0> for signal <state>.
+    Found finite state machine <FSM_1> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
     | Transitions        | 12                                             |
@@ -286,10 +354,10 @@ Synthesizing Unit <UART_RX_CTRL>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 6-bit adder for signal <overcounter[5]_GND_14_o_add_1_OUT> created at line 49.
-    Found 3-bit adder for signal <nbits[2]_GND_14_o_add_20_OUT> created at line 1241.
-    Found 4-bit adder for signal <nticks[3]_GND_14_o_add_33_OUT> created at line 1241.
-    Found 4-bit 4-to-1 multiplexer for signal <nticks_next> created at line 75.
+    Found 6-bit adder for signal <overcounter[5]_GND_15_o_add_1_OUT> created at line 48.
+    Found 3-bit adder for signal <nbits[2]_GND_15_o_add_20_OUT> created at line 1241.
+    Found 4-bit adder for signal <nticks[3]_GND_15_o_add_33_OUT> created at line 1241.
+    Found 4-bit 4-to-1 multiplexer for signal <nticks_next> created at line 74.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  22 D-type flip-flop(s).
@@ -298,7 +366,7 @@ Synthesizing Unit <UART_RX_CTRL>.
 Unit <UART_RX_CTRL> synthesized.
 
 Synthesizing Unit <uart_rx_interface>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/uart_rx_interface.vhd".
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uart_rx_interface.vhd".
     Found 1-bit register for signal <flagReg>.
     Found 8-bit register for signal <bufferReg>.
     Summary:
@@ -306,9 +374,9 @@ Synthesizing Unit <uart_rx_interface>.
 Unit <uart_rx_interface> synthesized.
 
 Synthesizing Unit <MIDI_parser>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd".
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/MIDI_parser.vhd".
     Found 3-bit register for signal <state>.
-    Found finite state machine <FSM_1> for signal <state>.
+    Found finite state machine <FSM_2> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 5                                              |
     | Transitions        | 11                                             |
@@ -334,15 +402,15 @@ WARNING:Xst:737 - Found 1-bit latch for signal <note<0>>. Latches may be generat
 Unit <MIDI_parser> synthesized.
 
 Synthesizing Unit <note_to_frequency>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/note_to_frequency.vhd".
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/note_to_frequency.vhd".
     Found 256x15-bit Read Only RAM for signal <frequency>
     Summary:
 	inferred   1 RAM(s).
 Unit <note_to_frequency> synthesized.
 
 Synthesizing Unit <fmSynth>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmSynth.vhd".
-INFO:Xst:3210 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmSynth.vhd" line 58: Output port <m_axis_dout_tvalid> of the instance <sc> is unconnected or connected to loadless signal.
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/fmSynth.vhd".
+INFO:Xst:3210 - "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/fmSynth.vhd" line 59: Output port <m_axis_dout_tvalid> of the instance <sc> is unconnected or connected to loadless signal.
     Found 48-bit register for signal <cordicModOut>.
     Found 1-bit register for signal <multiplex>.
     Found 48-bit register for signal <cordicCarrierOut>.
@@ -353,7 +421,7 @@ INFO:Xst:3210 - "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignm
 Unit <fmSynth> synthesized.
 
 Synthesizing Unit <fmOp>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd".
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/fmOperator.vhd".
 WARNING:Xst:647 - Input <modulator<23:22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <m_axis_dout_tdata<23:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 24-bit register for signal <sincosout<47:24>>.
@@ -368,14 +436,14 @@ WARNING:Xst:647 - Input <m_axis_dout_tdata<23:0>> is never used. This port will 
 Unit <fmOp> synthesized.
 
 Synthesizing Unit <pdmModule>.
-    Related source file is "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/pdmModule.vhd".
+    Related source file is "/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/pdmModule.vhd".
     Found 1-bit register for signal <sample.pdmBit>.
     Found 1-bit register for signal <pdmOutput>.
     Found 24-bit register for signal <sample.sigma>.
-    Found 24-bit adder for signal <sineIn[23]_GND_62_o_add_1_OUT> created at line 34.
+    Found 24-bit adder for signal <sineIn[23]_GND_56_o_add_1_OUT> created at line 34.
     Found 24-bit adder for signal <sample.sigma[23]_sineIn[23]_add_3_OUT> created at line 36.
-    Found 24-bit subtractor for signal <sineIn[23]_GND_62_o_sub_1_OUT<23:0>> created at line 32.
-    Found 24-bit comparator greater for signal <sample.sigma[23]_GND_62_o_LessThan_5_o> created at line 37
+    Found 24-bit subtractor for signal <sineIn[23]_GND_56_o_sub_1_OUT<23:0>> created at line 32.
+    Found 24-bit comparator greater for signal <sample.sigma[23]_GND_56_o_LessThan_5_o> created at line 37
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  26 D-type flip-flop(s).
@@ -386,36 +454,38 @@ Unit <pdmModule> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 4
+# RAMs                                                 : 3
  256x15-bit single-port Read Only RAM                  : 1
- 32x24-bit single-port Read Only RAM                   : 1
  4x4-bit single-port Read Only RAM                     : 1
  64x8-bit single-port Read Only RAM                    : 1
 # Multipliers                                          : 2
  22x5-bit multiplier                                   : 2
-# Adders/Subtractors                                   : 16
+# Adders/Subtractors                                   : 22
  15-bit adder                                          : 1
  16-bit adder                                          : 5
  24-bit adder                                          : 3
  24-bit addsub                                         : 1
  27-bit adder                                          : 2
  3-bit adder                                           : 2
- 4-bit adder                                           : 1
+ 4-bit adder                                           : 5
+ 5-bit addsub                                          : 2
  6-bit adder                                           : 1
-# Registers                                            : 32
+# Registers                                            : 39
  1-bit register                                        : 11
  15-bit register                                       : 1
  16-bit register                                       : 5
  24-bit register                                       : 6
  3-bit register                                        : 2
- 4-bit register                                        : 1
+ 4-bit register                                        : 5
  48-bit register                                       : 2
+ 5-bit register                                        : 3
  6-bit register                                        : 1
  8-bit register                                        : 3
 # Latches                                              : 8
  1-bit latch                                           : 8
-# Comparators                                          : 1
+# Comparators                                          : 2
  24-bit comparator greater                             : 1
+ 5-bit comparator equal                                : 1
 # Multiplexers                                         : 24
  1-bit 2-to-1 multiplexer                              : 12
  2-bit 4-to-1 multiplexer                              : 1
@@ -423,7 +493,7 @@ Macro Statistics
  3-bit 2-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 7
  4-bit 4-to-1 multiplexer                              : 2
-# FSMs                                                 : 2
+# FSMs                                                 : 3
 # Xors                                                 : 5
  1-bit xor2                                            : 5
 
@@ -543,17 +613,6 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_frequency> will be implemented on LU
 Unit <note_to_frequency> synthesized (advanced).
 
 Synthesizing (advanced) Unit <nx3_audio>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0060> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 32-word x 24-bit                    |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <buttons_deb>   |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_digit> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
@@ -571,13 +630,21 @@ Synthesizing (advanced) Unit <pdmModule>.
 The following registers are absorbed into accumulator <sample.sigma>: 1 register on signal <sample.sigma>.
 Unit <pdmModule> synthesized (advanced).
 
+Synthesizing (advanced) Unit <uiState>.
+The following registers are absorbed into counter <modAmpReg>: 1 register on signal <modAmpReg>.
+The following registers are absorbed into counter <carAmpReg>: 1 register on signal <carAmpReg>.
+The following registers are absorbed into counter <modAttack>: 1 register on signal <modAttack>.
+The following registers are absorbed into counter <modRelease>: 1 register on signal <modRelease>.
+The following registers are absorbed into counter <carAttack>: 1 register on signal <carAttack>.
+The following registers are absorbed into counter <carRelease>: 1 register on signal <carRelease>.
+Unit <uiState> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 4
+# RAMs                                                 : 3
  256x15-bit single-port distributed Read Only RAM      : 1
- 32x24-bit single-port distributed Read Only RAM       : 1
  4x4-bit single-port distributed Read Only RAM         : 1
  64x8-bit single-port distributed Read Only RAM        : 1
 # Multipliers                                          : 2
@@ -586,24 +653,27 @@ Macro Statistics
  24-bit adder                                          : 3
  24-bit addsub                                         : 1
  4-bit adder                                           : 1
-# Counters                                             : 9
+# Counters                                             : 15
  15-bit up counter                                     : 1
  16-bit up counter                                     : 5
  3-bit up counter                                      : 2
+ 4-bit up counter                                      : 4
+ 5-bit updown counter                                  : 2
  6-bit up counter                                      : 1
 # Accumulators                                         : 3
  24-bit up accumulator                                 : 3
-# Registers                                            : 207
- Flip-Flops                                            : 207
-# Comparators                                          : 1
+# Registers                                            : 212
+ Flip-Flops                                            : 212
+# Comparators                                          : 2
  24-bit comparator greater                             : 1
+ 5-bit comparator equal                                : 1
 # Multiplexers                                         : 23
  1-bit 2-to-1 multiplexer                              : 12
  2-bit 4-to-1 multiplexer                              : 1
  24-bit 2-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 7
  4-bit 4-to-1 multiplexer                              : 2
-# FSMs                                                 : 2
+# FSMs                                                 : 3
 # Xors                                                 : 5
  1-bit xor2                                            : 5
 
@@ -614,7 +684,7 @@ Macro Statistics
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <sample.pdmBit> in Unit <pdmModule> is equivalent to the following FF/Latch, which will be removed : <pdmOutput> 
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <uartrx/FSM_0> on signal <state[1:2]> with gray encoding.
+Optimizing FSM <uartrx/FSM_1> on signal <state[1:2]> with gray encoding.
 -------------------
  State | Encoding
 -------------------
@@ -624,7 +694,24 @@ Optimizing FSM <uartrx/FSM_0> on signal <state[1:2]> with gray encoding.
  stop  | 10
 -------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <midi/FSM_1> on signal <state[1:3]> with user encoding.
+Optimizing FSM <ui/FSM_0> on signal <state[1:4]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 0000
+ carrier   | 0001
+ carup     | 0010
+ cardown   | 0011
+ caratck   | 0100
+ carrel    | 0101
+ modulator | 0110
+ modup     | 0111
+ moddown   | 1000
+ modatck   | 1001
+ modrel    | 1010
+-----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <midi/FSM_2> on signal <state[1:3]> with user encoding.
 -----------------------
  State     | Encoding
 -----------------------
@@ -645,6 +732,8 @@ Optimizing unit <nx3_audio> ...
 Optimizing unit <btn_debounce> ...
 
 Optimizing unit <UART_RX_CTRL> ...
+
+Optimizing unit <uiState> ...
 
 Optimizing unit <uart_rx_interface> ...
 
@@ -712,8 +801,6 @@ INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_16> in Unit <nx3_audio> is
 INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_17> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_17> 
 INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_18> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_18> 
 INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_19> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_19> 
-INFO:Xst:2261 - The FF/Latch <dcm_clock/counter_0> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <uartrx/overcounter_0> 
-INFO:Xst:2261 - The FF/Latch <dcm_clock/counter_1> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <uartrx/overcounter_1> 
 INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_0> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_0> 
 INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_1> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_1> 
 INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_2> in Unit <nx3_audio> is equivalent to the following FF/Latch, which will be removed : <fm/modulator/phaseCounter_2> 
@@ -732,7 +819,7 @@ INFO:Xst:2261 - The FF/Latch <fm/carrier/phaseCounter_14> in Unit <nx3_audio> is
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block nx3_audio, actual ratio is 19.
+Found area constraint ratio of 100 (+ 5) on block nx3_audio, actual ratio is 20.
 
 Final Macro Processing ...
 
@@ -740,8 +827,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 310
- Flip-Flops                                            : 310
+# Registers                                            : 347
+ Flip-Flops                                            : 347
 
 =========================================================================
 
@@ -764,23 +851,23 @@ Top Level Output File Name         : nx3_audio.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 7480
+# BELS                             : 7547
 #      GND                         : 2
-#      INV                         : 35
+#      INV                         : 42
 #      LUT1                        : 120
-#      LUT2                        : 805
-#      LUT3                        : 1307
-#      LUT4                        : 81
-#      LUT5                        : 203
-#      LUT6                        : 110
+#      LUT2                        : 812
+#      LUT3                        : 1316
+#      LUT4                        : 93
+#      LUT5                        : 215
+#      LUT6                        : 132
 #      MUXCY                       : 2353
-#      MUXF7                       : 5
+#      MUXF7                       : 3
 #      VCC                         : 2
 #      XORCY                       : 2457
-# FlipFlops/Latches                : 318
-#      FD                          : 155
-#      FDE                         : 70
-#      FDR                         : 85
+# FlipFlops/Latches                : 355
+#      FD                          : 164
+#      FDE                         : 96
+#      FDR                         : 87
 #      LD                          : 8
 # Clock Buffers                    : 3
 #      BUFG                        : 3
@@ -800,16 +887,16 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             310  out of  18224     1%  
- Number of Slice LUTs:                 2661  out of   9112    29%  
-    Number used as Logic:              2661  out of   9112    29%  
+ Number of Slice Registers:             347  out of  18224     1%  
+ Number of Slice LUTs:                 2730  out of   9112    29%  
+    Number used as Logic:              2730  out of   9112    29%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2774
-   Number with an unused Flip Flop:    2464  out of   2774    88%  
-   Number with an unused LUT:           113  out of   2774     4%  
-   Number of fully used LUT-FF pairs:   197  out of   2774     7%  
-   Number of unique control sets:        21
+ Number of LUT Flip Flop pairs used:   2842
+   Number with an unused Flip Flop:    2495  out of   2842    87%  
+   Number with an unused LUT:           112  out of   2842     3%  
+   Number of fully used LUT-FF pairs:   235  out of   2842     8%  
+   Number of unique control sets:        27
 
 IO Utilization: 
  Number of IOs:                          38
@@ -843,9 +930,9 @@ Clock Information:
 Clock Signal                                                             | Clock buffer(FF name)  | Load  |
 -------------------------------------------------------------------------+------------------------+-------+
 word_ready(uartrx/Mmux_word_ready11:O)                                   | NONE(*)(leds_0)        | 8     |
-sample_clock/pll_base_inst/CLKOUT0                                       | BUFG                   | 53    |
-dcm_clock/clk_out2                                                       | BUFG                   | 249   |
-midi/state[2]_PWR_17_o_Mux_14_o(midi/Mmux_state[2]_PWR_17_o_Mux_14_o11:O)| NONE(*)(midi/note_0)   | 8     |
+sample_clock/pll_base_inst/CLKOUT0                                       | BUFG                   | 55    |
+dcm_clock/clk_out2                                                       | BUFG                   | 284   |
+midi/state[2]_PWR_19_o_Mux_14_o(midi/Mmux_state[2]_PWR_19_o_Mux_14_o11:O)| NONE(*)(midi/note_0)   | 8     |
 -------------------------------------------------------------------------+------------------------+-------+
 (*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -862,7 +949,7 @@ Speed Grade: -2
 
    Minimum period: 97.107ns (Maximum Frequency: 10.298MHz)
    Minimum input arrival time before clock: 4.113ns
-   Maximum output required time after clock: 10.355ns
+   Maximum output required time after clock: 11.509ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -872,7 +959,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sample_clock/pll_base_inst/CLKOUT0'
   Clock period: 4.854ns (frequency: 206.016MHz)
-  Total number of paths / destination ports: 432 / 75
+  Total number of paths / destination ports: 452 / 79
 -------------------------------------------------------------------------
 Delay:               4.854ns (Levels of Logic = 2)
   Source:            uartrx/overclk (FF)
@@ -895,7 +982,7 @@ Delay:               4.854ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'dcm_clock/clk_out2'
   Clock period: 97.107ns (frequency: 10.298MHz)
-  Total number of paths / destination ports: 1475598593224571435503487912062624741418074112 / 380
+  Total number of paths / destination ports: 1475598593224571435503487912062624741418074112 / 441
 -------------------------------------------------------------------------
 Delay:               97.107ns (Levels of Logic = 719)
   Source:            fm/cordicIn_23 (FF)
@@ -1667,7 +1754,7 @@ Offset:              2.707ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             6   1.328   0.876  uart_rx_IBUF (uart_rx_IBUF)
-     LUT5:I4->O            1   0.254   0.000  uartrx/Mmux_nticks_next34_G (N16)
+     LUT5:I4->O            1   0.254   0.000  uartrx/Mmux_nticks_next34_G (N22)
      MUXF7:I1->O           1   0.175   0.000  uartrx/Mmux_nticks_next34 (uartrx/nticks_next<2>)
      FD:D                      0.074          uartrx/nticks_2
     ----------------------------------------
@@ -1695,48 +1782,49 @@ Offset:              4.118ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sample_clock/pll_base_inst/CLKOUT0'
-  Total number of paths / destination ports: 344 / 12
+  Total number of paths / destination ports: 232 / 12
 -------------------------------------------------------------------------
-Offset:              9.513ns (Levels of Logic = 5)
-  Source:            c/count_13 (FF)
-  Destination:       segments<1> (PAD)
+Offset:              9.051ns (Levels of Logic = 4)
+  Source:            c/count_14 (FF)
+  Destination:       segments<7> (PAD)
   Source Clock:      sample_clock/pll_base_inst/CLKOUT0 rising
 
-  Data Path: c/count_13 to segments<1>
+  Data Path: c/count_14 to segments<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              15   0.525   1.585  c/count_13 (c/count_13)
-     LUT6:I1->O            1   0.254   0.000  Mmux_mode24_G (N14)
-     MUXF7:I1->O          12   0.175   1.499  Mmux_mode24 (mode<1>)
-     LUT5:I0->O            8   0.254   1.374  dd/digit<2>1 (dd/digit<2>)
-     LUT6:I1->O            1   0.254   0.681  dd_Mram_segs111 (segments_1_OBUF)
-     OBUF:I->O                 2.912          segments_1_OBUF (segments<1>)
-    ----------------------------------------
-    Total                      9.513ns (4.374ns logic, 5.139ns route)
-                                       (46.0% logic, 54.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'dcm_clock/clk_out2'
-  Total number of paths / destination ports: 1194 / 10
--------------------------------------------------------------------------
-Offset:              10.355ns (Levels of Logic = 5)
-  Source:            button_debounce/btn3_reg (FF)
-  Destination:       segments<7> (PAD)
-  Source Clock:      dcm_clock/clk_out2 rising
-
-  Data Path: button_debounce/btn3_reg to segments<7>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q             14   0.525   1.557  button_debounce/btn3_reg (button_debounce/btn3_reg)
-     LUT5:I0->O            3   0.254   1.196  Mram__n0060221 (Mram__n006022)
-     LUT6:I1->O           12   0.254   1.069  Mmux_mode11 (mode<0>)
-     LUT3:I2->O            8   0.254   1.399  dd/digit<0>1 (dd/digit<0>)
+     FD:C->Q              11   0.525   1.494  c/count_14 (c/count_14)
+     LUT6:I0->O           12   0.254   1.297  Mmux_mode2 (mode<1>)
+     LUT3:I0->O            8   0.235   1.399  dd/digit<0>1 (dd/digit<0>)
      LUT6:I0->O            1   0.254   0.681  dd_Mram_segs71 (segments_7_OBUF)
      OBUF:I->O                 2.912          segments_7_OBUF (segments<7>)
     ----------------------------------------
-    Total                     10.355ns (4.453ns logic, 5.902ns route)
+    Total                      9.051ns (4.180ns logic, 4.871ns route)
+                                       (46.2% logic, 53.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dcm_clock/clk_out2'
+  Total number of paths / destination ports: 1426 / 10
+-------------------------------------------------------------------------
+Offset:              11.509ns (Levels of Logic = 7)
+  Source:            ui/state_FSM_FFd4 (FF)
+  Destination:       segments<5> (PAD)
+  Source Clock:      dcm_clock/clk_out2 rising
+
+  Data Path: ui/state_FSM_FFd4 to segments<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              28   0.525   1.883  ui/state_FSM_FFd4 (ui/state_FSM_FFd4)
+     LUT5:I0->O            1   0.254   0.682  Mmux_num21 (Mmux_num2)
+     LUT6:I5->O            1   0.254   0.682  Mmux_num22 (Mmux_num21)
+     LUT6:I5->O            1   0.254   0.790  Mmux_num23 (Mmux_num22)
+     LUT6:I4->O            1   0.250   0.790  Mmux_num24 (num<1>)
+     LUT3:I1->O            8   0.250   1.052  dd/digit<1>1 (dd/digit<1>)
+     LUT6:I4->O            1   0.250   0.681  dd_Mram_segs12 (segments_0_OBUF)
+     OBUF:I->O                 2.912          segments_0_OBUF (segments<0>)
+    ----------------------------------------
+    Total                     11.509ns (4.949ns logic, 6.560ns route)
                                        (43.0% logic, 57.0% route)
 
 =========================================================================
@@ -1750,15 +1838,15 @@ Clock to Setup on destination clock dcm_clock/clk_out2
 Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------+---------+---------+---------+---------+
 dcm_clock/clk_out2             |   97.107|         |         |         |
-midi/state[2]_PWR_17_o_Mux_14_o|         |    5.536|         |         |
+midi/state[2]_PWR_19_o_Mux_14_o|         |    5.536|         |         |
 -------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock midi/state[2]_PWR_17_o_Mux_14_o
+Clock to Setup on destination clock midi/state[2]_PWR_19_o_Mux_14_o
 ----------------------------------+---------+---------+---------+---------+
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-sample_clock/pll_base_inst/CLKOUT0|         |         |    1.854|         |
+sample_clock/pll_base_inst/CLKOUT0|         |         |    1.884|         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sample_clock/pll_base_inst/CLKOUT0
@@ -1780,15 +1868,15 @@ sample_clock/pll_base_inst/CLKOUT0|    1.364|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 14.27 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.38 secs
  
 --> 
 
 
-Total memory usage is 435172 kilobytes
+Total memory usage is 436016 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  119 (   0 filtered)
-Number of infos    :   34 (   0 filtered)
+Number of warnings :  146 (   0 filtered)
+Number of infos    :   31 (   0 filtered)
 

@@ -3,7 +3,7 @@
 -- Engineer:		UoB 
 -- Create Date:   19:59:47 01/11/2015 
 -- Module Name:   uart_rx_interface - Behavioral 
--- Description: 	A flag flip flop and one word buffer, prevents the same uart rx
+-- Description: 	A flip flop and one word buffer, prevents the same uart rx
 --						word from being received multiple times.
 -- Modified and inspired from: (FSM model used for design)
 -- http://academic.csuohio.edu/chu_p/rtl/fpga_vhdl_book/fpga_vhdl_sample_chapter.pdf

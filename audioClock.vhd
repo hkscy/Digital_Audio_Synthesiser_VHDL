@@ -1,11 +1,11 @@
 -----------------------------------------------------------------------------------
--- Company: 		 UoB
--- Engineer: 		 Christopher Hicks
--- Create Date:    20:55:56 12/29/2014 
--- Module Name:    audioClock - Behavioral 
--- Project Name: 	 Digital_audio_synthesiser
--- Target Devices: Nexys3 board.
--- Description: 	 Takes a clock signal in and divides it by eight.
+-- Company:		UoB
+-- Engineer: 		Christopher Hicks
+-- Create Date:     	20:55:56 12/29/2014 
+-- Module Name:     	audioClock - Behavioral 
+-- Project Name: 	Digital_audio_synthesiser
+-- Target Devices:  	Nexys3 board.
+-- Description:		Takes a clock signal in and divides it by eight.
 ----------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;

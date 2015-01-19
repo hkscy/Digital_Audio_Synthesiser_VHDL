@@ -9,10 +9,10 @@ SET_PREFERENCE verilogsim false
 SET_PREFERENCE vhdlsim true
 SET_PREFERENCE simulationfiles Behavioral
 SET_PREFERENCE busformat BusFormatAngleBracketNotRipped
-SET_PREFERENCE outputdirectory /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/
-SET_PREFERENCE workingdirectory /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/tmp/
-SET_PREFERENCE subworkingdirectory /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/tmp/_cg/
-SET_PREFERENCE transientdirectory /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/ipcore_dir/tmp/_cg/_dbg/
+SET_PREFERENCE outputdirectory /home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/ipcore_dir/
+SET_PREFERENCE workingdirectory /home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/ipcore_dir/tmp/
+SET_PREFERENCE subworkingdirectory /home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/ipcore_dir/tmp/_cg/
+SET_PREFERENCE transientdirectory /home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/ipcore_dir/tmp/_cg/_dbg/
 SET_PREFERENCE designentry VHDL
 SET_PREFERENCE flowvendor Other
 SET_PREFERENCE addpads false

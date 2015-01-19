@@ -28,7 +28,7 @@ ARCHITECTURE behavior OF audioClock_tb IS
    signal clk_out2 : std_logic;
 
    -- Clock period definitions
-   constant clk_in2_period : time := 44.291 ns; -- Simulate 2.882Mhz input
+   constant clk_in2_period : time := 44.291 ns; -- Simulate 22.581Mhz input
    --constant clk_out2_period : time := 10 ns;
  
 BEGIN

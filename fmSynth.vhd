@@ -7,7 +7,6 @@
 -- Project Name: 	Digital Audio Synthesiser
 -- Target Devices: Nexys3
 -- Description: Multiplexes access to the CORDIC core between two FM operands.
---
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -15,8 +14,8 @@ use ieee.numeric_std.all;
 
 entity fmSynth is
     Port ( note_frequency : in  unsigned (23 downto 0); --Angular frequency of the note to play.
-			  modAmplitude: in signed(5 downto 0);			  --Fed to the modulating operand, determines it's amplitude
-			  carrierAmplitude: in signed(5 downto 0);	  --Fed to the carrier operand, determines it's amplitude
+			  modAmplitude: in signed(4 downto 0);			  --Fed to the modulating operand, determines it's amplitude
+			  carrierAmplitude: in signed(4 downto 0);	  --Fed to the carrier operand, determines it's amplitude
            clk : in  STD_LOGIC;								  --Input clock, expected 2.8228Mhz
            fmOut : out  STD_LOGIC_VECTOR (23 downto 0));--FM output signal.
 end fmSynth;
@@ -63,7 +62,7 @@ begin
 
 	modulator:	fmOp port map( osc_freq => note_frequency,		  --Input is note frequency	--
 										modulator => (others => '0'),
-										amplitude => "00011",
+										amplitude => modAmplitude,
 										m_axis_dout_tdata => cordicModOut, --Cordic output, is input here.
 										s_axis_phase_tdata => cordicModIn, --Output from mod is input to cordic
 										clk => clk,
@@ -71,7 +70,7 @@ begin
 										
 	carrier:	fmOp port map( osc_freq => note_frequency,
 									modulator => signed(modOut),
-									amplitude => "00001",
+									amplitude => carrierAmplitude,
 									m_axis_dout_tdata => cordicCarrierOut,
 									s_axis_phase_tdata => cordicCarrierIn,
 									clk => clk,

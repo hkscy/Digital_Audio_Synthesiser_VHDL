@@ -5,8 +5,9 @@ Command Line: /opt/Xilinx/13.4/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nx3_audio.ucf -p xc6slx16-csg324-2
 nx3_audio.ngc nx3_audio.ngd
 
-Reading NGO file "/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL
-assignment/designs/Digital_Audio_Synthesiser/nx3_audio.ngc" ...
+Reading NGO file
+"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_A
+udio_Synthesiser/nx3_audio.ngc" ...
 Loading design module "ipcore_dir/SinCos.ngc"...
 Gathering constraint information from source properties...
 Done.
@@ -29,10 +30,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 417668 kilobytes
+Total memory usage is 417896 kilobytes
 
 Writing NGD file "nx3_audio.ngd" ...
-Total REAL time to NGDBUILD completion:  5 sec
-Total CPU time to NGDBUILD completion:   5 sec
+Total REAL time to NGDBUILD completion:  7 sec
+Total CPU time to NGDBUILD completion:   7 sec
 
 Writing NGDBUILD log file "nx3_audio.bld"...

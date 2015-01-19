@@ -2,15 +2,15 @@ import serial
 import time
 
 def noteOn( str ):
-	ser.write('\x90')  #Note on MIDI status message
-	ser.write( str )   #Write note number
-	ser.write('\x00')  #Write velocity
+	ser.write('\x90')   	#Note on MIDI status message
+	ser.write( str )    	#Write note number
+	ser.write('\x00')   	#Write velocity
 	return
 
 def noteOff( str ):
-	ser.write('\x80')  #Note off MIDI status message
-	ser.write( str )   #Write note number
-	ser.write(b'\x00')  #Write velocity
+	ser.write('\x80')   	#Note off MIDI status message
+	ser.write( str )    	#Write note number
+	ser.write(b'\x00')  	#Write velocity
 	return
 
 def playNote( str, float ):
@@ -73,6 +73,5 @@ playNote('\x43', 0.2) #G3
 #5 - A A C A C D
 #4 - G F# F D# E
 #5 - A A C A C D + C# D C
-
 
 ser.close()

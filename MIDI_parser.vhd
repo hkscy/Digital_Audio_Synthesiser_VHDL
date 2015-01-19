@@ -61,7 +61,7 @@ begin
 				elsif data = NOTE_OFF then
 					state_next <= data1_off;	--Note off.
 				else
-					state_next <= idle; --Return to idle.
+					state_next <= data2; --Return to idle.
 				end if;
 			when data1_on =>	--Incoming MIDI data byte 1, contains note number to turn ON.
 				if data_ready = '1' then

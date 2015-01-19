@@ -8,7 +8,88 @@
 <msg type="info" file="Xst" num="0" delta="new" >Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 41: Net &lt;<arg fmt="%s" index="1">frequency[23]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 85: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 91: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 93: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 95: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 97: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 99: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 105: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 107: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 113: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 115: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 121: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 123: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 129: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 131: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 137: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 139: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 141: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 143: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 145: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 151: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 153: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 159: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 161: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 167: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 169: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 175: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/uiState.vhd" Line 177: <arg fmt="%s" index="1">buttonreg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/nx3_audio.vhd" Line 40: Net &lt;<arg fmt="%s" index="1">frequency[23]</arg>&gt; does not have a driver.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">switches&lt;7:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -41,7 +122,7 @@
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/fmSynth.vhd</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_dout_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sc</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/fmSynth.vhd</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_dout_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sc</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">modulator&lt;23:22&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -53,10 +134,10 @@
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">sample.pdmBit</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pdm</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pdmOutput&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sincosout_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">modulator</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">sincosout_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">modulator</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sincosout_47</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">modulator</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">sincosout_47</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">modulator</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
@@ -131,10 +212,10 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cordicModOut_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cordicModOut_47</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicModOut_47</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cordicCarrierOut_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fm</arg>&gt;.
@@ -213,9 +294,6 @@
 </msg>
 
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_frequency</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-</msg>
-
-<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0060</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_digit</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -389,76 +467,70 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fm/modulator/sincosout_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_20&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_20&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_15&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_15&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_21&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_21&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_16&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_16&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_17&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_17&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_18&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_18&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_19&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_19&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dcm_clock/counter_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;uartrx/overcounter_0&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dcm_clock/counter_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;uartrx/overcounter_1&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_0&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_2&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_1&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_2&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_4&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_3&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_5&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_4&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_6&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_5&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_7&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_6&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_8&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_7&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_9&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_8&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_10&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_9&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_11&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_10&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_12&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_11&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_13&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_12&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_13&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_14&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fm/carrier/phaseCounter_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_audio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fm/modulator/phaseCounter_14&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

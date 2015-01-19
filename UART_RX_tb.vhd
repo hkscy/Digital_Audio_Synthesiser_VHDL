@@ -2,7 +2,7 @@
 -- Company: 		UoB
 -- Engineer:		Christopher hicks
 -- Create Date:   14:06:16 01/12/2015  
--- Module Name:   /home/meccastreissand/Documents/Fourth Year/EE4G - VHDL assignment/designs/Digital_Audio_Synthesiser/UART_RX_tb.vhd
+-- Module Name:   UART_RX_tb.vhd
 -- Project Name:  Digital_Audio_Synthesiser
 -- Description:   
 -- 
@@ -66,7 +66,7 @@ ARCHITECTURE behavior OF UART_RX_tb IS
 	signal frequency: std_logic_vector(14 downto 0) := (others => '0');
 
    -- Clock period definitions
-   constant clk_period : time := 44.283 ns;	--22.582Mhz clock. 
+   constant clk_period : time := 44.283 ns;	--22.581Mhz clock. 
 	constant uart_period: time := 31.175 us;	--32077 ~MIDI baud. (closest to w\above clock) 31250 is MIDI. 2.6% out.
  
 BEGIN

@@ -1,13 +1,10 @@
 ----------------------------------------------------------------------------------
--- 
 -- Create Date:    19:11:12 12/24/2014 
--- Design Name: 	 display_driver.vhd
+-- Design Name:    display_driver.vhd
 -- Module Name:    display_driver - Behavioral 
--- Project Name: 	 Digital_audio_synthesiser.
+-- Project Name:   Digital_audio_synthesiser.
 -- Target Devices: Nexys3 development board.
--- Tool versions: 
--- Description: Generates apropriate display segments given an input number.
---
+-- Description:    Generates apropriate display segments given an input number.
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

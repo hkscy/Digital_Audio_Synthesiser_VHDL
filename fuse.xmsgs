@@ -5,5 +5,11 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/sineGen_tb.vhd" Line 49: &lt;<arg fmt="%s" index="1">sinegen</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">/home/meccastreissand/Documents/FourthYear/EE4GVHDLAssignment/designs/Digital_Audio_Synthesiser/sineGen_tb.vhd</arg>&quot; Line <arg fmt="%d" index="2">49</arg>. Instance <arg fmt="%s" index="3">sinegen</arg> is unbound
+</msg>
+
 </messages>
 
